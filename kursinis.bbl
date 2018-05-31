@@ -91,6 +91,32 @@
       \field{title}{Deep Learning}
       \field{year}{2016}
     \endentry
+    \entry{Convolution-book}{book}{}
+      \name{author}{2}{}{%
+        {{hash=b437b3540ca6290b1af286f81e1918f1}{%
+           family={Patterson},
+           family_i={P\bibinitperiod},
+           given={Josh},
+           given_i={J\bibinitperiod}}}%
+        {{hash=6cc15cc3c2db75f3b76f461a16e7acd5}{%
+           family={Gibson},
+           family_i={G\bibinitperiod},
+           given={Adam},
+           given_i={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {O’Reilly Media, Inc.}%
+      }
+      \strng{namehash}{57d3e134e29f75914b76c446039ab8bf}
+      \strng{fullhash}{57d3e134e29f75914b76c446039ab8bf}
+      \field{labelalpha}{PG17}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Deep Learning}
+      \field{year}{2017}
+    \endentry
     \entry{Woodford-2018}{misc}{}
       \name{author}{1}{}{%
         {{hash=22b71cb13471913f282541b85da54900}{%

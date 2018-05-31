@@ -144,8 +144,67 @@ Prisitaikančio mokymosi funkcijos turi atskirus kiekvieno parametro mokymosi gr
 metodą, nereikalaujant brangaus darbo rankiniu būdu nustatant hiperparametrus mokymosi greičiui. Tačiau šios funkcijos 
 generalizuoja blogiau negu nuolatinio mokymosi greičio funkcijos, nors ir mokymosi metu pasirodo geriau \cite{2017arXiv170508292W}.
 
+% generalization -> http://www.ra.cs.uni-tuebingen.de/SNNS/UserManual/node16.html
 
-\section{VGG}
+% layer types? 
+\section{Konvoliucinis neuroninis tinklas}
+Konvoliuciniai neuroniniai tinklai yra labai panašūs į paprastus neuroninius tinklus (daugiau informacijos skyriuje ,,Neuroninis
+tinklas''). Tačiau pagrindinis skirtumas tarp šių tinklų yra, kad konvoliucinio įeities sluoksnis priima tik tai paveiksliukus, 
+kurie jei padaryti su standartine skaitmenine kamera, turi tris komponentus - raudoną, žalią ir mėlyną. Šiuos komponentus galima 
+įsivaizduoti kaip tris 2D matricas sudėtas viena ant kitos. Kiekvienos matricos i-osios eilutės ir j-ojo stulpelio elementas 
+atitinka nuotraukos pikselį, kurio reikšmė yra intervale nuo 0 iki 255. Kadangi naudojamos informacijos tipas yra specifinis, 
+tai labai sumažina tinklo parametrų kiekį ir tinklą padaro efektyvesnį.
+
+
+Objektų atpažinimas paveiksliukuose yra sudėtingas dėl šių iššukių:
+\begin{itemize}
+\item Segmentavimas - paveiksliukai gali atvaizduoti įvairias scenas, kuriose gali būti pavaizduota daug objektų, kurie vienas kita gali dalinai uždengti.
+\item Šviesa - pikselių intensyvumas gali būti paveiktas šviesos šaltinio ar pačio objekto.
+\item Deformacija - objektai gali būti deformuoti įvairiais būdais, pavyzdžiui, kiekvieno žmogaus ranka parašyti skaičiai skiriasi.
+\item Galimybės - objektų klasės dažnai nustatomos pagal tai kaip patys objektai yra naudojami, pavyzdžiui, kėdės yra objektai sukurti sėdėti, tačiau jos gali turėti įvairų dizainą.
+\item Žvilgsnio taškas - keičiant vietą iš kurios yra žiūrima gali keistis objekto forma, informacija šokinėja per įeities sluoksnio dimensiją (t.y. pikselius). 
+\end{itemize}
+
+\subsection{Konvoliucija}
+Matematiškam panaudojimui, konvoliucija yra matematinė operacija, kuri apibūdina taisyklę, kuri parodo kaip reikia sujungti du informacijos rinkinius \cite{Convolution-book}. 
+Paveiksliukų analizėje, statinė ir pagrindinė funckija yra įeities paveiksliukas, kuris yra analizuojamas, o antroji, judanti funkcija, žinoma 
+kaip filtras, nes ji išskiria paveiksliuko ypatybę. Abi funkcijos yra susietos daugyba. 
+
+\\AR REIKIA PAVEIKSLIUKO KURIS PARODYTU KAIP VEIKIA????????????
+
+Tačiau konvoliuciniai tinklai turi daug filtrų, kurie pereina per vieną paveiksliuką, kiekvienas išskirdamas skirtingą paveiksliuko ypatybę.
+Pirmuose sluoksniuose šiuos filtrus galima įsivaizduoti kaip horizontalių, vertikalių ar įstrižų linijų filtrus, kurie sukuria paveikslėlio 
+kraštų planą. Tinklas paima visus filtrus, gabaliukus paveiksliukų ypatybių vietų, ir juos sudeda į planą, kuris parodo ypatybės vietą. 
+Mokydamasis skirtingų proporcijų ypatybių, tinklas leidžia lengvai kurti įvairių dydžių ir greitą ypatybių atpažinimą.
+
+Ypatybių planas yra kontroliuojamas trimis parametrais:
+\begin{itemize}
+\item Gylis - atitinka filtrų skaičių.
+\item Žingsnis - pikselių kiekis, kuris parodo per kiek reikia slinkti filtro matrica per įeities informacijos matricą.
+\item Nulių pamušalas - įeities informacijos matrcios kraštus užpilduti nuliais.
+\end{itemize}
+
+\subsection{Konvoliucinio neuroninio tinklo sluoksniai}
+Neuroniniai tinklai tai yra sluoksnių rinkinys, kuris turi įeities, vidinius ir išeities sluoksnius. Tačiau priklausomai 
+kokio tipo neuroninis tinklas vidiniai sluoksniai gali skirtis. Konvoliuciniai neuroniniai tinklai turi tris pagrindinius 
+sluoksnių tipus, kurie sudaro vidinį sluoksnį. Šie tipai yra konvoliucinis, sujungimo ir pilno sujungimo sluoksniai.
+
+\subsubsection{Konvoliucinis sluoksnis}
+Šis sluoksnis yra pagrindinis konvoliucinio neuroninio tinklo sluoksnis, kuris atlieka daugiausia skaičiavimų.
+
+Kai naudojami paveiksliukai yra nepatogu ir neefektyvu sujungti visus neuronus vienus su kitais. Todėl reikia kiekvieną 
+neuroną sujungti su lokaliu įeities informacijos regionu. Šios jungties erdvinė apimtis yra vertinama hiperparametru 
+priimtinu lauku, kuris yra lygus filtro dydžiui. Jungties gylio ašis yra visada lygi įeities informacijos gyliui.
+
+
+
+\subsubsection{Sujungimo sluoksnis}
+
+
+\subsubsection{Pilno sujungimo sluoksnis}
+
+
+\subsection{VGG}
 \subsection{Fine-tune}
 
 \section{Ekspermentas}
