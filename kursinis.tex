@@ -58,7 +58,7 @@ milijardų neuronų, kurie yra sujungti sinapsėsmis. Per tuos neuronus sklinda 
 atpažinti objektus, garsus ir t.t. Neuroniniai tinklai veikia panašiai. Jie irgi turi daug besijungiančių neuronų, kurie gauna informaciją ir 
 pagal tą informaciją gali nuspręsti koks objektas yra paveikslėlyje. Tačiau ties tuo ir baigiasi žmogaus smegenų ir neuroninių tinklų panašumas, 
 kadangi neuroniniai tinklai yra kompiuterinė simuliacija - matematinis algoritmas su aritmetiniais kintamaisiais. Ši simuliacija yra suvokiama 
-tik žmogui, kuris suprogramavo neuroninį tinklą, pačiam tinklui simuliacija nieko nereiškia, nuovokos neįgauna.
+tik žmogui, kuris suprogramavo neuroninį tinklą, pačiam tinklui simuliacija nieko nereiškia, nuovokos nesuteikia.
 
 \subsection{Neuroninio tinklo sudėtis}
 Neuroninis tinklas yra sluoksnių rinkinys (1 pav.) - neuronų grupė sudaro sluoksnį, kuris yra sujungtas tarpusavyje su kitais sluoksniais. Vienas iš
@@ -74,18 +74,18 @@ Tarp anksčiau apibūdintų sluoksnių yra įvairaus dydžio sluoksnių sistema,
 \end{figure}
 
 \subsection{Neuroninio tinklo veikimas}
-Jungtys tarp neuronų yra pateiktos skaitine išraiška ir vadinama svoriu. Kuo didesnis šis svoris tuo didesnę įtaką turi vienas neuronas kitam.
+Jungtys tarp neuronų yra pateiktos skaitine išraiška ir vadinamos svoriu. Kuo didesnis šis svoris tuo didesnę įtaką turi vienas neuronas kitam.
 Vienam neuronui yra pateikiama visų prieš jį buvusių neuronų informacija ir jungčių svoriai. Kiekvieno neurono informacija yra sudauginama su
 jo svoriu ir visi šie duomenys yra sudedami tarpusavyje. Taip iš vektoriaus gaunamas vienas rezultatas ir jei šis rezultatas tinka aktyvavimo
 funkcijai, jis yra perduodamas tolimesniems neuronams. Tokio tipo veikimo dizainas yra vadinamas ,,feedforward'' tinklu.
 
 Tačiau jungčių svoriai nėra pastovūs. Kai neuroninis tinklas mokosi, galutinis rezultatas yra lyginamas su tikėtinu teisingu rezultatu, jei šie
-rezultatai skiriasi, svoriai yra keičiami atitinkamai tai vadinama ,,backpropagation''. Tokiu būdu yra gerinamas rezultatas ir mažinamas skirtumas
+rezultatai skiriasi, svoriai yra keičiami atitinkamai, tai vadinama ,,backpropagation''. Tokiu būdu yra gerinamas rezultatas ir mažinamas skirtumas
 tarp tikėtino ir gauto atsakymų.
 
 \subsection{Aktyvavimo funkcijos}
 Aktyvavimo funkcijų yra įvairių, kadangi sprendžiant tam tikrą problemą yra geriau naudoti vienas funkcijas, o kitas problemas - kitas funkcijas.
-Pagrinde yra dviejų tipų aktyvavimo funkcijos - tiesinės ir netiesinės. Tačiau tiesinės nėra tokios populiarios, kadangi jos neleidžia įvesčiai
+Pagrinde yra dviejų tipų aktyvavimo funkcijos - tiesinės ir netiesinės. Tiesinės nėra tokios populiarios, kadangi jos neleidžia įvesčiai
 būti lanksčiai. Nors tiesinė funkcija labai dažnai naudojama išeities sluoksnyje.
 Netiesinės funkcijos dažniausiai naudojamos vidiniuose sluoksniuose. Šiuo metu labiausiai naudojama yra ReLU, kadangi naudojant šią funkciją mokymo
 rezultatai nuolatos gerėja, tačiau ReLU funkcijos spraustumas nesuteikia efektyvumo tinklui \cite{DBLP:journals/corr/XuWCL15}.
@@ -146,7 +146,6 @@ generalizuoja blogiau negu nuolatinio mokymosi greičio funkcijos, nors ir mokym
 
 % generalization -> http://www.ra.cs.uni-tuebingen.de/SNNS/UserManual/node16.html
 
-% layer types? 
 \section{Konvoliucinis neuroninis tinklas}
 Konvoliuciniai neuroniniai tinklai yra labai panašūs į paprastus neuroninius tinklus (daugiau informacijos skyriuje ,,Neuroninis
 tinklas''). Tačiau pagrindinis skirtumas tarp šių tinklų yra, kad konvoliucinio įeities sluoksnis priima tik tai paveiksliukus, 
@@ -166,23 +165,20 @@ Objektų atpažinimas paveiksliukuose yra sudėtingas dėl šių iššukių:
 \end{itemize}
 
 \subsection{Konvoliucija}
-Matematiškam panaudojimui, konvoliucija yra matematinė operacija, kuri apibūdina taisyklę, kuri parodo kaip reikia sujungti du informacijos rinkinius \cite{Convolution-book}. 
+Konvoliucija yra matematinė operacija, kuri apibūdina taisyklę, kuri parodo kaip reikia sujungti du informacijos rinkinius \cite{Convolution-book}. 
 Paveiksliukų analizėje, statinė ir pagrindinė funckija yra įeities paveiksliukas, kuris yra analizuojamas, o antroji, judanti funkcija, žinoma 
-kaip filtras, nes ji išskiria paveiksliuko ypatybę. Abi funkcijos yra susietos daugyba. 
+kaip filtras, nes ji išskiria paveiksliuko ypatybę. Abi funkcijos yra susietos daugyba (2 pav.). 
 
-\\AR REIKIA PAVEIKSLIUKO KURIS PARODYTU KAIP VEIKIA????????????
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{img/Konvoliucija.png}
+\caption{Konvoliucijos veikimas}
+\end{figure}
 
 Tačiau konvoliuciniai tinklai turi daug filtrų, kurie pereina per vieną paveiksliuką, kiekvienas išskirdamas skirtingą paveiksliuko ypatybę.
 Pirmuose sluoksniuose šiuos filtrus galima įsivaizduoti kaip horizontalių, vertikalių ar įstrižų linijų filtrus, kurie sukuria paveikslėlio 
 kraštų planą. Tinklas paima visus filtrus, gabaliukus paveiksliukų ypatybių vietų, ir juos sudeda į planą, kuris parodo ypatybės vietą. 
-Mokydamasis skirtingų proporcijų ypatybių, tinklas leidžia lengvai kurti įvairių dydžių ir greitą ypatybių atpažinimą.
-
-Ypatybių planas yra kontroliuojamas trimis parametrais:
-\begin{itemize}
-\item Gylis - atitinka filtrų skaičių.
-\item Žingsnis - pikselių kiekis, kuris parodo per kiek reikia slinkti filtro matrica per įeities informacijos matricą.
-\item Nulių pamušalas - įeities informacijos matrcios kraštus užpilduti nuliais.
-\end{itemize}
+Mokydamasis skirtingų proporcijų ypatybių, tinklas leidžia lengvai kurti greitą ypatybių atpažinimą.
 
 \subsection{Konvoliucinio neuroninio tinklo sluoksniai}
 Neuroniniai tinklai tai yra sluoksnių rinkinys, kuris turi įeities, vidinius ir išeities sluoksnius. Tačiau priklausomai 
@@ -190,22 +186,38 @@ kokio tipo neuroninis tinklas vidiniai sluoksniai gali skirtis. Konvoliuciniai n
 sluoksnių tipus, kurie sudaro vidinį sluoksnį. Šie tipai yra konvoliucinis, sujungimo ir pilno sujungimo sluoksniai.
 
 \subsubsection{Konvoliucinis sluoksnis}
-Šis sluoksnis yra pagrindinis konvoliucinio neuroninio tinklo sluoksnis, kuris atlieka daugiausia skaičiavimų.
+Šis sluoksnis yra pagrindinis konvoliucinio neuroninio tinklo sluoksnis, kuris atlieka daugiausia skaičiavimų, nustato visas paveiksliuko ypatybes.
+Kadangi, įeities informacija (paveiksliukas) yra didelės dimencijos neefektyvu visų neuronų sujungti vienus su kitais. Todėl neuronai yra sujungiami
+su lokaliu informacijos kiekiu, kuris yra lygus filtro dydžiui ir vadinamas erdviniu mastu \cite{layers-CS231n}.
 
-Kai naudojami paveiksliukai yra nepatogu ir neefektyvu sujungti visus neuronus vienus su kitais. Todėl reikia kiekvieną 
-neuroną sujungti su lokaliu įeities informacijos regionu. Šios jungties erdvinė apimtis yra vertinama hiperparametru 
-priimtinu lauku, kuris yra lygus filtro dydžiui. Jungties gylio ašis yra visada lygi įeities informacijos gyliui.
-
-
+Neuronų kiekis po konvoliucijos (ypatybių plano dydis) yra nustatomas trimis parametrais:
+\begin{itemize}
+\item Gylis - atitinka filtrų skaičių.
+\item Žingsnis - pikselių kiekis, kuris parodo per kiek reikia slinkti filtro matrica per įeities informacijos matricą.
+\item Nulių pamušalas - įeities informacijos matrcios kraštus užpilduti nuliais.
+\end{itemize}
 
 \subsubsection{Sujungimo sluoksnis}
+Periodiškai sujungimo sluoksnis yra įterpiamas tarp konvoliucinių. Pagrindinis sluoksnio tikslas yra laipsniškai mažinti erdvinį filtruojamo paveiskliuko mąstą.
+Šis veikslas yra atliekams tam, kad sumažinti parametrų ir skaičiavimų kiekį bei kontroliuoti perjungimą. Sujungimo sluoksnis veikia nepriklausomai nuo kiekvieno
+gabalėlio gylio ir keičia jo dydį erdviškai, naudodamas MAX operaciją. Dažniausiai šis sluoksnis yra naudojamas su 2x2 dydžio filtru - kas antras po konvoliucijos 
+gauto gabaliuko kiekvienas gylio sluoksnis yra mažinamas per pusę ties ilgiu ir pločiu, taip yra atsikratoma 75 procentų aktyvacijų. Po šios operacijos gabaliuko 
+gylis nepasikeičia.
 
+Dažniausiai yra naudojamos dvi šio sluoksnio variacijos. Pirmasis yra vadinamas persidengiantis sujungimas, kur filtro dydis yra lygus 3 ir žingsnis yra lygus 2. 
+O kitas dažniau naudojamas turi filtro dydį lygų 2 ir žingsnį taip pat 2. Sujungimo sluoksniai su labai dideliais parametrais yra labai desktruktyvūs.
 
 \subsubsection{Pilno sujungimo sluoksnis}
+Konvoliucinio ir sujungimo sluoksnių išeitys yra aukšto lygio ypatybės, kurios yra gautos iš įeities paveiksliuko. Pilno sujungimo sluoksnis yra sujungtas su visais 
+neuronais iš sluoksnio buvusio prieš jį. Šio sluoksnio tikslas yra panaudojant tas ypatybes, kurios yra gautos iš prieš tai buvusių sluoksnių, nustatyti kokioms 
+klasėms priklauso įeities paveiksliukas pagal mokymo informacijos rinkinį, kai nueroninio tinklo problema yra klasifikacija \cite{layers-fullyconnected}. Jei šiam sluoksniui yra naudojama 
+minkštojo maksimumo funkcija tuomet sudėtis visų gautų galimybių turi būti lygi 1. Minkštojo maksimumo funkcija priima vektorių įvertinimų ir jį suspaudžia į 
+vektorių, kuriame yra klasių tikimybių įvertinimai intervale nuo 0 iki 1, kur tikimybė arčiausiai vieneto reiškia, kad labiausiai užtikrintas dėl tos klasės.
 
-
-\subsection{VGG}
 \subsection{Fine-tune}
+
+\subsection{Architektūros}
+
 
 \section{Ekspermentas}
 \subsection{Technologijos}

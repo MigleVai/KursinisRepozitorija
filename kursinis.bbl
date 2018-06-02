@@ -91,6 +91,47 @@
       \field{title}{Deep Learning}
       \field{year}{2016}
     \endentry
+    \entry{layers-fullyconnected}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=985c4475f1e55e59f7bd68f5ac293c6b}{%
+           family={Karn},
+           family_i={K\bibinitperiod},
+           given={Ujjwal},
+           given_i={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{985c4475f1e55e59f7bd68f5ac293c6b}
+      \strng{fullhash}{985c4475f1e55e59f7bd68f5ac293c6b}
+      \field{labelalpha}{Kar16}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://ujjwalkarn.me/2016/08/11/intuitive-explanation-convnets/}}
+      \field{title}{An Intuitive Explanation of Convolutional Neural Networks}
+      \field{year}{2016}
+    \endentry
+    \entry{layers-CS231n}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=9147b1a8523fee33e02ea8ada6fde536}{%
+           family={Li},
+           family_i={L\bibinitperiod},
+           given={Fei-Fei},
+           given_i={F\bibinithyphendelim F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Stanford}%
+      }
+      \strng{namehash}{9147b1a8523fee33e02ea8ada6fde536}
+      \strng{fullhash}{9147b1a8523fee33e02ea8ada6fde536}
+      \field{labelalpha}{Li15}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://cs231n.github.io/convolutional-networks/}}
+      \field{title}{Convolutional Neural Networks}
+      \field{year}{2015}
+    \endentry
     \entry{Convolution-book}{book}{}
       \name{author}{2}{}{%
         {{hash=b437b3540ca6290b1af286f81e1918f1}{%

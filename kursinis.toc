@@ -30,18 +30,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.2.3.}Pilno sujungimo sluoksnis}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.}VGG}{8}
+\contentsline {subsection}{\numberline {2.3.}Fine-tune}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.}Fine-tune}{8}
+\contentsline {subsection}{\numberline {2.4.}Architektūros}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.}Ekspermentas}{9}
+\contentsline {section}{\numberline {3.}Ekspermentas}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.}Technologijos}{9}
+\contentsline {subsection}{\numberline {3.1.}Technologijos}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.1.}ImageNet}{9}
+\contentsline {subsubsection}{\numberline {3.1.1.}ImageNet}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.2.}Keras}{9}
+\contentsline {subsubsection}{\numberline {3.1.2.}Keras}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Rezultaitai ir išvados}{10}
+\contentsline {section}{Rezultaitai ir išvados}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Literatūra}{11}
+\contentsline {section}{Literatūra}{12}

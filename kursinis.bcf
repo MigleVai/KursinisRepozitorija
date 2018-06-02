@@ -2059,6 +2059,8 @@
     <bcf:citekey order="5">clas-loss-2017</bcf:citekey>
     <bcf:citekey order="6">2017arXiv170508292W</bcf:citekey>
     <bcf:citekey order="7">Convolution-book</bcf:citekey>
+    <bcf:citekey order="8">layers-CS231n</bcf:citekey>
+    <bcf:citekey order="9">layers-fullyconnected</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="anyt/global" type="entry" sortscheme="anyt" sortnamekeyscheme="global">
   <bcf:sorting>
