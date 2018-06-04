@@ -50,6 +50,15 @@
 
 \sectionnonum{Įvadas}
 
+Darbo tikslas: patikrinti mokymosi tikslumo kokybę su skirtinų gylių dirbtiniais neuroniniais tinklais, kai mokymui yra naudojamas mažas paveikslėlių rinkinys.
+
+Užduotys:
+\begin{enumerate}
+\item Pasirinkti analizuojamą dirbtinį neuroninį tinklą.
+\item Pritaikyti ir modifikuoti neuronį tinklą išsikeltam darbo tikslui.
+\item Gautą neuronį tinklą su skirtingais gyliais apmokyti.
+\item Surasti ir naudoti geriausią optimizavimo funkciją.
+\end{enumerate}
 
 
 \section{Neuroninis tinklas}
@@ -144,6 +153,8 @@ Prisitaikančio mokymosi funkcijos turi atskirus kiekvieno parametro mokymosi gr
 metodą, nereikalaujant brangaus darbo rankiniu būdu nustatant hiperparametrus mokymosi greičiui. Tačiau šios funkcijos 
 generalizuoja blogiau negu nuolatinio mokymosi greičio funkcijos, nors ir mokymosi metu pasirodo geriau \cite{2017arXiv170508292W}.
 
+% optimizavimo funkciju pvz?
+
 % generalization -> http://www.ra.cs.uni-tuebingen.de/SNNS/UserManual/node16.html
 
 \section{Konvoliucinis neuroninis tinklas}
@@ -214,10 +225,37 @@ klasėms priklauso įeities paveiksliukas pagal mokymo informacijos rinkinį, ka
 minkštojo maksimumo funkcija tuomet sudėtis visų gautų galimybių turi būti lygi 1. Minkštojo maksimumo funkcija priima vektorių įvertinimų ir jį suspaudžia į 
 vektorių, kuriame yra klasių tikimybių įvertinimai intervale nuo 0 iki 1, kur tikimybė arčiausiai vieneto reiškia, kad labiausiai užtikrintas dėl tos klasės.
 
-\subsection{Fine-tune}
+\subsection{Modelio reguliavimas}
+Pilnas dirbtinio neuroninio tinklo apmokymas gali užtrukti labai ilgą laiką ir išnaudoti daug resursų. Todėl yra kai kurios įstaigos arba žmonės, kurie apmoko savo 
+tinklą ir jo svorius bei reikšmes, vadinamą modeliu, pateikia visuomenei, tačiau šis modelis yra nepritaikytas individuoliai žmogaus užduočiai. Modelį reikia 
+reguliuoti - iš naujo apmokyti paskutinius sluoksnius su individuolios užduoties parametrais.
+
+Daugelis dirbtinių neuroninių tinklų apmokytų su natūraliais paveiksliukais turi fenomeną. Pirmuosiuose sluoksniuose jie išmoksta ypatybių panašių į Gaboro filtą 
+(tiesinis filtras naudojamas tekstūroms analizuoti) ir spalvų dėmes. Šios pirmojo sluoksnio ypatybės nepriklauso nuo duomenų rinkinio, bet yra bendros ir tinkamos 
+daugeliui duomenų rinkinių ir užduočių \cite{DBLP:journals/corr/YosinskiCBL14}. Dėl šio fenomeno galima naudoti modelius neapmokytus su specifiniu duomenų rinkiniu, 
+bet jį minimaliai modifiktą, kitoms užduotims spręsti, kas leidžia sutaupyti resursų bei turėti mažesnį duomenų rinkinį.
 
 \subsection{Architektūros}
+Konvoliuciniai neuroniniai tinklai turi keletą skirtingų architektūrų, kurios yra naudojamos atinkmai pagal sprendžiamą problemą. 1 lentelėje pateikta infromaciją 
+apie įvairias architektūras.
 
+
+\begin{longtable}[h!]{ | p{4cm} | p{1cm} | p{3cm} | p{5cm} | p{2cm} | } 
+\hline
+Pavadinimas & Metai & Parametrų kiekis & Veikimas & ILSVRC vieta \\
+\hline
+LeNet & 1998 & 60 000 & Geriausiai atpažysta ranka paraštytus skaičius. Susideda iš sluoksnių - kelių pasikartojančių konvoliucijos ir sujungimo bei pasibaigia dviem pilno sujungimo sluoksniais. & - \\
+\hline
+AlexNet & 2012 & 60 000 000 & Veikimu panašus į LeNet, tačiau turi daug daugiau parametrų ir filtrų bei sudėtus konvoliucinius sluoksnius.  & pirma \\
+\hline
+GoogLeNet/Inception & 2014 & 4 000 000 & Vidiniai sluoksniai sudėti paraleliai, naudojami Inception moduliai. Vienas modulis savyje turi 1x1, 3x3 ir 5x5 dydžių konvoliucijos filtrų bei vidurkio sudėjimo sluoksnius. & pirma \\
+\hline
+VGGNet & 2014 & 138 000 000 & Panašus veikimas į AlexNet, tačiau daug gilesnis. Naudojamų filtrų dydis yra 3x3 ir jie yra sudėti vienas po kito. & antra \\
+\hline
+ResNet & 2015 & 25 000 000 & Turi labai daug sluoksnių, sudėtų vienas po kito, kurie turi liekamajį bloką, kuris įeities informaciją perduoda tolimesniam sluoksniui ją pridėdamas ir taip sumažina konvoliucijos ir aktyvavimo funkcijų kiekį.  & pirma \\
+\hline
+\caption{Konvoliucinių neuroninių tinklų architektūros}
+\end{longtable}
 
 \section{Ekspermentas}
 \subsection{Technologijos}
@@ -225,7 +263,20 @@ vektorių, kuriame yra klasių tikimybių įvertinimai intervale nuo 0 iki 1, ku
 \subsubsection{Keras}
 
 \sectionnonum{Rezultaitai ir išvados}
+Darbo rezultatai:
+\begin{itemize}
+\item Pasirinktas tiriamas neuroninis tinklas - VGG.
+\item Rasta geriausia ir tinkamiausia optimizavimo funkicja - XX.
+\item VGG buvo pritaikytas ir modifikuotas išsikeltam tikslui.
+\item Neuroninis tinklas buvo apmokytas.
+\end{itemize}
 
+
+Darbo išvados:
+\begin{itemize}
+\item 
+\item
+\end{itemize}
 
 \printbibliography[heading=bibintoc]  % Šaltinių sąraše nurodoma panaudota
 % literatūra, kitokie šaltiniai. Abėcėlės tvarka išdėstomi darbe panaudotų

@@ -1,16 +1,16 @@
 [0] Config.pm:340> INFO - This is Biber 2.4
 [1] Config.pm:343> INFO - Logfile is 'kursinis.blg'
-[48] biber:287> INFO - === Sat Jun  2, 2018, 17:03:19
-[171] Biber.pm:348> INFO - Reading 'kursinis.bcf'
+[46] biber:287> INFO - === Mon Jun  4, 2018, 14:10:00
+[168] Biber.pm:348> INFO - Reading 'kursinis.bcf'
 [319] Biber.pm:742> INFO - Found 9 citekeys in bib section 0
 [327] Biber.pm:3151> INFO - Processing section 0
-[370] Biber.pm:3308> INFO - Looking for bibtex format file 'bibliografija.bib' for section 0
-[387] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
-[401] bibtex.pm:974> INFO - Found BibTeX data source 'bibliografija.bib'
-[480] Utils.pm:147> WARN - BibTeX subsystem: /tmp/vrIfbDVjN5/bibliografija.bib_86.utf8, line 4, warning: 148 characters of junk seen at toplevel
-[621] UCollate.pm:65> INFO - Overriding locale 'lt-LT' defaults 'variable = shifted' with 'variable = non-ignorable'
-[622] UCollate.pm:65> INFO - Overriding locale 'lt-LT' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[622] Biber.pm:3028> INFO - Sorting list 'anyt/global' of type 'entry' with scheme 'anyt' and locale 'lt-LT'
-[635] bbl.pm:519> INFO - Writing 'kursinis.bbl' with encoding 'UTF-8'
-[664] bbl.pm:615> INFO - Output to kursinis.bbl
-[670] Biber.pm:109> INFO - WARNINGS: 1
+[372] Biber.pm:3308> INFO - Looking for bibtex format file 'bibliografija.bib' for section 0
+[398] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
+[416] bibtex.pm:974> INFO - Found BibTeX data source 'bibliografija.bib'
+[505] Utils.pm:147> WARN - BibTeX subsystem: /tmp/5YfNemndIX/bibliografija.bib_29.utf8, line 4, warning: 148 characters of junk seen at toplevel
+[639] UCollate.pm:65> INFO - Overriding locale 'lt-LT' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[640] UCollate.pm:65> INFO - Overriding locale 'lt-LT' defaults 'variable = shifted' with 'variable = non-ignorable'
+[640] Biber.pm:3028> INFO - Sorting list 'anyt/global' of type 'entry' with scheme 'anyt' and locale 'lt-LT'
+[654] bbl.pm:519> INFO - Writing 'kursinis.bbl' with encoding 'UTF-8'
+[684] bbl.pm:615> INFO - Output to kursinis.bbl
+[689] Biber.pm:109> INFO - WARNINGS: 1
