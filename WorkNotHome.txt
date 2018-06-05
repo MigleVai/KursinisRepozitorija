@@ -1,0 +1,93 @@
+Tikslymo grafo siekiamybė yra didėti ir siekti 1.
+Netekties grafo siekiamybė yra mažėti link 0.
+
+--------------------------------------------------------------
+Adagrad:
+
+Reguliavimas modelio
+Tikslumas mokymosi intervale: [0.80; 1.00)
+Validavimas intervale: (0.9; 0.96]
+
+Modifikuoto modelio
+Tikslumas mokymosi intervale: [0.76; 1.00)
+Validavimas intervale: [0.90; 0.95]
+
+Reguliavimo modelio
+Netektis mokymosi intervale: (0.50; 0.00) - mažėjanti
+Validavomi intervale: (0.24; 0.12) - mažėjanti
+
+Modifikuoto modelio
+Netektis mokymosi intervale: (0.47; 0.00) - mažėjanti
+Validavomi intervale: (0.13; 0.30) - didėjanti
+
+--------------------------------------------------------------
+Adam:
+
+Reguliavimas modelio
+Tikslumas mokymosi intervale: [0.83; 1.00)
+Validavimas intervale: (0.94; 0.97)
+
+Modifikuoto modelio
+Tikslumas mokymosi intervale: [0.86; 1.00)
+Validavimas intervale: [0.94; 0.96]
+
+Reguliavimo modelio
+Netektis mokymosi intervale: [0.35; 0.00) - mažėjanti
+Validavomi intervale: (0.10; 0.20) - nežymiai didėjanti
+
+Modifikuoto modelio
+Netektis mokymosi intervale: [0.34; 0.00) - mažėjanti
+Validavomi intervale: [0.11; 0.35] - didėjanti
+
+--------------------------------------------------------------
+RMSprop:
+
+Reguliavimas modelio
+Tikslumas mokymosi intervale: (0.72; 1.00)
+Validavimas intervale: [0.70; 0.95]
+
+Modifikuoto modelio
+Tikslumas mokymosi intervale: [0.81; 1.00)
+Validavimas intervale: [0.80; 0.95]
+
+Reguliavimo modelio
+Netektis mokymosi intervale: [0.68; 0.00) - mažėjanti
+Validavomi intervale: [0.80; 0.19) - nežymiai didėjanti
+
+Modifikuoto modelio
+Netektis mokymosi intervale: [0.41; 0.00) - mažėjanti
+Validavomi intervale: [0.15; 0.95] - didėjanti
+
+--------------------------------------------------------------
+SGD:
+
+Reguliavimas modelio
+Tikslumas mokymosi intervale: (0.51; 0.85)
+Validavimas intervale: [0.55; 0.86]
+
+Modifikuoto modelio
+Tikslumas mokymosi intervale: [0.49; 0.52]
+Validavimas intervale: [0.50; 0.51]
+
+Reguliavimo modelio
+Netektis mokymosi intervale: (0.80; 0.30) - mažėjanti
+Validavomi intervale: [0.70; 0.30) - mažėjanti
+
+Modifikuoto modelio
+Netektis mokymosi intervale: [0.693; 0.692] - mažėjanti
+Validavomi intervale: [0.693; 0.692] - didėjanti
+
+
+ImageNet
+
+ImageNet yra projektas sugalvotas profesorės Li Fei-Fei 2009 metais. Projekto tikslas buvo sukurti didelę sukategorizuotų paveiksliukų ir jų etikečių duomenų bazę, kuri butų skirta vizualinio objekto atpažinimo programinės įrangos tyrimams. Ši duomenų bazė yra suorganizuota pagal WorldNet hierarchija - anglų kalbos žodžiai yra grupuojami į sinonimų rinkinius, kurie turi apibūdinimus ir naudojimo pavyzdžius bei saugo ryšių kiekį tarp sinonimų arba jų narių. ImageNet turi daugiau nei 100 000 sinonimų rinkinių, kur didžioji dalis yra daiktavardžiai (80 000+). 
+Taip pat šis projektas kiekvienais metais daro konkursą vadinamą ,, ImageNet Large Scale Visual Recognition Challenge'' (trumpinys ILSVRC). Konkurso užduotis yra išmokinti modelį, kuris galėtų įeities paveiksliuką teisingai klasifikuoti į 1000 skirtingų objektų klasių, kurios atitinka realius daiktus, gyvūnus ir t.t. Modeliai yra apmokomi su apie 1.2 milijonų paveiksliukų ir dar 50 000 paveiksliukų yra naudojami validacijai mokymo metu bei 100 000 paveiksliukų yra panaudojami galutiniam modelio testavimui. Šis konkursas yra paveiksliukų klasifikacijos algoritmų etalonas.
+
+Keras
+
+Keras yra aukšto lygio programų sąsaja skirta neuroniniams tinklams. Sąsaja parašyta su ,,Python'' programavimo kalba ir vidinėje pusėje galinti veikti su ,,TensorFlow'' ir kitomis bibliotekomis. Keras buvo sukurtas tikintis suteikti greitą ekspermentavimą, kad sugalvojus idėją pasiekti rezultato būtų galima su kiek įmanoma mažiau uždėlsimo.
+Keras savyje turi visus pagrindinius neuroninio tinklo kūrimo blokus, pavyzdžiui, sluoskniai, aktyvavimo ir optimizavimo funkcijos. Taip pat Keras suteikia modelius, kurie yra apmokyti naudojant ImageNet duomenų bazę. Šiuos modelius galima reguliuoti, pridėti papildomų sluoksnių, pasirinkti esamus sluoksnius bei juos iš naujo apmokyti.
+
+Tensorflow
+
+TensorFlow yra atviros programinės įrangos biblioteka skirta aukšto našumo skaitinimas skaičiavimams. Jo lanksti architektūra leidžia lengvai diegti skaičiavimus įvairiose platformose - procesoriuose, grafikos procesoriuose. Sukurtas ,,Google'' dirbtinio intelekto skyriaus, tad yra labai palaikomas automatinis ir gilusis mokymasis, tačiau dėl bibliotekos ir skaičiavimų lankstumo yra naudojamas įvairiose mokslinėse srityse.
