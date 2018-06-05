@@ -25,8 +25,8 @@
 \faculty{Matematikos ir informatikos fakultetas}
 \department{Programų sistemų katedra}
 \papertype{Kursinis darbas}
-\title{Labai panašių neuroninių klasių atskyrimas neuroniniais tinklais}
-\titleineng{(Separation of very similar neuronal classes by neural networks)}
+\title{Labai panašių neuroninių klasių atskyrimas dirbtiniais neuroniniais tinklais}
+\titleineng{(Separation of very similar neuronal classes by artificial neural networks)}
 \status{3 kurso 5 grupės studentai}
 \author{Miglė Vaitulevičiūtė}
 \supervisor{dr. Vytautas Valaitis}
@@ -61,19 +61,19 @@ Užduotys:
 \end{enumerate}
 
 
-\section{Neuroninis tinklas}
-Pagal apibendrintą žmogaus smegenų veikimą buvo sugalvoti neuroniniai tinklai \cite{Goodfellow-et-al-2016}. Bendrai žmogaus smegenys turi šimtus
+\section{Dirbtinis neuroninis tinklas}
+Pagal apibendrintą žmogaus smegenų veikimą buvo sugalvoti dirbtiniai neuroniniai tinklai \cite{Goodfellow-et-al-2016}. Bendrai žmogaus smegenys turi šimtus
 milijardų neuronų, kurie yra sujungti sinapsėsmis. Per tuos neuronus sklinda elektroniniai impulsai perduodantys informaciją - taip žmonės gali 
-atpažinti objektus, garsus ir t.t. Neuroniniai tinklai veikia panašiai. Jie irgi turi daug besijungiančių neuronų, kurie gauna informaciją ir 
-pagal tą informaciją gali nuspręsti koks objektas yra paveikslėlyje. Tačiau ties tuo ir baigiasi žmogaus smegenų ir neuroninių tinklų panašumas, 
-kadangi neuroniniai tinklai yra kompiuterinė simuliacija - matematinis algoritmas su aritmetiniais kintamaisiais. Ši simuliacija yra suvokiama 
-tik žmogui, kuris suprogramavo neuroninį tinklą, pačiam tinklui simuliacija nieko nereiškia, nuovokos nesuteikia.
+atpažinti objektus, garsus ir t.t. Dirbtiniai neuroniniai tinklai veikia panašiai. Jie irgi turi daug besijungiančių neuronų, kurie gauna informaciją ir 
+pagal tą informaciją gali nuspręsti koks objektas yra paveikslėlyje. Tačiau ties tuo ir baigiasi žmogaus smegenų ir dirbtinių neuroninių tinklų panašumas, 
+kadangi dirbtiniai neuroniniai tinklai yra kompiuterinė simuliacija - matematinis algoritmas su aritmetiniais kintamaisiais. Ši simuliacija yra suvokiama 
+tik žmogui, kuris suprogramavo dirbtinį neuroninį tinklą, pačiam tinklui simuliacija nieko nereiškia, nuovokos nesuteikia.
 
-\subsection{Neuroninio tinklo sudėtis}
-Neuroninis tinklas yra sluoksnių rinkinys (1 pav.) - neuronų grupė sudaro sluoksnį, kuris yra sujungtas tarpusavyje su kitais sluoksniais. Vienas iš
+\subsection{Dirbtinio neuroninio tinklo sudėtis}
+Dirbtinis neuroninis tinklas yra sluoksnių rinkinys (1 pav.) - neuronų grupė sudaro sluoksnį, kuris yra sujungtas tarpusavyje su kitais sluoksniais. Vienas iš
 sluoksnių privalo būti įvesties sluoksnis, kuris atitinkamai pagal užduoti gali gauti įvairios formos informaciją - paveiksliukai, vaizdo
 medžiaga, garsas ir t.t. Ši informacija yra reikalinga tam, kad tinklas galėtų ją išanalizuoti ir išmokti. Tuo tikslu, kad vėliau gavęs panašią
-informaciją galėtų ją atpažinti - tam reikalingas išeities sluoksnis. Jis yra priešingame neuroninio tinklo gale negu įeities sluoksnis.
+informaciją galėtų ją atpažinti - tam reikalingas išeities sluoksnis. Jis yra priešingame dirbtinio neuroninio tinklo gale negu įeities sluoksnis.
 Tarp anksčiau apibūdintų sluoksnių yra įvairaus dydžio sluoksnių sistema, kuri atlieka pagrindinį darbą \cite{Woodford-2018}.
 
 \begin{figure}[h]
@@ -82,13 +82,13 @@ Tarp anksčiau apibūdintų sluoksnių yra įvairaus dydžio sluoksnių sistema,
 \caption{Sluoksnių rinkinys}
 \end{figure}
 
-\subsection{Neuroninio tinklo veikimas}
+\subsection{Dirbtinio neuroninio tinklo veikimas}
 Jungtys tarp neuronų yra pateiktos skaitine išraiška ir vadinamos svoriu. Kuo didesnis šis svoris tuo didesnę įtaką turi vienas neuronas kitam.
 Vienam neuronui yra pateikiama visų prieš jį buvusių neuronų informacija ir jungčių svoriai. Kiekvieno neurono informacija yra sudauginama su
 jo svoriu ir visi šie duomenys yra sudedami tarpusavyje. Taip iš vektoriaus gaunamas vienas rezultatas ir jei šis rezultatas tinka aktyvavimo
 funkcijai, jis yra perduodamas tolimesniems neuronams. Tokio tipo veikimo dizainas yra vadinamas ,,feedforward'' tinklu.
 
-Tačiau jungčių svoriai nėra pastovūs. Kai neuroninis tinklas mokosi, galutinis rezultatas yra lyginamas su tikėtinu teisingu rezultatu, jei šie
+Tačiau jungčių svoriai nėra pastovūs. Kai dirbtinis neuroninis tinklas mokosi, galutinis rezultatas yra lyginamas su tikėtinu teisingu rezultatu, jei šie
 rezultatai skiriasi, svoriai yra keičiami atitinkamai, tai vadinama ,,backpropagation''. Tokiu būdu yra gerinamas rezultatas ir mažinamas skirtumas
 tarp tikėtino ir gauto atsakymų.
 
@@ -116,8 +116,8 @@ Aktyvavimo funkcijos yra skirstomos į:
 
 
 \subsection{Nuostolio funkcijos}
-Kai neuroninis tinklas mokosi, jo gaunami rezultatai gali labai skirtis nuo tikėtinų rezultatų. Todėl nuostolio funkcija apskaičiuoja kaip stipriai
-skiriasi gautas rezultatas nuo tikėtino. Kuo didesnis nuostolis tuo toliau nuo teisingo atsakymo yra neuroninis tinklas \cite{Cameron-loss-fun}.
+Kai dirbtinis neuroninis tinklas mokosi, jo gaunami rezultatai gali labai skirtis nuo tikėtinų rezultatų. Todėl nuostolio funkcija apskaičiuoja kaip stipriai
+skiriasi gautas rezultatas nuo tikėtino. Kuo didesnis nuostolis tuo toliau nuo teisingo atsakymo yra dirbtinis neuroninis tinklas \cite{Cameron-loss-fun}.
 Paprasčiausia ir dažniausiai naudojama nuostolio funkcija yra vidutinio kvadrato klaida. Ši funkcija apskaičiuoja kvadratinį skirtumą tarp tikėtino 
 ir gauto rezultatų. Tačiau šios funkcijos vienas iš didesnių trūkumų - neproporcingas išskyrimas didelių rezultatų. Kadangi funkcija didėja kvadratiniai,
 o ne tiesiniai, kai gaunamas rezultatas tolsta nuo tikėtino rezultato.
@@ -158,7 +158,7 @@ generalizuoja blogiau negu nuolatinio mokymosi greičio funkcijos, nors ir mokym
 % generalization -> http://www.ra.cs.uni-tuebingen.de/SNNS/UserManual/node16.html
 
 \section{Konvoliucinis neuroninis tinklas}
-Konvoliuciniai neuroniniai tinklai yra labai panašūs į paprastus neuroninius tinklus (daugiau informacijos skyriuje ,,Neuroninis
+Konvoliuciniai neuroniniai tinklai yra labai panašūs į paprastus dirbtinius neuroninius tinklus (daugiau informacijos skyriuje ,,Dirbtinis neuroninis
 tinklas''). Tačiau pagrindinis skirtumas tarp šių tinklų yra, kad konvoliucinio įeities sluoksnis priima tik tai paveiksliukus, 
 kurie jei padaryti su standartine skaitmenine kamera, turi tris komponentus - raudoną, žalią ir mėlyną. Šiuos komponentus galima 
 įsivaizduoti kaip tris 2D matricas sudėtas viena ant kitos. Kiekvienos matricos i-osios eilutės ir j-ojo stulpelio elementas 
@@ -192,8 +192,8 @@ kraštų planą. Tinklas paima visus filtrus, gabaliukus paveiksliukų ypatybių
 Mokydamasis skirtingų proporcijų ypatybių, tinklas leidžia lengvai kurti greitą ypatybių atpažinimą.
 
 \subsection{Konvoliucinio neuroninio tinklo sluoksniai}
-Neuroniniai tinklai tai yra sluoksnių rinkinys, kuris turi įeities, vidinius ir išeities sluoksnius. Tačiau priklausomai 
-kokio tipo neuroninis tinklas vidiniai sluoksniai gali skirtis. Konvoliuciniai neuroniniai tinklai turi tris pagrindinius 
+Konvoliuciniai neuroniniai tinklai tai yra sluoksnių rinkinys, kuris turi įeities, vidinius ir išeities sluoksnius. Tačiau priklausomai 
+kokio tipo konvoliucinis neuroninis tinklas vidiniai sluoksniai gali skirtis. Konvoliuciniai neuroniniai tinklai turi tris pagrindinius 
 sluoksnių tipus, kurie sudaro vidinį sluoksnį. Šie tipai yra konvoliucinis, sujungimo ir pilno sujungimo sluoksniai.
 
 \subsubsection{Konvoliucinis sluoksnis}
@@ -226,11 +226,11 @@ minkštojo maksimumo funkcija tuomet sudėtis visų gautų galimybių turi būti
 vektorių, kuriame yra klasių tikimybių įvertinimai intervale nuo 0 iki 1, kur tikimybė arčiausiai vieneto reiškia, kad labiausiai užtikrintas dėl tos klasės.
 
 \subsection{Modelio reguliavimas}
-Pilnas dirbtinio neuroninio tinklo apmokymas gali užtrukti labai ilgą laiką ir išnaudoti daug resursų. Todėl yra kai kurios įstaigos arba žmonės, kurie apmoko savo 
+Pilnas konvoliucinio neuroninio tinklo apmokymas gali užtrukti labai ilgą laiką ir išnaudoti daug resursų. Todėl yra kai kurios įstaigos arba žmonės, kurie apmoko savo 
 tinklą ir jo svorius bei reikšmes, vadinamą modeliu, pateikia visuomenei, tačiau šis modelis yra nepritaikytas individuoliai žmogaus užduočiai. Modelį reikia 
 reguliuoti - iš naujo apmokyti paskutinius sluoksnius su individuolios užduoties parametrais.
 
-Daugelis dirbtinių neuroninių tinklų apmokytų su natūraliais paveiksliukais turi fenomeną. Pirmuosiuose sluoksniuose jie išmoksta ypatybių panašių į Gaboro filtą 
+Daugelis konvoliucinių neuroninių tinklų apmokytų su natūraliais paveiksliukais turi fenomeną. Pirmuosiuose sluoksniuose jie išmoksta ypatybių panašių į Gaboro filtą 
 (tiesinis filtras naudojamas tekstūroms analizuoti) ir spalvų dėmes. Šios pirmojo sluoksnio ypatybės nepriklauso nuo duomenų rinkinio, bet yra bendros ir tinkamos 
 daugeliui duomenų rinkinių ir užduočių \cite{DBLP:journals/corr/YosinskiCBL14}. Dėl šio fenomeno galima naudoti modelius neapmokytus su specifiniu duomenų rinkiniu, 
 bet jį minimaliai modifiktą, kitoms užduotims spręsti, kas leidžia sutaupyti resursų bei turėti mažesnį duomenų rinkinį.
@@ -261,14 +261,36 @@ ResNet & 2015 & 25 000 000 & Turi labai daug sluoksnių, sudėtų vienas po kito
 \subsection{Technologijos}
 \subsubsection{ImageNet}
 \subsubsection{Keras}
+\subsection{Work work work}
+dataset:
+8000 train
+2000 validate
+
+epoch - 40
+trainbatch - 200
+valbatch - 50
+
+ft:
+layers = 23
+trainable = 8
+total param - 40 406 849
+trainable - 32 771 585
+netrainable - 7 635 264
+
+add lay:
+layer = 34 
+trainable = 19
+total param - 51 952 449
+trainable - 44 317 185
+netrainable - 7 635 264
 
 \sectionnonum{Rezultaitai ir išvados}
 Darbo rezultatai:
 \begin{itemize}
-\item Pasirinktas tiriamas neuroninis tinklas - VGG.
+\item Pasirinktas tiriamas konvoliucinis neuroninis tinklas - VGG.
 \item Rasta geriausia ir tinkamiausia optimizavimo funkicja - XX.
 \item VGG buvo pritaikytas ir modifikuotas išsikeltam tikslui.
-\item Neuroninis tinklas buvo apmokytas.
+\item Konvoliucinis neuroninis tinklas buvo apmokytas.
 \end{itemize}
 
 
