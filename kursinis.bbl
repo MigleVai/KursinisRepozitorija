@@ -91,6 +91,48 @@
       \field{title}{Deep Learning}
       \field{year}{2016}
     \endentry
+    \entry{DBLP:journals/corr/YosinskiCBL14}{article}{}
+      \name{author}{4}{}{%
+        {{hash=9f400712248e594ce887c5cd06d9767b}{%
+           family={Yosinski},
+           family_i={Y\bibinitperiod},
+           given={Jason},
+           given_i={J\bibinitperiod}}}%
+        {{hash=ec864655608cdb84e55422b0797b6419}{%
+           family={Clune},
+           family_i={C\bibinitperiod},
+           given={Jeff},
+           given_i={J\bibinitperiod}}}%
+        {{hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           family_i={B\bibinitperiod},
+           given={Yoshua},
+           given_i={Y\bibinitperiod}}}%
+        {{hash=475bdf26aafc86ddd3f62a8ff9267f8a}{%
+           family={Lipson},
+           family_i={L\bibinitperiod},
+           given={Hod},
+           given_i={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{1b793354c73b5eaf9d3e535540209ef1}
+      \strng{fullhash}{1b793354c73b5eaf9d3e535540209ef1}
+      \field{labelalpha}{YCB\textsuperscript {+}14}
+      \field{sortinit}{Y}
+      \field{sortinithash}{3cbc1e3d286284cedb5e5218a3248f94}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{How transferable are features in deep neural networks?}
+      \field{volume}{abs/1411.1792}
+      \field{year}{2014}
+      \verb{eprint}
+      \verb 1411.1792
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1411.1792
+      \endverb
+    \endentry
     \entry{layers-fullyconnected}{misc}{}
       \name{author}{1}{}{%
         {{hash=985c4475f1e55e59f7bd68f5ac293c6b}{%

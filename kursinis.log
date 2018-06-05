@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.5.17)  4 JUN 2018 16:23
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.5.17)  5 JUN 2018 19:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1163,11 +1163,11 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'kursinis.bbl' found.
 (./kursinis.bbl
-LaTeX Font Info:    Try loading font information for U+msa on input line 222.
+LaTeX Font Info:    Try loading font information for U+msa on input line 135.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 222.
+LaTeX Font Info:    Try loading font information for U+msb on input line 135.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1196,589 +1196,88 @@ File: img/Konvoliucija.png Graphic file (type QTm)
 <use  "img/Konvoliucija.png" > [7
 
 ] [8]
-
-LaTeX Warning: Citation 'DBLP:journals/corr/YosinskiCBL14' on page 9 undefined 
-on input line 235.
-
-! Undefined control sequence.
-\LT@@hline ...\let \@gtempa \@empty \gdef \LT@sep 
-                                                  {\penalty -\@lowpenalty \v...
-l.244 \hline
-            
-? 
-! Undefined control sequence.
-\LT@@hline ...ewidth \hfill \cr \noalign {\LT@sep 
-                                                  }\multispan \LT@cols \unsk...
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-! Missing control sequence inserted.
-<inserted text> 
-                \inaccessible 
-l.244 \hline
-            
-? 
-! Extra }, or forgotten \endgroup.
-\@nextchar ...t \@let@token \global \let {refname}
-                                                  \gdef {\penalty -\@lowpena...
-l.244 \hline
-            
-? 
-! Missing control sequence inserted.
-<inserted text> 
-                \inaccessible 
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 \hline
-            
-? 
-
-Overfull \hbox (870.62956pt too wide) in alignment at lines 244--258
- [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
-[] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [
-] 
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
+[]|\EU1/texgyretermes(0)/m/n/12 ILSVRC
  []
 
-[9] [10
 
-] [11
+Underfull \hbox (badness 1043) in paragraph at lines 247--247
+\EU1/texgyretermes(0)/m/n/12 raštytus skaičius. Susideda
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--251
+[]|\EU1/texgyretermes(0)/m/n/12 Vidiniai sluoksniai sudėti
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--251
+\EU1/texgyretermes(0)/m/n/12 paraleliai, naudojami In-
+ []
+
+
+Underfull \hbox (badness 4391) in paragraph at lines 251--251
+\EU1/texgyretermes(0)/m/n/12 ception moduliai. Vienas
+ []
+
+
+Underfull \hbox (badness 1661) in paragraph at lines 251--251
+\EU1/texgyretermes(0)/m/n/12 ir 5x5 dydžių konvoliucijos
+ []
+
+
+Underfull \hbox (badness 1210) in paragraph at lines 251--251
+\EU1/texgyretermes(0)/m/n/12 filtrų bei vidurkio sudėjimo
+ []
+
+
+Underfull \hbox (badness 6220) in paragraph at lines 255--255
+[]|\EU1/texgyretermes(0)/m/n/12 Turi labai daug sluoksnių,
+ []
+
+
+Underfull \hbox (badness 2409) in paragraph at lines 255--255
+\EU1/texgyretermes(0)/m/n/12 sudėtų vienas po kito, ku-
+ []
+
+
+Underfull \hbox (badness 2828) in paragraph at lines 255--255
+\EU1/texgyretermes(0)/m/n/12 konvoliucijos ir aktyvavimo
+ []
+
+
+Overfull \hbox (17.32082pt too wide) in alignment at lines 243--258
+ [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 258
+ []
+
+[9] [10] [11
+
+] [12] [13
 
 ]
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 281
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 329
 .
- (/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmtt.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmtt.fd
 File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-[12
+) [14
 
 ] (./kursinis.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                kursinis
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'kursinis.run.xml'.
 \openout1 = `kursinis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
  25853 strings out of 493638
- 476151 string characters out of 6146796
- 859730 words of memory out of 5000000
+ 476187 string characters out of 6146796
+ 849753 words of memory out of 5000000
  28932 multiletter control sequences out of 15000+600000
  16614 words of font info for 86 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  68i,12n,96p,10497b,2268s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on kursinis.pdf (12 pages).
+Output written on kursinis.pdf (14 pages).
