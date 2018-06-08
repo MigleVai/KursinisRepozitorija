@@ -285,47 +285,65 @@ platformose - procesoriuose, grafikos procesoriuose. Sukurtas ,,Google'' dirbtin
 dėl bibliotekos ir skaičiavimų lankstumo yra naudojamas įvairiose mokslinėse srityse.
 
 \section{Ekspermentas}
-Šio ekspermento tikslas yra išanalizuoti mokymosi tikslumą su skirtingų gylių neuroninais tinklais, kai mokymui yra naudojamas mažas paveiksėlių rinkinys. Taigi, pirmas šio ekspermento žingsinis - išsirinkti konvoliucinį neuroninį tinklą. Poskyriuje ,,Architektūros'' yra trumpai apibūdinti pagrindiniai konvolicinių neuroninių tinklų tipai. Iš jų buvo išsirinktas VGG, kadangi jo veikimas ir sluoksnių išsidėstymas yra tinkamiausi išsikeltam tikslui įgyvendiniti. Buvo nuspręsta daryti paprastą, binarinę paveikslėlių klasifikaciją - nustatymas ar katė, ar šuo pavaizduotas paveikslėlyje.
+Šio ekspermento tikslas yra išanalizuoti mokymosi tikslumą su skirtingų gylių neuroninais tinklais, kai mokymui yra naudojamas mažas paveiksėlių rinkinys. Taigi, pirmas 
+šio ekspermento žingsinis - išsirinkti konvoliucinį neuroninį tinklą. Poskyriuje ,,Architektūros'' yra trumpai apibūdinti pagrindiniai konvolicinių neuroninių tinklų tipai. 
+Iš jų buvo išsirinktas VGG, kadangi jo veikimas ir sluoksnių išsidėstymas yra tinkamiausi išsikeltam tikslui įgyvendiniti. Buvo nuspręsta daryti paprastą, binarinę paveikslėlių 
+klasifikaciją - nustatymas ar katė, ar šuo pavaizduotas paveikslėlyje.
 
 \subsection{Duomenų rinkinys}
-Šiais laikais konvoliuciniai neuroniniai tinklai pranoksta prieš tai buvusias naujausias technologijas naudotas paveiksliukų klasifikacijai. Viena iš pagrindinių priežasčių yra dideli ir gerai aprašyti duomenų rinkiniai, kaip kad ImageNet duomenų bazė. Geriausiai tinklas pasirodo, kai yra apmokomas su bendrinėm ypatybėm ir dar efektyviau pasirodo kai yra sureguliuoti su specifiniu duomenų rinkiniu \cite{http://adas.cvc.uab.es/task-cv2016/papers/0002.pdf}. Optimalus duomenų kiekis, kad gerai sureguliuoti modelį yra apie 10 000 paveiksliukų. 
+Šiais laikais konvoliuciniai neuroniniai tinklai pranoksta prieš tai buvusias naujausias technologijas naudotas paveiksliukų klasifikacijai. Viena iš pagrindinių priežasčių 
+yra dideli ir gerai aprašyti duomenų rinkiniai, kaip kad ImageNet duomenų bazė. Geriausiai tinklas pasirodo, kai yra apmokomas su bendrinėm ypatybėm ir dar efektyviau 
+pasirodo kai yra sureguliuoti su specifiniu duomenų rinkiniu \cite{http://adas.cvc.uab.es/task-cv2016/papers/0002.pdf}. Optimalus duomenų kiekis, kad gerai sureguliuoti 
+modelį yra apie 10 000 paveiksliukų. 
 
-Tačiau realybėje visų klasių objektų paveiksliukų nėra be galo daug, kadangi reikia skirti labai daug laiko ir žmogiškųjų resursų paveiksliukų žymėjimui bei turėti tiek daug paveiksliukų. Todėl tenka tinklus apmokyti su limituotais duomenų rinkiniais. Pagal šią realaus pasaulio problemą buvo įvykdyta viena iš ekspermento tikslo sąlygų - mažas duomenų rinkinys. Buvo surastas ir naudotas duomenų rinkinys, kuris turi 10 000 paveikslėlių - 8 000 mokymosi tikslui ir 2 000 validacijos.
+Tačiau realybėje visų klasių objektų paveiksliukų nėra be galo daug, kadangi reikia skirti labai daug laiko ir žmogiškųjų resursų paveiksliukų žymėjimui bei turėti tiek 
+daug paveiksliukų. Todėl tenka tinklus apmokyti su limituotais duomenų rinkiniais. Pagal šią realaus pasaulio problemą buvo įvykdyta viena iš ekspermento tikslo sąlygų - 
+mažas duomenų rinkinys. Buvo surastas ir naudotas duomenų rinkinys, kuris turi 10 000 paveikslėlių - 8 000 mokymosi tikslui ir 2 000 validacijos.
 
 \subsection{Programos veikimas}
 Skyrije ,,Technologijos'' yra išvardintos visos technologijos, kurios buvo naudotos šio ekspermento programai parašyti.
 
-Pirmiausiai reikia paruošti kompiuterį darbui - įrašyti ,,Python'' programavimo įrankius, paruošti ,,Anaconda'' komandinę eilutę, ,,NVIDIA CUDA'' įrankius, Keras ir TensorFlow. Tačiau kompiuteris privalo turėti tinkamą procesorių ar grafinį procesroiaus bloką - kompiuteris, kurį naudojau turėjo XXXX. Po šių pasiruošiamųjų žingsnių galima pradėti rašyti programą.
+Pirmiausiai reikia paruošti kompiuterį darbui - įrašyti ,,Python'' programavimo įrankius, paruošti ,,Anaconda'' komandinę eilutę, ,,NVIDIA CUDA'' įrankius, Keras ir 
+TensorFlow. Tačiau kompiuteris privalo turėti tinkamą procesorių ar grafinį procesroiaus bloką - kompiuteris, kurį naudojau turėjo Nvidia 1080 Ti. Programa, kuri 
+reguliuoja modelį ir modifikuoja, nelabai skiriasi, tad dėstysiu modelio reguliavimo eigą, kuri bus vėliau pritaikyta ir modifikavimo daliai. 
 
+Modelio reguliavimui pirmiausia reikia turėti modelį, kurį galima reguliuoti. Keras pateikia modelius, apmokytus su ImageNet, ir jų svorius, tad reikia tik importuoti 
+tinkamą modelį - šiuo atveju VGG16. Importavimo metu reikia nustatyti, kad pilnai sujungtas sluoksnis nebūtų pridėtas, kadangi tada galime pasrinkti kokių dimensijų 
+paveiksliukus naudosime ir kiek spalvų sluoksnių jie turės (standartiniai paveiksliukai turi 3). Tuomet reikia nustatyti kokius importuoto modelio sluoksnius norime 
+mokinti ir kuriuos - ne. Iš visų esamų sluoksnių mokinimui nustačiau tik paskutinius 4, kadangi jie yra atsakingi už specifinių ypatybių išmokimą. Po šių egzistuojančio 
+modelio paruošimų reikia sukurti naują Kero modelį, prie kurio reikia pridėti paruoštą egzistuojantį modelį bei pridėti kelis kitus sluoksnius tam tikru išsidėstymu - 
+plokštinimo, tankumo, išmetimo ir tankumo. Pirmasis išmetimo sluoksnis turi aktyvacijos funkciją ReLU, o paskutinis - sigmoidinę. Po visų sluoksnių pridėjimo modelis iš 
+viso turėjo 40 406 849 parametrų, iš kurių mokinami buvo 32 771 585, o tik 7 635 264 buvo nekeičiami. 
+
+Naudotų sluoksnių paaiškinimai:
+\begin{itemize}
+\item Plokštinimo sluoksnis - skirtas tam, kad įeinančius duomenis suploti į atitinkamą sluoksnių skaičių, jeigu sluoksnio prametras nenustatytas suplojama į vieną sluoksnį.
+\item Tankumo sluoksnis - atlieka tokią pačią funkciją kaip kad pilno sujungimo sluoksnis (daugiau informacijos poskyriuje ,,Pilno sujungimo sluoksnis'').
+\item Išmetimo sluoksnis - sluoksnyje atsitiktinai yra išjungiami tam tikri neuronai su Bernulio pasiskirstymo tikimybe. Dažniausiai nustatytas 50 procentų.
+\end{itemize}
+
+Po modelio paruošimo, reikia nustatyti kokio dydžio paveikslėlių paketais bus mokomas ir validuojamas modelis. Kadangi partijų dydį reikia nustatyti pagal kompiuterio atmintį, 
+po keletos bandymų nustačiau, kad geriausi dydžiai yra mokymosi partijai 200 paveikslėlių, o validacijos - 50.
+Tuomet nustatomas paveikslėlių aplankalo kelias, jų ir partijos dydis bei nustatomas klasės režimas į binarinį, nes duomenų rinkinys susideda iš dviejų klasių - kačių ir šunų.
+
+Paruošę modelį bei paveikslėlių rinkinį, galima pradėti mokinti ir validuoti modelį. Taigi, nustatomas modelio kompiliavimo metodas, kur turi būti - nuostolio ir 
+optimizavimo funkcijos. Daugiau apie nuostolio ir optimizavimo funckcijas galima skaityti skyriuose ,,Nuostolio funckcijos'' ir ,,Optimizavimo funckcijos''. Tačiau nuotolio 
+funkcija šiame modelyje yra binarinė kryžiaus entropija bei ji yra nekeičiama viso ekspermento metu. Šio ekspermento metu bus naudojamos keturios optimizavimo funkcijos - SGD, 
+Adam, Adagrad ir RMSprop. Po modelio sukompiliavimo yra aprašomas mokymo metodas, kuriam turi būti pateikta - paruošti paveiksliukai, žingsinis per epochą, epochų kiekis, 
+paruošti validacijos paveiksliukai ir jų žingsnis. Taigi, šiame ekspermente epocha yra nustayta 40, kadangi tokia išeina pagal visų turimų paveiksliukų skaičių ir paketo dydį.
+
+Modelio modifikavimo veikimas yra toks pats išskyrus, kad pridedami ne 4 sluoksniai, o 14 sluoksnių, kurie visi yra tankumo sluoksniai su aktyvacijos funkcija ReLu. Jie yra 
+pridedami tarp plokštinimo ir kito tankumo sluoksnio. Po visų sluoksnių pridėjimo iš viso buvo 51 952 449 parametrų, iš kurių buvo 44 317 185 mokinami, o tiek pat buvo nemokinami 
+kaip ir reguliuojant modelį. Taigi, modifikavimo metu prisidėjo papildomi 11 545 600 parametrų.
+
+\subsection{Modelio bandymai?????}
 
 - CNN issirinkimas
 - Duomenu radimas
-CNN reguliavimo programos parasymas
-bei programos pritaikymas modifikavimui
+- CNN reguliavimo programos parasymas
+- bei programos pritaikymas modifikavimui
 Skirtingu optimizavimo funkciju pritaikymas ir rezultatai
 
-
-dataset:
-8000 train
-2000 validate
-
-epoch - 40
-trainbatch - 200
-valbatch - 50
-
-ft:
-layers = 23
-trainable = 8
-total param - 40 406 849
-trainable - 32 771 585
-netrainable - 7 635 264
-
-add lay:
-layer = 34 
-trainable = 19
-total param - 51 952 449
-trainable - 44 317 185
-netrainable - 7 635 264
 
 \sectionnonum{Rezultaitai ir išvados}
 Darbo rezultatai:
