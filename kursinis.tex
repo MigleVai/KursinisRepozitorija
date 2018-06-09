@@ -49,15 +49,37 @@
 \tableofcontents
 
 \sectionnonum{Įvadas}
+Dirbtinių neuroninių tinklų idėja sugalvota buvo dar 1943 metais, bet dėl resursų trūkumo dirbtinių neuroninių tinklų efektyviai ir naudingai taikyti neišėjo. 
+Tobulėjant technologijoms bei kompiuteriams galint vykdyti vis daugiau ir daugiau skaičiavimų dirbtiniai neuroniniai tinklai sparčiai įgyjo populiarumą.
 
-Darbo tikslas: patikrinti mokymosi tikslumo kokybę su skirtinų gylių dirbtiniais neuroniniais tinklais, kai mokymui yra naudojamas mažas paveikslėlių rinkinys.
+Vienas iš pagrindinių sprendžiamų uždavinių yra klasifikacija - tai yra paveiksliukų skirstymas į aprašytas klases. Tokį uždavinį atlieka dirbtinių neuroninių 
+tinklų tipas - konvoliuciniai neuroniniai tinklai. Jie yra patys efektyviausi šio uždavinio sprendimui, kadangi jų įeities duomenys gali būti tik paveiksliukai.
+Klasifikacijos uždavinys yra aktualus, kadangi jo panaudojimas yra labai skirtingas - nuo medicinos iki savivairuojančių mašinų.
+
+Konvoliuciniai neuroniniai tinklai dar yra naudojami:
+\begin{itemize}
+\item Veido atpažinimui - identifikuoti arba verifikuoti asmenį. Pavyzdžiui, ,,DeepFace'' sistema sukurta ,,FaceBook'', kuri atpažysta žmonių veidus nuotraukose 
+arba ,,Face ID'' sistema sukurta ,,Apple'', kuri yra skirta identifikuoti asmenį, kuris bando atrakinti telefoną. 
+\item Medicinoje - širdies, plaučių, prostatos vėžių ir akių ligų diagnozavimui.
+\item Žmonių elgesio analizė realiu laiku - ,,DeepGlint'' nustato žmones nuotraukose ir nuspėja jų pozas.
+\item Vertimas - ,,Google Translate'' gali versti tekstą iš paveiksliukų realiu laiku.
+\end{itemize}
+
+Daugiausia resursų išnaudojanti dirbinių neuroninių tinklų dalis yra mokymas. Šiai daliai reikia ne vien daug laiko - žmonių ir pačio mokymo, bet ir didelio 
+paveiksliukų rinkinio, kuris privalo turėti aprašymus, kas pavaizduota juose. Tačiau realiame pasaulyje paveiksliukų kiekis ir žmogiškieji bei laiko resursai yra riboti, 
+tad yra siekiama keičiant dirbtinio neuroninio tinklo architektūra, parametrus bei naudojamas funkcijas gauti kuo didesnį tikslumą bei mažiausią įmanomą nuostolį. 
+Dirbtinio neuroninio tinklo teisingumą lemią ne vien kokybiški duomenys, didelį poveikį turi ir tinklo gylis - kiek daug sluoksnių turi dirbtinis neuroninis 
+tinklas. 
+
+Tad, šio darbo tikslas yra palyginti skirtinų gylių dirbtinius neuroninius tinklus pagal mokymosi tikslumą bei nuostolių dydį, kai mokymui yra naudojamas mažas 
+paveikslėlių rinkinys ir keičiamos optimizavimo funkcijos.
 
 Užduotys:
 \begin{enumerate}
-\item Pasirinkti analizuojamą dirbtinį neuroninį tinklą.
-\item Pritaikyti ir modifikuoti neuronį tinklą išsikeltam darbo tikslui.
-\item Gautą neuronį tinklą su skirtingais gyliais apmokyti.
-\item Surasti ir naudoti geriausią optimizavimo funkciją.
+\item Pasirinkti naudojamą dirbtinio neuroninio tinklo architektūrą.
+\item Sukurti programą, kuri reguliuotų ir modifikuotų jau egzistuojantį pasirinktos architektūros modelį.
+\item Apmokyti reguliuotą ir modifikuotą modelį.
+\item Palyginti SGD, Adam, Adagrad ir RMSprop optimizavimo funkcijas.
 \end{enumerate}
 
 
@@ -336,13 +358,47 @@ Modelio modifikavimo veikimas yra toks pats išskyrus, kad pridedami ne 4 sluoks
 pridedami tarp plokštinimo ir kito tankumo sluoksnio. Po visų sluoksnių pridėjimo iš viso buvo 51 952 449 parametrų, iš kurių buvo 44 317 185 mokinami, o tiek pat buvo nemokinami 
 kaip ir reguliuojant modelį. Taigi, modifikavimo metu prisidėjo papildomi 11 545 600 parametrų.
 
-\subsection{Modelio bandymai?????}
+\subsection{Modelių mokymas}
+Parašius programas, kurios reguliuoja bei modifikuoja modelį, buvo pradėta jį mokyti ir validuoti su skirtingomis optimizavimo funkcijomis.
+Mokymosi greitis buvo išrinktas 1e-4, kas yra 0.0001.
+\subsubsection{Modelio reguliavimas}
+Pasirinkta buvo pradėti ekspermentą nuo modelio modifikavimo, kadangi tokiu būdu galima pamatyti kaip modelio paskutiniai keli sluoksniai yra apmokomi ir kaip tikslumas ir nuostolis 
+keičiasi mokymo metu, kai yra naudojamas negilus modelis.
 
-- CNN issirinkimas
-- Duomenu radimas
-- CNN reguliavimo programos parasymas
-- bei programos pritaikymas modifikavimui
-Skirtingu optimizavimo funkciju pritaikymas ir rezultatai
+Taigi, pirmiausiai buvo pasirinkta SGD optimizavimo funkcija. Apmokius modelį buvo gauti grafikai XXX.
+\begin{figure}
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.4\linewidth]{image1}
+  \caption{A subfigure}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.4\linewidth]{image1}
+  \caption{A subfigure}
+\end{subfigure}
+\caption{A figure with two subfigures}
+\end{figure}
+Grafikas (x pav.) parodo, kad tikslumas kyla kuo daugiau modelis išmoksta taip pat validacijos grafikas pranoksta mokymosi. Aukščiausias tikslumo rezultatas yra virš XX procentų.
+Bei grafikas (x pav.) rodo nuostolį per epochas. Tad, jis parodo, kad XXX
+
+Paskui keičiama optimizavimo funkcija į Adam - mokymosi rezultatai matomi grafikuose XX.
+
+Tikslumo grafikas parodo tą ir tą.
+O nuostolio grafikas parodo aną ir aną.
+
+Trečiasis testuojama optimizavimo funkcija yra Adagrad. Jos grafikai yra XXX
+
+
+Taigi, tikslumo grafikas parodo, kad XX
+O nuostolio grafikas parodo kad XXX
+
+\subsubsection{Modelio modifikavimas}
+Po to buvo išnaujo apmokyti modeliai su 14 papildomų sluoksnių. Visi prametrai ir duomenų rinkinys liko tokie patys tik optimizavimo funkcija vėl buvo keičiama tam, kad pamatyti 
+kaip skirsis modelio tikslumas bei nuostolis.
+
+Tad, kaip ir prieš tai pirmoji modifikavimo funkcija yra SGD. Jos grafikai matomi XXX
 
 
 \sectionnonum{Rezultaitai ir išvados}

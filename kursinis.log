@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.5.17)  8 JUN 2018 10:53
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.5.17)  9 JUN 2018 22:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1196,62 +1196,62 @@ File: img/Konvoliucija.png Graphic file (type QTm)
 <use  "img/Konvoliucija.png" > [7
 
 ] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 235--236
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
 []|\EU1/texgyretermes(0)/m/n/12 ILSVRC
  []
 
 
-Underfull \hbox (badness 1043) in paragraph at lines 237--237
+Underfull \hbox (badness 1043) in paragraph at lines 259--259
 \EU1/texgyretermes(0)/m/n/12 raštytus skaičius. Susideda
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--241
+Underfull \hbox (badness 10000) in paragraph at lines 263--263
 []|\EU1/texgyretermes(0)/m/n/12 Vidiniai sluoksniai sudėti
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--241
+Underfull \hbox (badness 10000) in paragraph at lines 263--263
 \EU1/texgyretermes(0)/m/n/12 paraleliai, naudojami In-
  []
 
 
-Underfull \hbox (badness 4391) in paragraph at lines 241--241
+Underfull \hbox (badness 4391) in paragraph at lines 263--263
 \EU1/texgyretermes(0)/m/n/12 ception moduliai. Vienas
  []
 
 
-Underfull \hbox (badness 1661) in paragraph at lines 241--241
+Underfull \hbox (badness 1661) in paragraph at lines 263--263
 \EU1/texgyretermes(0)/m/n/12 ir 5x5 dydžių konvoliucijos
  []
 
 
-Underfull \hbox (badness 1210) in paragraph at lines 241--241
+Underfull \hbox (badness 1210) in paragraph at lines 263--263
 \EU1/texgyretermes(0)/m/n/12 filtrų bei vidurkio sudėjimo
  []
 
 
-Underfull \hbox (badness 6220) in paragraph at lines 245--245
+Underfull \hbox (badness 6220) in paragraph at lines 267--267
 []|\EU1/texgyretermes(0)/m/n/12 Turi labai daug sluoksnių,
  []
 
 
-Underfull \hbox (badness 2409) in paragraph at lines 245--245
+Underfull \hbox (badness 2409) in paragraph at lines 267--267
 \EU1/texgyretermes(0)/m/n/12 sudėtų vienas po kito, ku-
  []
 
 
-Underfull \hbox (badness 2828) in paragraph at lines 245--245
+Underfull \hbox (badness 2828) in paragraph at lines 267--267
 \EU1/texgyretermes(0)/m/n/12 konvoliucijos ir aktyvavimo
  []
 
 
-Overfull \hbox (17.32082pt too wide) in alignment at lines 233--248
+Overfull \hbox (17.32082pt too wide) in alignment at lines 255--270
  [] [] [] [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 248
+Underfull \vbox (badness 10000) detected at line 270
  []
 
 [9] [10] [11
@@ -1259,21 +1259,106 @@ Underfull \vbox (badness 10000) detected at line 248
 ]
 
 LaTeX Warning: Citation 'http://adas.cvc.uab.es/task-cv2016/papers/0002.pdf' on
- page 12 undefined on input line 296.
+ page 12 undefined on input line 318.
 
 [12
 
-] [13] [14
+] [13]
+
+! LaTeX Error: Environment subfigure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.371 \begin{subfigure}
+                       {.5\textwidth}
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.371 \begin{subfigure}{.5\textwidth}
+                                     
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.371 \begin{subfigure}{.5\textwidth}
+                                     
+? 
+
+! LaTeX Error: File `image1' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.373 ...cludegraphics[width=.4\linewidth]{image1}
+                                                  
+? 
+
+! LaTeX Error: \begin{figure} on input line 369 ended by \end{subfigure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.375 \end{subfigure}
+                     %
+? 
+
+! LaTeX Error: Environment subfigure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.376 \begin{subfigure}
+                       {.5\textwidth}
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.376 \begin{subfigure}{.5\textwidth}
+                                     
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.376 \begin{subfigure}{.5\textwidth}
+                                     
+? 
+
+! LaTeX Error: File `image1' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.378 ...cludegraphics[width=.4\linewidth]{image1}
+                                                  
+? 
+
+! LaTeX Error: \begin{figure} on input line 369 ended by \end{subfigure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.380 \end{subfigure}
+                     
+? 
+[14] [15
 
 ]
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 364
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 420
 .
  (/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmtt.fd
 File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-[15
+) [16
 
-] (./kursinis.aux)
+]
+(./kursinis.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1287,12 +1372,12 @@ Package logreq Info: Writing requests to 'kursinis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25854 strings out of 493638
- 476206 string characters out of 6146796
+ 25886 strings out of 493638
+ 476352 string characters out of 6146796
  847804 words of memory out of 5000000
- 28933 multiletter control sequences out of 15000+600000
+ 28935 multiletter control sequences out of 15000+600000
  16614 words of font info for 86 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 68i,11n,96p,10497b,2268s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,12n,96p,10497b,2268s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on kursinis.pdf (15 pages).
+Output written on kursinis.pdf (16 pages).
