@@ -531,19 +531,23 @@ O nuostolio grafikas (18 pav.) parodyta, kad mokymosi funkcija pasiekia 0 procen
 Darbo rezultatai:
 \begin{itemize}
 \item Pasirinktas tiriamas konvoliucinis neuroninis tinklas - VGG.
-\item VGG buvo pritaikytas ir modifikuotas išsikeltam tikslui.
-\item Konvoliucinis neuroninis tinklas buvo apmokytas.
+\item Sukurta programą, kuri reguliuotų ir modifikuotų pasirinktą konvoliucinį neuroninį tinklą.
+\item Apmokytas reguliuotas ir modifikuotas modelis.
+\item Mokymo metu buvo keičiamos optimizavimo funckijos - iš viso panaudotos SGD, Adam, Adagrad ir RMSprop funckijos.
+\item Gauti modelio mokymo ir validacijos tikslumo ir nuostolio grafikai.
 \end{itemize}
 
+\hfill\break
 
 Darbo išvados:
 \begin{itemize}
-\item Apmokius skirtingų gylių neuroninius tinklus, buvo nustatyta, kad gilesnis tinklas mokomojoje dalyje pasirodo labai gerai - tikslumas auga ir nuostolis mažėja, tačiau 
-validacijos metu tikslumas pakyla iki tam tikros reikšmės, o praradimas tolygiai auga. Galima daryti išvadą, kad gilesnis neuroninis tinklas su mažu kiekiu duomenų gali juos 
+\item Apmokius skirtingų gylių neuroninius tinklus, buvo nustatyta, kad gilesnis tinklas mokomojoje dalyje pasirodo labai gerai - tikslumas auga ir nuostolis mažėja iki 0 procentų, tačiau 
+validacijos metu tikslumas pakyla iki tam tikros reikšmės ir pasidaro pastovus, o praradimas tolygiai auga. Galima daryti išvadą, kad gilesnis neuroninis tinklas su mažu kiekiu duomenų gali juos 
 įsiminti, o ne išmokti atpažinti.
-\item Modelis apmokytas su kitais duomenimis gali būti pritaikytas atpažinti specifinius objektus.
-\item Pritaikius *dar kol kas ieškomą* optimizavimo funkciją, galima sumažinti praradimo augimą giliuose neuroniniuose tinkluose.
-\item Pritaikius *kitą dar kol kas ieškomą* optimizavimo funkciją, galima pagerinti modelio apmokytas su kitais duomenimis pritaikymą specifiniai užduočiai tikslumą bei praradimą.
+\item Mažo gylio modeliuose geriausia naudoti Adagrad optimizavimo funckiją, kadangi jos pasiektas validacijos tikslumas yra 96 procentai, nors ir Adam funkcija pasiekė tokį 
+patį tikslumą. Tačiau Adam funkcijos validacijos nuostolis 80 epochoje siekė 25 procentus, kai Adagrad siekė tik 15 procentų ir augimo tendencija buvo daug mažensė.
+\item Didesnio gylio modeliuose geriau naudoti Adam optimizavimo funkciją, kadangi validacijos tikslumas yra 96 procentai, o nuostolio funkcija pasiekia 35 procentus. O Adagrad 
+funkcija pasiekia tikslumą 95 procentų ir nuostolį 35 procentų, tačiau turi labai didelę augimo tendenciją.
 \end{itemize}
 
 \printbibliography[heading=bibintoc] 
