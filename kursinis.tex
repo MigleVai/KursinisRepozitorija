@@ -27,7 +27,7 @@
 \papertype{Kursinis darbas}
 \title{Labai panašių neuroninių klasių atskyrimas dirbtiniais neuroniniais tinklais}
 \titleineng{(Separation of very similar neuronal classes by artificial neural networks)}
-\status{3 kurso 5 grupės studentai}
+\status{3 kurso 5 grupės studentė}
 \author{Miglė Vaitulevičiūtė}
 \supervisor{dr. Vytautas Valaitis}
 \date{Vilnius – \the\year}
@@ -50,15 +50,15 @@
 
 \sectionnonum{Įvadas}
 Dirbtinių neuroninių tinklų idėja sugalvota buvo dar 1943 metais, bet dėl resursų trūkumo dirbtinių neuroninių tinklų efektyviai ir naudingai taikyti neišėjo. 
-Tobulėjant technologijoms bei kompiuteriams galint vykdyti vis daugiau ir daugiau skaičiavimų dirbtiniai neuroniniai tinklai sparčiai įgyjo populiarumą.
+Tobulėjant technologijoms bei kompiuteriams galint vykdyti vis daugiau ir daugiau skaičiavimų dirbtiniai neuroniniai tinklai sparčiai įgijo populiarumą.
 
 Vienas iš pagrindinių sprendžiamų uždavinių yra klasifikacija - tai yra paveiksliukų skirstymas į aprašytas klases. Tokį uždavinį atlieka dirbtinių neuroninių 
 tinklų tipas - konvoliuciniai neuroniniai tinklai. Jie yra patys efektyviausi šio uždavinio sprendimui, kadangi jų įeities duomenys gali būti tik paveiksliukai.
-Klasifikacijos uždavinys yra aktualus, kadangi jo panaudojimas yra labai skirtingas - nuo medicinos iki savivairuojančių mašinų.
+Klasifikacijos uždavinys yra aktualus, kadangi jo panaudojimas yra labai skirtingas - nuo medicinos iki savi-vairuojančių mašinų.
 
 Konvoliuciniai neuroniniai tinklai dar yra naudojami:
 \begin{itemize}
-\item Veido atpažinimui - identifikuoti arba verifikuoti asmenį. Pavyzdžiui, ,,DeepFace'' sistema sukurta ,,FaceBook'', kuri atpažysta žmonių veidus nuotraukose 
+\item Veido atpažinimui - identifikuoti arba verifikuoti asmenį. Pavyzdžiui, ,,DeepFace'' sistema sukurta ,,FaceBook'', kuri atpažįsta žmonių veidus nuotraukose 
 arba ,,Face ID'' sistema sukurta ,,Apple'', kuri yra skirta identifikuoti asmenį, kuris bando atrakinti telefoną. 
 \item Medicinoje - širdies, plaučių, prostatos vėžių ir akių ligų diagnozavimui.
 \item Žmonių elgesio analizė realiu laiku - ,,DeepGlint'' nustato žmones nuotraukose ir nuspėja jų pozas.
@@ -136,7 +136,7 @@ Aktyvavimo funkcijos yra skirstomos į:
 \end{itemize}
 \end{itemize}
 
-Šio darbo ekspermento dalyje buvo naudotos ReLU ir sigmoidinė aktyvavimo funckcijos.
+Šio darbo eksperimento dalyje buvo naudotos ReLU ir sigmoidinė aktyvavimo funkcijos.
 
 \subsection{Nuostolio funkcijos}
 Kai dirbtinis neuroninis tinklas mokosi, jo gaunami rezultatai gali labai skirtis nuo tikėtinų rezultatų. Todėl nuostolio funkcija apskaičiuoja kaip stipriai
@@ -158,11 +158,10 @@ Kelios klasifikacijos nuostolio funkcijos:
 \item Minkštų maržų klasifikatorius.
 \end{itemize}
 
-
 \subsection{Optimizavimo funkcijos}
 Optimizavimo funkcijos naudojamos vidinių tinklo parametrų atnaujinimui, kad sumažinti gaunamų rezultatų netikslumą. 
-Visos optimizavimo funkcijos gali būti suskirtytos į du tipus - nuolatinio mokymosi greičio ir prisitaikančio mokymosi. 
-Lentelėje 1 išvardinti visos populiariausios optimizavimo funckijos.
+Visos optimizavimo funkcijos gali būti suskirstytos į du tipus - nuolatinio mokymosi greičio ir prisitaikančio mokymosi. 
+Lentelėje 1 išvardinti visos populiariausios optimizavimo funkcijos.
 
 \begin{longtable}[h!]{ | p{2cm} | p{2.2cm} | p{2.5cm} | p{2.5cm} | p{4.5cm} | } 
 \hline
@@ -170,11 +169,11 @@ Pavadinimas & Tipas & Privalumai & Trūkumai & Veikimas \\
 \hline
 SGD & Nuolatinio mokymosi greičio & Parametrų atnaujinimai turi aukštą dispersiją, kas leidžia lengviau rasti lokalų minimumą. & Didelis svyravimas trukdo konverguoti. & Parametrų atnaujinimas vykdomas kiekvienai mokymo iteracijai. \\
 \hline
-Adam & Prisitaikančio mokymosi & Greitai konverguoja ir modelio mokymosi greitis yra didelis bei efektyvus. & Praleidžia mažą lokalų minimumą. & Suskaičiuoja mokymosi greitį kiekvienam parametrui bei saugo eksponentiškai nykstantį prieš tai buvusį kvadraditinio gradiento vidurkį ir eksponentiškai mažėjantį prieš tai buvusį gradiento vidurkį, panašų į momentą. \\
+Adam & Prisitaikančio mokymosi & Greitai konverguoja ir modelio mokymosi greitis yra didelis bei efektyvus. & Praleidžia mažą lokalų minimumą. & Suskaičiuoja mokymosi greitį kiekvienam parametrui bei saugo eksponentiškai nykstantį prieš tai buvusį kvadratinio gradiento vidurkį ir eksponentiškai mažėjantį prieš tai buvusį gradiento vidurkį, panašų į momentą. \\
 \hline
 Adagrad & Prisitaikančio mokymosi & Nereikia rankiniu būdu derinti mokymosi greičio. & Mokymosi greitis visada yra mažėjantis ir nykstantis, kas lėtina konvergavimą. & Leidžia mokymosi greičiui priklausyti nuo parametrų. Dideli atnaujinimai nedažniems parametrams, maži atnaujinimai dažniems parametrams. \\
 \hline
-RMSprop & Prisitaikančio mokymosi & Greitai konverguoja. & Momentas nedidina funkcijos efektyvumo. & Dalyja mokymosi greitį iš eksponentiškai nykstančio kvadraditinio gradiento vidurkio. \\
+RMSprop & Prisitaikančio mokymosi & Greitai konverguoja. & Momentas nedidina funkcijos efektyvumo. & Dalija mokymosi greitį iš eksponentiškai nykstančio kvadratinio gradiento vidurkio. \\
 \hline
 \caption{Optimizavimo funkcijos}
 \end{longtable}
@@ -185,7 +184,7 @@ konverguoti, o pasirinkus per didelį parametrams gali trukdyti konverguoti ir p
 apie minimumą arba diverguoti. Šio tipo funkcijos turi panašų hiperparametrą - momentą - kuris didina mokymosi greitį, 
 kai jis artėja prie minimumo. 
 
-Vienos iš pagrindinių problemų nuolationio mokymosi greičio funkicijų, kad jos privalo turėti nustatytus hiperparametrus 
+Vienos iš pagrindinių problemų nuolatinio mokymosi greičio funkcijų, kad jos privalo turėti nustatytus hiperparametrus 
 iš anksto ir jie labai stipriai priklauso nuo modelio ir sprendžiamos problemos. Dar vienas trūkumas, kad toks pats 
 mokymosi greitis yra pritaikomas visiems vidinių parametrų atnaujinimams.
 
@@ -204,7 +203,7 @@ atitinka nuotraukos pikselį, kurio reikšmė yra intervale nuo 0 iki 255. Kadan
 tai labai sumažina tinklo parametrų kiekį ir tinklą padaro efektyvesnį.
 
 
-Objektų atpažinimas paveiksliukuose yra sudėtingas dėl šių iššukių:
+Objektų atpažinimas paveiksliukuose yra sudėtingas dėl šių iššūkių:
 \begin{itemize}
 \item Segmentavimas - paveiksliukai gali atvaizduoti įvairias scenas, kuriose gali būti pavaizduota daug objektų, kurie vienas kita gali dalinai uždengti.
 \item Šviesa - pikselių intensyvumas gali būti paveiktas šviesos šaltinio ar pačio objekto.
@@ -215,7 +214,7 @@ Objektų atpažinimas paveiksliukuose yra sudėtingas dėl šių iššukių:
 
 \subsection{Konvoliucija}
 Konvoliucija yra matematinė operacija, kuri apibūdina taisyklę, kuri parodo kaip reikia sujungti du informacijos rinkinius \cite{Convolution-book}. 
-Paveiksliukų analizėje, statinė ir pagrindinė funckija yra įeities paveiksliukas, kuris yra analizuojamas, o antroji, judanti funkcija, žinoma 
+Paveiksliukų analizėje, statinė ir pagrindinė funkcija yra įeities paveiksliukas, kuris yra analizuojamas, o antroji, judanti funkcija, žinoma 
 kaip filtras, nes ji išskiria paveiksliuko ypatybę. Abi funkcijos yra susietos daugyba (2 pav.). 
 
 \begin{figure}[h]
@@ -236,35 +235,36 @@ sluoksnių tipus, kurie sudaro vidinį sluoksnį. Šie tipai yra konvoliucinis, 
 
 \subsubsection{Konvoliucinis sluoksnis}
 Šis sluoksnis yra pagrindinis konvoliucinio neuroninio tinklo sluoksnis, kuris atlieka daugiausia skaičiavimų, nustato visas paveiksliuko ypatybes.
-Kadangi, įeities informacija (paveiksliukas) yra didelės dimencijos neefektyvu visų neuronų sujungti vienus su kitais. Todėl neuronai yra sujungiami
+Kadangi, įeities informacija (paveiksliukas) yra didelės dimensijos neefektyvu visų neuronų sujungti vienus su kitais. Todėl neuronai yra sujungiami
 su lokaliu informacijos kiekiu, kuris yra lygus filtro dydžiui ir vadinamas erdviniu mastu \cite{layers-CS231n}.
 
 Neuronų kiekis po konvoliucijos (ypatybių plano dydis) yra nustatomas trimis parametrais:
 \begin{itemize}
 \item Gylis - atitinka filtrų skaičių.
 \item Žingsnis - pikselių kiekis, kuris parodo per kiek reikia slinkti filtro matrica per įeities informacijos matricą.
-\item Nulių pamušalas - įeities informacijos matrcios kraštus užpilduti nuliais.
+\item Nulių pamušalas - įeities informacijos matricos kraštus užpildyti nuliais.
 \end{itemize}
 
+
 \subsubsection{Sujungimo sluoksnis}
-Periodiškai sujungimo sluoksnis yra įterpiamas tarp konvoliucinių. Pagrindinis sluoksnio tikslas yra laipsniškai mažinti erdvinį filtruojamo paveiskliuko mąstą.
-Šis veikslas yra atliekams tam, kad sumažinti parametrų ir skaičiavimų kiekį bei kontroliuoti perjungimą. Sujungimo sluoksnis veikia nepriklausomai nuo kiekvieno
+Periodiškai sujungimo sluoksnis yra įterpiamas tarp konvoliucinių. Pagrindinis sluoksnio tikslas yra laipsniškai mažinti erdvinį filtruojamo paveiksliuko mąstą.
+Šis veiksmas yra atliekamas tam, kad sumažinti parametrų ir skaičiavimų kiekį bei kontroliuoti perjungimą. Sujungimo sluoksnis veikia nepriklausomai nuo kiekvieno
 gabalėlio gylio ir keičia jo dydį erdviškai, naudodamas MAX operaciją. Dažniausiai šis sluoksnis yra naudojamas su 2x2 dydžio filtru - kas antras po konvoliucijos 
 gauto gabaliuko kiekvienas gylio sluoksnis yra mažinamas per pusę ties ilgiu ir pločiu, taip yra atsikratoma 75 procentų aktyvacijų. Po šios operacijos gabaliuko 
 gylis nepasikeičia.
 
 Dažniausiai yra naudojamos dvi šio sluoksnio variacijos. Pirmasis yra vadinamas persidengiantis sujungimas, kur filtro dydis yra lygus 3 ir žingsnis yra lygus 2. 
-O kitas dažniau naudojamas turi filtro dydį lygų 2 ir žingsnį taip pat 2. Sujungimo sluoksniai su labai dideliais parametrais yra labai desktruktyvūs.
+O kitas dažniau naudojamas turi filtro dydį lygų 2 ir žingsnį taip pat 2. Sujungimo sluoksniai su labai dideliais parametrais yra labai destruktyvūs.
 
 \subsubsection{Pilno sujungimo sluoksnis}
 Konvoliucinio ir sujungimo sluoksnių išeitys yra aukšto lygio ypatybės, kurios yra gautos iš įeities paveiksliuko. Pilno sujungimo sluoksnis yra sujungtas su visais 
 neuronais iš sluoksnio buvusio prieš jį. Šio sluoksnio tikslas yra panaudojant tas ypatybes, kurios yra gautos iš prieš tai buvusių sluoksnių, nustatyti kokioms 
-klasėms priklauso įeities paveiksliukas pagal mokymo informacijos rinkinį, kai nueroninio tinklo problema yra klasifikacija \cite{layers-fullyconnected}. Jei šiam sluoksniui yra naudojama 
+klasėms priklauso įeities paveiksliukas pagal mokymo informacijos rinkinį, kai neuroninio tinklo problema yra klasifikacija \cite{layers-fullyconnected}. Jei šiam sluoksniui yra naudojama 
 minkštojo maksimumo funkcija tuomet sudėtis visų gautų galimybių turi būti lygi 1. Minkštojo maksimumo funkcija priima vektorių įvertinimų ir jį suspaudžia į 
 vektorių, kuriame yra klasių tikimybių įvertinimai intervale nuo 0 iki 1, kur tikimybė arčiausiai vieneto reiškia, kad labiausiai užtikrintas dėl tos klasės.
 
 \subsection{Architektūros}
-Konvoliuciniai neuroniniai tinklai turi keletą skirtingų architektūrų, kurios yra naudojamos atinkmai pagal sprendžiamą problemą. 1 lentelėje pateikta infromaciją 
+Konvoliuciniai neuroniniai tinklai turi keletą skirtingų architektūrų, kurios yra naudojamos atitinkamai pagal sprendžiamą problemą. 1 lentelėje pateikta informaciją 
 apie įvairias architektūras.
 
 
@@ -272,7 +272,7 @@ apie įvairias architektūras.
 \hline
 Pavadinimas & Metai & Parametrų kiekis & Veikimas & ILSVRC vieta \\
 \hline
-LeNet & 1998 & 60 000 & Geriausiai atpažysta ranka paraštytus skaičius. Susideda iš sluoksnių - kelių pasikartojančių konvoliucijos ir sujungimo bei pasibaigia dviem pilno sujungimo sluoksniais. & - \\
+LeNet & 1998 & 60 000 & Geriausiai atpažįsta ranka parašytus skaičius. Susideda iš sluoksnių - kelių pasikartojančių konvoliucijos ir sujungimo bei pasibaigia dviem pilno sujungimo sluoksniais. & - \\
 \hline
 AlexNet & 2012 & 60 000 000 & Veikimu panašus į LeNet, tačiau turi daug daugiau parametrų ir filtrų bei sudėtus konvoliucinius sluoksnius.  & pirma \\
 \hline
@@ -280,20 +280,20 @@ GoogLeNet/Inception & 2014 & 4 000 000 & Vidiniai sluoksniai sudėti paraleliai,
 \hline
 VGGNet & 2014 & 138 000 000 & Panašus veikimas į AlexNet, tačiau daug gilesnis. Naudojamų filtrų dydis yra 3x3 ir jie yra sudėti vienas po kito. & antra \\
 \hline
-ResNet & 2015 & 25 000 000 & Turi labai daug sluoksnių, sudėtų vienas po kito, kurie turi liekamajį bloką, kuris įeities informaciją perduoda tolimesniam sluoksniui ją pridėdamas ir taip sumažina konvoliucijos ir aktyvavimo funkcijų kiekį.  & pirma \\
+ResNet & 2015 & 25 000 000 & Turi labai daug sluoksnių, sudėtų vienas po kito, kurie turi liekamąjį bloką, kuris įeities informaciją perduoda tolimesniam sluoksniui ją pridėdamas ir taip sumažina konvoliucijos ir aktyvavimo funkcijų kiekį.  & pirma \\
 \hline
 \caption{Konvoliucinių neuroninių tinklų architektūros}
 \end{longtable}
 
 \subsection{Modelio reguliavimas}
 Pilnas konvoliucinio neuroninio tinklo apmokymas gali užtrukti labai ilgą laiką ir išnaudoti daug resursų. Todėl yra kai kurios įstaigos arba žmonės, kurie apmoko savo 
-tinklą ir jo svorius bei reikšmes, vadinamą modeliu, pateikia visuomenei, tačiau šis modelis yra nepritaikytas individuoliai žmogaus užduočiai. Modelį reikia 
-reguliuoti - iš naujo apmokyti paskutinius sluoksnius su individuolios užduoties parametrais.
+tinklą ir jo svorius bei reikšmes, vadinamą modeliu, pateikia visuomenei, tačiau šis modelis yra nepritaikytas individualiai žmogaus užduočiai. Modelį reikia 
+reguliuoti - iš naujo apmokyti paskutinius sluoksnius su individualios užduoties parametrais.
 
-Daugelis konvoliucinių neuroninių tinklų apmokytų su natūraliais paveiksliukais turi fenomeną. Pirmuosiuose sluoksniuose jie išmoksta ypatybių panašių į Gaboro filtą 
+Daugelis konvoliucinių neuroninių tinklų apmokytų su natūraliais paveiksliukais turi fenomeną. Pirmuosiuose sluoksniuose jie išmoksta ypatybių panašių į Gaboro filtrą 
 (tiesinis filtras naudojamas tekstūroms analizuoti) ir spalvų dėmes. Šios pirmojo sluoksnio ypatybės nepriklauso nuo duomenų rinkinio, bet yra bendros ir tinkamos 
 daugeliui duomenų rinkinių ir užduočių \cite{DBLP:journals/corr/YosinskiCBL14}. Dėl šio fenomeno galima naudoti modelius neapmokytus su specifiniu duomenų rinkiniu, 
-bet jį minimaliai modifiktą, kitoms užduotims spręsti, kas leidžia sutaupyti resursų bei turėti mažesnį duomenų rinkinį.
+bet jį minimaliai modifikuotą, kitoms užduotims spręsti, kas leidžia sutaupyti resursų bei turėti mažesnį duomenų rinkinį.
 
 \section{Technologijos}
 Naudojamų technologijų išsirinkimas yra pradinis žingsnis siekiant įvykdyti išsikeltas užduotis. Šiame skyriuje pateiktos populiariausios šių laikų technologijos 
@@ -312,41 +312,41 @@ modelio testavimui. Šis konkursas yra paveiksliukų klasifikacijos algoritmų e
 
 \subsection{Keras}
 Keras yra aukšto lygio programų sąsaja skirta neuroniniams tinklams. Sąsaja parašyta su ,,Python'' programavimo kalba ir vidinėje pusėje galinti veikti su ,,TensorFlow'' 
-ir kitomis bibliotekomis. Keras buvo sukurtas tikintis suteikti greitą ekspermentavimą, kad sugalvojus idėją pasiekti rezultato būtų galima su kiek įmanoma mažiau uždėlsimo.
+ir kitomis bibliotekomis. Keras buvo sukurtas tikintis suteikti greitą eksperimentavimą, kad sugalvojus idėją pasiekti rezultato būtų galima su kiek įmanoma mažiau uždelsimo.
 
-Ši sąsaja savyje turi visus pagrindinius neuroninio tinklo kūrimo blokus, pavyzdžiui, sluoskniai, aktyvavimo ir optimizavimo funkcijos. Taip pat Keras suteikia modelius, 
+Ši sąsaja savyje turi visus pagrindinius neuroninio tinklo kūrimo blokus, pavyzdžiui, sluoksniai, aktyvavimo ir optimizavimo funkcijos. Taip pat Keras suteikia modelius, 
 kurie yra apmokyti naudojant ImageNet duomenų bazę. Šiuos modelius galima reguliuoti, pridėti papildomų sluoksnių, pasirinkti esamus sluoksnius bei juos iš naujo apmokyti.
 
 \subsection{TensorFlow}
-TensorFlow yra atviros programinės įrangos biblioteka skirta aukšto našumo skaitinimas skaičiavimams. Jo lanksti architektūra leidžia lengvai diegti skaičiavimus įvairiose 
+TensorFlow yra atviros programinės įrangos biblioteka skirta aukšto našumo skaitiniams skaičiavimams. Jo lanksti architektūra leidžia lengvai diegti skaičiavimus įvairiose 
 platformose - procesoriuose, grafikos procesoriuose. Sukurtas ,,Google'' dirbtinio intelekto skyriaus, tad yra labai palaikomas automatinis ir gilusis mokymasis, tačiau 
 dėl bibliotekos ir skaičiavimų lankstumo yra naudojamas įvairiose mokslinėse srityse.
 
-\section{Ekspermentas}
-Šio ekspermento tikslas yra išanalizuoti mokymosi tikslumą su skirtingų gylių neuroninais tinklais, kai mokymui yra naudojamas mažas paveiksėlių rinkinys. Taigi, pirmas 
-šio ekspermento žingsinis - išsirinkti konvoliucinį neuroninį tinklą. Poskyriuje ,,Architektūros'' yra trumpai apibūdinti pagrindiniai konvolicinių neuroninių tinklų tipai. 
-Iš jų buvo išsirinktas VGG, kadangi jo veikimas ir sluoksnių išsidėstymas yra tinkamiausi išsikeltam tikslui įgyvendiniti. Buvo nuspręsta daryti paprastą, binarinę paveikslėlių 
+\section{Eksperimentas}
+Šio eksperimento tikslas yra išanalizuoti mokymosi tikslumą su skirtingų gylių neuroninais tinklais, kai mokymui yra naudojamas mažas paveikslėlių rinkinys. Taigi, pirmas 
+šio eksperimento žingsnis - išsirinkti konvoliucinį neuroninį tinklą. Poskyriuje ,,Architektūros'' yra trumpai apibūdinti pagrindiniai konvolicinių neuroninių tinklų tipai. 
+Iš jų buvo išsirinktas VGG, kadangi jo veikimas ir sluoksnių išsidėstymas yra tinkamiausi išsikeltam tikslui įgyvendinti. Buvo nuspręsta daryti paprastą, binarinę paveikslėlių 
 klasifikaciją - nustatymas ar katė, ar šuo pavaizduotas paveikslėlyje.
 
 \subsection{Duomenų rinkinys}
 Šiais laikais konvoliuciniai neuroniniai tinklai pranoksta prieš tai buvusias naujausias technologijas naudotas paveiksliukų klasifikacijai. Viena iš pagrindinių priežasčių 
-yra dideli ir gerai aprašyti duomenų rinkiniai, kaip kad ImageNet duomenų bazė. Geriausiai tinklas pasirodo, kai yra apmokomas su bendrinėm ypatybėm ir dar efektyviau 
+yra dideli ir gerai aprašyti duomenų rinkiniai, kaip kad ImageNet duomenų bazė. Geriausiai tinklas pasirodo, kai yra apmokomas su bendromis ypatybėmis ir dar efektyviau 
 pasirodo kai yra sureguliuoti su specifiniu duomenų rinkiniu \cite{DBLP:conf/eccv/ChuMBHD16}. Optimalus duomenų kiekis, kad gerai sureguliuoti 
 modelį yra apie 10 000 paveiksliukų. 
 
 Tačiau realybėje visų klasių objektų paveiksliukų nėra be galo daug, kadangi reikia skirti labai daug laiko ir žmogiškųjų resursų paveiksliukų žymėjimui bei turėti tiek 
-daug paveiksliukų. Todėl tenka tinklus apmokyti su limituotais duomenų rinkiniais. Pagal šią realaus pasaulio problemą buvo įvykdyta viena iš ekspermento tikslo sąlygų - 
+daug paveiksliukų. Todėl tenka tinklus apmokyti su limituotais duomenų rinkiniais. Pagal šią realaus pasaulio problemą buvo įvykdyta viena iš eksperimento tikslo sąlygų - 
 mažas duomenų rinkinys. Buvo surastas ir naudotas duomenų rinkinys, kuris turi 10 000 paveikslėlių - 8 000 mokymosi tikslui ir 2 000 validacijos.
 
 \subsection{Programos veikimas}
-Skyrije ,,Technologijos'' yra išvardintos visos technologijos, kurios buvo naudotos šio ekspermento programai parašyti.
+Skyriuje ,,Technologijos'' yra išvardintos visos technologijos, kurios buvo naudotos šio eksperimento programai parašyti.
 
 Pirmiausiai reikia paruošti kompiuterį darbui - įrašyti ,,Python'' programavimo įrankius, paruošti ,,Anaconda'' komandinę eilutę, ,,NVIDIA CUDA'' įrankius, Keras ir 
-TensorFlow. Tačiau kompiuteris privalo turėti tinkamą procesorių ar grafinį procesroiaus bloką - kompiuteris, kurį naudojau turėjo Nvidia 1080 Ti. Programa, kuri 
+TensorFlow. Tačiau kompiuteris privalo turėti tinkamą procesorių ar grafinį procesoriaus bloką - kompiuteris, kurį naudojau turėjo Nvidia 1080 Ti. Programa, kuri 
 reguliuoja modelį ir modifikuoja, nelabai skiriasi, tad dėstysiu modelio reguliavimo eigą, kuri bus vėliau pritaikyta ir modifikavimo daliai. 
 
 Modelio reguliavimui pirmiausia reikia turėti modelį, kurį galima reguliuoti. Keras pateikia modelius, apmokytus su ImageNet, ir jų svorius, tad reikia tik importuoti 
-tinkamą modelį - šiuo atveju VGG16. Importavimo metu reikia nustatyti, kad pilnai sujungtas sluoksnis nebūtų pridėtas, kadangi tada galime pasrinkti kokių dimensijų 
+tinkamą modelį - šiuo atveju VGG16. Importavimo metu reikia nustatyti, kad pilnai sujungtas sluoksnis nebūtų pridėtas, kadangi tada galime parinkti kokių dimensijų 
 paveiksliukus naudosime ir kiek spalvų sluoksnių jie turės (standartiniai paveiksliukai turi 3). Tuomet reikia nustatyti kokius importuoto modelio sluoksnius norime 
 mokinti ir kuriuos - ne. Iš visų esamų sluoksnių mokinimui nustačiau tik paskutinius 4, kadangi jie yra atsakingi už specifinių ypatybių išmokimą. Po šių egzistuojančio 
 modelio paruošimų reikia sukurti naują Kero modelį, prie kurio reikia pridėti paruoštą egzistuojantį modelį bei pridėti kelis kitus sluoksnius tam tikru išsidėstymu - 
@@ -355,20 +355,20 @@ viso turėjo 40 406 849 parametrų, iš kurių mokinami buvo 32 771 585, o tik 7
 
 Naudotų sluoksnių paaiškinimai:
 \begin{itemize}
-\item Plokštinimo sluoksnis - skirtas tam, kad įeinančius duomenis suploti į atitinkamą sluoksnių skaičių, jeigu sluoksnio prametras nenustatytas suplojama į vieną sluoksnį.
+\item Plokštinimo sluoksnis - skirtas tam, kad įeinančius duomenis suploti į atitinkamą sluoksnių skaičių, jeigu sluoksnio parametras nenustatytas suplojama į vieną sluoksnį.
 \item Tankumo sluoksnis - atlieka tokią pačią funkciją kaip kad pilno sujungimo sluoksnis (daugiau informacijos poskyriuje ,,Pilno sujungimo sluoksnis'').
 \item Išmetimo sluoksnis - sluoksnyje atsitiktinai yra išjungiami tam tikri neuronai su Bernulio pasiskirstymo tikimybe. Dažniausiai nustatytas 50 procentų.
 \end{itemize}
 
 Po modelio paruošimo, reikia nustatyti kokio dydžio paveikslėlių paketais bus mokomas ir validuojamas modelis. Kadangi partijų dydį reikia nustatyti pagal kompiuterio atmintį, 
-po keletos bandymų nustačiau, kad geriausi dydžiai yra mokymosi partijai 200 paveikslėlių, o validacijos - 50.
+po parametras bandymų buvo nustatyta, kad geriausi dydžiai yra mokymosi partijai 100 paveikslėlių, o validacijos - 25.
 Tuomet nustatomas paveikslėlių aplankalo kelias, jų ir partijos dydis bei nustatomas klasės režimas į binarinį, nes duomenų rinkinys susideda iš dviejų klasių - kačių ir šunų.
 
 Paruošę modelį bei paveikslėlių rinkinį, galima pradėti mokinti ir validuoti modelį. Taigi, nustatomas modelio kompiliavimo metodas, kur turi būti - nuostolio ir 
-optimizavimo funkcijos. Daugiau apie nuostolio ir optimizavimo funckcijas galima skaityti skyriuose ,,Nuostolio funckcijos'' ir ,,Optimizavimo funckcijos''. Tačiau nuotolio 
-funkcija šiame modelyje yra binarinė kryžiaus entropija bei ji yra nekeičiama viso ekspermento metu. Šio ekspermento metu bus naudojamos keturios optimizavimo funkcijos - SGD, 
-Adam, Adagrad ir RMSprop. Po modelio sukompiliavimo yra aprašomas mokymo metodas, kuriam turi būti pateikta - paruošti paveiksliukai, žingsinis per epochą, epochų kiekis, 
-paruošti validacijos paveiksliukai ir jų žingsnis. Taigi, šiame ekspermente epocha yra nustayta 40, kadangi tokia išeina pagal visų turimų paveiksliukų skaičių ir paketo dydį.
+optimizavimo funkcijos. Daugiau apie nuostolio ir optimizavimo funkcijas galima skaityti skyriuose ,,Nuostolio funkcijos'' ir ,,Optimizavimo funkcijos''. Tačiau nuotolio 
+funkcija šiame modelyje yra binarinė kryžiaus entropija bei ji yra nekeičiama viso eksperimento metu. Šio eksperimento metu bus naudojamos keturios optimizavimo funkcijos - SGD, 
+Adam, Adagrad ir RMSprop. Po modelio sukompiliavimo yra aprašomas mokymo metodas, kuriam turi būti pateikta - paruošti paveiksliukai, žingsnis per epochą, epochų kiekis, 
+paruošti validacijos paveiksliukai ir jų žingsnis. Taigi, šiame eksperimente epocha yra nustatyta 80, kadangi tokia išeina pagal visų turimų paveiksliukų skaičių ir paketo dydį.
 
 Modelio modifikavimo veikimas yra toks pats išskyrus, kad pridedami ne 4 sluoksniai, o 14 sluoksnių, kurie visi yra tankumo sluoksniai su aktyvacijos funkcija ReLu. Jie yra 
 pridedami tarp plokštinimo ir kito tankumo sluoksnio. Po visų sluoksnių pridėjimo iš viso buvo 51 952 449 parametrų, iš kurių buvo 44 317 185 mokinami, o tiek pat buvo nemokinami 
@@ -378,7 +378,7 @@ kaip ir reguliuojant modelį. Taigi, modifikavimo metu prisidėjo papildomi 11 5
 Parašius programas, kurios reguliuoja bei modifikuoja modelį, buvo pradėta jį mokyti ir validuoti su skirtingomis optimizavimo funkcijomis.
 Mokymosi greitis buvo išrinktas 1e-4, kas yra 0.0001.
 \subsubsection{Modelio reguliavimas}
-Pasirinkta buvo pradėti ekspermentą nuo modelio modifikavimo, kadangi tokiu būdu galima pamatyti kaip modelio paskutiniai keli sluoksniai yra apmokomi ir kaip tikslumas ir nuostolis 
+Pasirinkta buvo pradėti eksperimentą nuo modelio modifikavimo, kadangi tokiu būdu galima pamatyti kaip modelio paskutiniai keli sluoksniai yra apmokomi ir kaip tikslumas ir nuostolis 
 keičiasi mokymo metu, kai yra naudojamas negilus modelis.
 
 Taigi, pirmiausiai buvo pasirinkta SGD optimizavimo funkcija. Apmokius modelį buvo gauti grafikai - 3 ir 4 paveiksliukai.
@@ -413,7 +413,7 @@ Paskui keičiama optimizavimo funkcija į Adam - mokymosi rezultatai matomi graf
 \end{figure}
 
 Tikslumo grafikas (5 pav.) parodo, kad mokymosi tikslumas per kelias pirmas epochas pasiekia beveik 100 procentinį tikslumą, tačiau validacijos lieka apie 96 procentus ir daugiau nebekyla.
-O nuostolio grafikas (6 pav.) parodo, kad mokymosi nuostolis stagiai nukrenta iki beveik 0 procentų nuostolių. Tačiau validacijos nuostoliai per kelias epocjas nukrenta, o po to staigiai pradeda augti ir išsilygina ties 24 procentais.
+O nuostolio grafikas (6 pav.) parodo, kad mokymosi nuostolis staigiai nukrenta iki beveik 0 procentų nuostolių. Tačiau validacijos nuostoliai per kelias epochas nukrenta, o po to staigiai pradeda augti ir išsilygina ties 24 procentais.
 
 Trečiasis testuojama optimizavimo funkcija yra Adagrad. Jos grafikai yra 7 ir 8 paveiksliukai.
 
@@ -430,7 +430,8 @@ Trečiasis testuojama optimizavimo funkcija yra Adagrad. Jos grafikai yra 7 ir 8
 \end{figure}
 
 Taigi, tikslumo grafikas (7 pav.) parodo, kad mokymosi tikslumas per pirmas 20 epochų pakyla beveik iki 100 procentų, o validacijos tikslumas pakyla iki 96 procentų ir ties tiek pasilieka.
-O nuostolio grafikas (8 pav.) parodo, kad taip pat kaip ir mokymosi tikslumas taip ir nuostolis per pirmas 20 epochų nukrenta iki beveik 0 procentų ir ties ten lieka. Kai validacijos nuostolis nukrenta iki tolygiai auga iki 11 procentų, o po to tolugiai kyla iki 15 procentų.
+O nuostolio grafikas (8 pav.) parodo, kad taip pat kaip ir mokymosi tikslumas taip ir nuostolis per pirmas 20 epochų nukrenta iki beveik 0 procentų ir ties ten lieka. Kai validacijos nuostolis 
+nukrenta iki tolygiai auga iki 11 procentų, o po to tolygiai kyla iki 15 procentų.
 
 Paskutinis bandymo optimizavimo funkcija yra RMSprop. Ji yra parodyta 9 ir 10 paveiksliukuose.
 
@@ -446,11 +447,11 @@ Paskutinis bandymo optimizavimo funkcija yra RMSprop. Ji yra parodyta 9 ir 10 pa
   \end{minipage}
 \end{figure}
 
-Tad, tikslumo grafikas (9 pav.) parodo, kad mokymosi funkcija šokteli iki 100 procentų ir ten išsilaiko, kai validacijos funckija stipriai svyruoja tarp 93 ir 95 procentų, bet per visas epochas neišsilygina.
+Tad, tikslumo grafikas (9 pav.) parodo, kad mokymosi funkcija šokteli iki 100 procentų ir ten išsilaiko, kai validacijos funkcija stipriai svyruoja tarp 93 ir 95 procentų, bet per visas epochas neišsilygina.
 O nuostolio grafikas (10 pav.) parodo, kad mokymosi funkcija nukrenta iki beveik 0 procentų ir ten išsilaiko. Tačiau validacijos funkcija labai stipriai svyruoja ir didėja. Pasiekdama aukščiausią nuostolį ties 82 procentais.
 
 \subsubsection{Modelio modifikavimas}
-Išnaujo apmokyti modeliai su 14 papildomų sluoksnių. Visi prametrai ir duomenų rinkinys liko tokie patys tik optimizavimo funkcija vėl buvo keičiama.
+Iš naujo apmokyti modeliai su 14 papildomų sluoksnių. Visi parametrai ir duomenų rinkinys liko tokie patys tik optimizavimo funkcija vėl buvo keičiama.
 
 Tad, kaip ir prieš tai pirmoji modifikavimo funkcija yra SGD. Jos grafikai yra 11 ir 12 paveiksliukai.
 
@@ -466,8 +467,8 @@ Tad, kaip ir prieš tai pirmoji modifikavimo funkcija yra SGD. Jos grafikai yra 
   \end{minipage}
 \end{figure}
 
-Tikslumo grafikas (11 pav.) matyti, kad mokymosi funkcija tolygiai svyruojančiai didėja, tačiau valdiacijos tikslumas ties 37 epocha pranoksta mokymosi bei pati validacijos funkcija tolygiai kyla ir neturi 
-tokių svyravimų kaip mokymosi. Beje, palyginus su 3 paveiksliuko tikslumu, po papildomų sluoksnių pridėjimo nei valdiacijos nei mokymosi tikslumas nepasiekia tokio aukšto tiksumo, koks buvo mažesnio gylio modelyje.
+Tikslumo grafikas (11 pav.) matyti, kad mokymosi funkcija tolygiai svyruojančiai didėja, tačiau validacijos tikslumas ties 37 epocha pranoksta mokymosi bei pati validacijos funkcija tolygiai kyla ir neturi 
+tokių svyravimų kaip mokymosi. Beje, palyginus su 3 paveiksliuko tikslumu, po papildomų sluoksnių pridėjimo nei validacijos nei mokymosi tikslumas nepasiekia tokio aukšto tikslumo, koks buvo mažesnio gylio modelyje.
 Nuostolio grafike (12 pav.) parodyta, kad mokymosi ir validacijos funkcijos tolygiai mažėja, tačiau mokymosi svyruoja. Tačiau mažiausias nuostolis šiame grafike yra 69 procentai, kai 4 paveiksliuke, kur parodyta 
 netokio gilaus modelio nuostoliai, mažiausi pasiekti nuostoliai yra 20 procentų.
 
@@ -487,7 +488,7 @@ Antra bandoma optimizavimo funkcija yra Adam. Jos grafikai yra 13 ir 14 paveiksl
 
 Taigi, tikslumo grafiką (13 pav.) palyginus su 5 paveiksliuku matyti, kad mokymosi tikslumo funkcija pakilo iki 100 procentų, panašiu greičiu. Beje, validacijos funkcija gilesniame modelyje pirmose 25 epochų ganėtinai 
 stipriai svyravo, tačiau po to išsilygino ties 96 procentais. 
-Tačiau nuostolio grafikas (14 pav.) labai skiriasi nuo 6 paveiksliuko, kur parodyta ne tokio gilaus modelio nuostolis. Mokymosi funkcija kaip ir mažesnio gylio modelio mažėja iki 0 procnetų, tačiau validacijos nuostolis 
+Tačiau nuostolio grafikas (14 pav.) labai skiriasi nuo 6 paveiksliuko, kur parodyta ne tokio gilaus modelio nuostolis. Mokymosi funkcija kaip ir mažesnio gylio modelio mažėja iki 0 procentų, tačiau validacijos nuostolis 
 daug stipriau svyruoja pirmose 25 epochose, o po to išsilygina ir pradeda tolygiai didėti, pasiekdama didžiausia nuostolį ties 36 procentais.
 
 Prieš paskutinė funkcija yra Adagrad. Šios funkcijos grafikai yra 15 ir 16 paveiksliukai.
@@ -506,10 +507,10 @@ Prieš paskutinė funkcija yra Adagrad. Šios funkcijos grafikai yra 15 ir 16 pa
 
 Tikslumo grafikas (15 pav.) yra labai panašus į mažesnio gylio tikslumo grafiką (7 pav.), kadangi mokymosi tikslumo funkcijos yra beveik vienodos, o validacija šiuo atveju yra šiek tiek mažesnio tikslumo gilesniame 
 modelyje - susilygina ties 95 procentais.
-Nuostolio grafikas (16 pav.) kaip ir 8 paveiksliuke, parodo, kad mokymosi nuostolis staigiai mažėja iki 0 procentų. O validacijos nuostolis pirmose 10 epochų stipriai svyruoje ir po to spračiai auga ir pasiekia maksimalią nuostolio 
+Nuostolio grafikas (16 pav.) kaip ir 8 paveiksliuke, parodo, kad mokymosi nuostolis staigiai mažėja iki 0 procentų. O validacijos nuostolis pirmose 10 epochų stipriai svyruoja ir po to sparčiai auga ir pasiekia maksimalią nuostolio 
 reikšmę ties 34 procentais, kai mažesnio gylio modelio yra apie 15 procentų.
 
-Paskutinioji optimizavimo funkcija yra RMSprop. Jos grafikai yra 17 ir 18 paveiksliukai.
+Paskutinė optimizavimo funkcija yra RMSprop. Jos grafikai yra 17 ir 18 paveiksliukai.
 
 \begin{figure}[!htbp]
   \centering
@@ -523,10 +524,10 @@ Paskutinioji optimizavimo funkcija yra RMSprop. Jos grafikai yra 17 ir 18 paveik
   \end{minipage}
 \end{figure}
 
-Tad, tikslumo grafike (17 pav.) matyti, kad mokymosi funkcija pakyla iki 100 procentų, o valdiacijos funkcija svyruoja iki 40 epochos, o po to išsilygina ties 95 procentais, kai toks pat rezultatą matomas ir 9 paveikslėlyje, kuriame parodyta mažiau gilaus modelio tikslumas.
+Tad, tikslumo grafike (17 pav.) matyti, kad mokymosi funkcija pakyla iki 100 procentų, o validacijos funkcija svyruoja iki 40 epochos, o po to išsilygina ties 95 procentais, kai toks pat rezultatą matomas ir 9 paveikslėlyje, kuriame parodyta mažiau gilaus modelio tikslumas.
 O nuostolio grafikas (18 pav.) parodyta, kad mokymosi funkcija pasiekia 0 procentų. Tačiau validacijos funkcija svyruoja pirmas 45 epochas, o po to išsilygina ties 55 procentais.
 
-\sectionnonum{Rezultaitai ir išvados}
+\sectionnonum{Rezultatai ir išvados}
 Darbo rezultatai:
 \begin{itemize}
 \item Pasirinktas tiriamas konvoliucinis neuroninis tinklas - VGG.
