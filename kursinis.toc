@@ -18,42 +18,42 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.5.}Optimizavimo funkcijos}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.}Konvoliucinis neuroninis tinklas}{7}
+\contentsline {section}{\numberline {2.}Konvoliucinis neuroninis tinklas}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.}Konvoliucija}{7}
+\contentsline {subsection}{\numberline {2.1.}Konvoliucija}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.}Konvoliucinio neuroninio tinklo sluoksniai}{8}
+\contentsline {subsection}{\numberline {2.2.}Konvoliucinio neuroninio tinklo sluoksniai}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.1.}Konvoliucinis sluoksnis}{8}
+\contentsline {subsubsection}{\numberline {2.2.1.}Konvoliucinis sluoksnis}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2.}Sujungimo sluoksnis}{8}
+\contentsline {subsubsection}{\numberline {2.2.2.}Sujungimo sluoksnis}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.3.}Pilno sujungimo sluoksnis}{8}
+\contentsline {subsubsection}{\numberline {2.2.3.}Pilno sujungimo sluoksnis}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.}Architektūros}{9}
+\contentsline {subsection}{\numberline {2.3.}Architektūros}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.}Modelio reguliavimas}{10}
+\contentsline {subsection}{\numberline {2.4.}Modelio reguliavimas}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.}Technologijos}{11}
+\contentsline {section}{\numberline {3.}Technologijos}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.}ImageNet}{11}
+\contentsline {subsection}{\numberline {3.1.}ImageNet}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.}Keras}{11}
+\contentsline {subsection}{\numberline {3.2.}Keras}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.}TensorFlow}{11}
+\contentsline {subsection}{\numberline {3.3.}TensorFlow}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.}Ekspermentas}{12}
+\contentsline {section}{\numberline {4.}Ekspermentas}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.}Duomenų rinkinys}{12}
+\contentsline {subsection}{\numberline {4.1.}Duomenų rinkinys}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.}Programos veikimas}{12}
+\contentsline {subsection}{\numberline {4.2.}Programos veikimas}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.}Modelių mokymas}{13}
+\contentsline {subsection}{\numberline {4.3.}Modelių mokymas}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.1.}Modelio reguliavimas}{13}
+\contentsline {subsubsection}{\numberline {4.3.1.}Modelio reguliavimas}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.2.}Modelio modifikavimas}{14}
+\contentsline {subsubsection}{\numberline {4.3.2.}Modelio modifikavimas}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Rezultaitai ir išvados}{15}
+\contentsline {section}{Rezultaitai ir išvados}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Literatūra}{16}
+\contentsline {section}{Literatūra}{21}

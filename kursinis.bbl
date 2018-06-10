@@ -38,6 +38,50 @@
       \field{title}{Loss Functions and Optimization Algorithms}
       \field{year}{2017}
     \endentry
+    \entry{DBLP:conf/eccv/ChuMBHD16}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=2c29bf6f697b27998dad5c2def172fb6}{%
+           family={Chu},
+           family_i={C\bibinitperiod},
+           given={Brian},
+           given_i={B\bibinitperiod}}}%
+        {{hash=8f1c0df53b87aa308e99e41904c28b1d}{%
+           family={Madhavan},
+           family_i={M\bibinitperiod},
+           given={Vashisht},
+           given_i={V\bibinitperiod}}}%
+        {{hash=0c3325985f73ff54cb6bd5443fd77c0e}{%
+           family={Beijbom},
+           family_i={B\bibinitperiod},
+           given={Oscar},
+           given_i={O\bibinitperiod}}}%
+        {{hash=98392893f850ec17a67d971c57631579}{%
+           family={Hoffman},
+           family_i={H\bibinitperiod},
+           given={Judy},
+           given_i={J\bibinitperiod}}}%
+        {{hash=90180e1a30742e0d15328bfe637c2ef4}{%
+           family={Darrell},
+           family_i={D\bibinitperiod},
+           given={Trevor},
+           given_i={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{4aaee6f3acfea21d765ce52d447c090f}
+      \strng{fullhash}{4aaee6f3acfea21d765ce52d447c090f}
+      \field{labelalpha}{CMB\textsuperscript {+}16}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Computer Vision - {ECCV} 2016 Workshops - Amsterdam, The Netherlands, October 8-10 and 15-16, 2016, Proceedings, Part {III}}
+      \field{title}{Best Practices for Fine-Tuning Visual Classifiers to New Domains}
+      \field{year}{2016}
+      \field{pages}{435\bibrangedash 442}
+      \range{pages}{8}
+      \verb{url}
+      \verb https://doi.org/10.1007/978-3-319-49409-8_34
+      \endverb
+    \endentry
     \entry{Cameron-loss-fun}{book}{}
       \name{author}{1}{}{%
         {{hash=ddd01661d7160cb48e55f66fe978576e}{%

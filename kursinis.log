@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.5.17)  9 JUN 2018 22:34
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.5.17)  10 JUN 2018 17:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1163,11 +1163,11 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'kursinis.bbl' found.
 (./kursinis.bbl
-LaTeX Font Info:    Try loading font information for U+msa on input line 135.
+LaTeX Font Info:    Try loading font information for U+msa on input line 84.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 135.
+LaTeX Font Info:    Try loading font information for U+msb on input line 84.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1190,194 +1190,334 @@ Package biblatex Info: Reference segment=0 on input line 41.
 File: img/NTSluoksniuSistema.jpeg Graphic file (type QTm)
  <use  "img/NTSluoksniuSistema.jpeg" > [4
 
-] [5] [6]
+] [5]
+Overfull \hbox (3.5265pt too wide) in paragraph at lines 169--169
+[]|\EU1/texgyretermes(0)/m/n/12 Pavadinimas| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--171
+[]|\EU1/texgyretermes(0)/m/n/12 Nuolatinio
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--171
+\EU1/texgyretermes(0)/m/n/12 mokymosi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--171
+[]|\EU1/texgyretermes(0)/m/n/12 Parametrų
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--171
+\EU1/texgyretermes(0)/m/n/12 atnaujinimai
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--171
+\EU1/texgyretermes(0)/m/n/12 turi aukštą
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--171
+\EU1/texgyretermes(0)/m/n/12 dispersiją,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--171
+\EU1/texgyretermes(0)/m/n/12 kas leidžia
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--171
+\EU1/texgyretermes(0)/m/n/12 lengviau
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--171
+\EU1/texgyretermes(0)/m/n/12 rasti lokalų
+ []
+
+
+Underfull \hbox (badness 1242) in paragraph at lines 171--171
+[]|\EU1/texgyretermes(0)/m/n/12 Didelis svyra-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--171
+\EU1/texgyretermes(0)/m/n/12 vimas trukdo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
+[]|\EU1/texgyretermes(0)/m/n/12 Parametrų atnaujinimas
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
+\EU1/texgyretermes(0)/m/n/12 vykdomas kiekvienai
+ []
+
+
+Overfull \hbox (3.64404pt too wide) in paragraph at lines 173--173
+[]|\EU1/texgyretermes(0)/m/n/12 Prisitaikančio
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+[]|\EU1/texgyretermes(0)/m/n/12 Greitai kon-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+\EU1/texgyretermes(0)/m/n/12 verguoja ir
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+\EU1/texgyretermes(0)/m/n/12 modelio mo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
+[]|\EU1/texgyretermes(0)/m/n/12 Suskaičiuoja mokymo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
+\EU1/texgyretermes(0)/m/n/12 si greitį kiekvienam
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
+\EU1/texgyretermes(0)/m/n/12 parametrui bei saugo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
+\EU1/texgyretermes(0)/m/n/12 eksponentiškai nykstantį
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
+\EU1/texgyretermes(0)/m/n/12 eksponentiškai mažėjantį
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
+\EU1/texgyretermes(0)/m/n/12 prieš tai buvusį gradi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
+\EU1/texgyretermes(0)/m/n/12 ento vidurkį, panašų į
+ []
+
+
+Overfull \hbox (3.64404pt too wide) in paragraph at lines 175--175
+[]|\EU1/texgyretermes(0)/m/n/12 Prisitaikančio
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]|\EU1/texgyretermes(0)/m/n/12 Nereikia
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\EU1/texgyretermes(0)/m/n/12 rankiniu bū-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\EU1/texgyretermes(0)/m/n/12 du derinti
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\EU1/texgyretermes(0)/m/n/12 mokymosi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]|\EU1/texgyretermes(0)/m/n/12 Mokymosi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\EU1/texgyretermes(0)/m/n/12 greitis visada
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\EU1/texgyretermes(0)/m/n/12 ir nykstantis,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\EU1/texgyretermes(0)/m/n/12 kas lėtina
+ []
+
+
+Overfull \hbox (3.64404pt too wide) in paragraph at lines 177--177
+[]|\EU1/texgyretermes(0)/m/n/12 Prisitaikančio
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--177
+[]|\EU1/texgyretermes(0)/m/n/12 Greitai kon-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--177
+[]|\EU1/texgyretermes(0)/m/n/12 Momentas
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--177
+\EU1/texgyretermes(0)/m/n/12 nedidina
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--177
+\EU1/texgyretermes(0)/m/n/12 funkcijos
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 180
+ []
+
+[6] [7]
 File: img/Konvoliucija.png Graphic file (type QTm)
+ <use  "img/Konvoliucija.png" > [8
 
-<use  "img/Konvoliucija.png" > [7
-
-] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 257--258
+] [9]
+Underfull \hbox (badness 10000) in paragraph at lines 273--274
 []|\EU1/texgyretermes(0)/m/n/12 ILSVRC
  []
 
 
-Underfull \hbox (badness 1043) in paragraph at lines 259--259
+Underfull \hbox (badness 1043) in paragraph at lines 275--275
 \EU1/texgyretermes(0)/m/n/12 raštytus skaičius. Susideda
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 263--263
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
 []|\EU1/texgyretermes(0)/m/n/12 Vidiniai sluoksniai sudėti
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 263--263
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
 \EU1/texgyretermes(0)/m/n/12 paraleliai, naudojami In-
  []
 
 
-Underfull \hbox (badness 4391) in paragraph at lines 263--263
+Underfull \hbox (badness 4391) in paragraph at lines 279--279
 \EU1/texgyretermes(0)/m/n/12 ception moduliai. Vienas
  []
 
 
-Underfull \hbox (badness 1661) in paragraph at lines 263--263
+Underfull \hbox (badness 1661) in paragraph at lines 279--279
 \EU1/texgyretermes(0)/m/n/12 ir 5x5 dydžių konvoliucijos
  []
 
 
-Underfull \hbox (badness 1210) in paragraph at lines 263--263
+Underfull \hbox (badness 1210) in paragraph at lines 279--279
 \EU1/texgyretermes(0)/m/n/12 filtrų bei vidurkio sudėjimo
  []
 
 
-Underfull \hbox (badness 6220) in paragraph at lines 267--267
+Underfull \hbox (badness 6220) in paragraph at lines 283--283
 []|\EU1/texgyretermes(0)/m/n/12 Turi labai daug sluoksnių,
  []
 
 
-Underfull \hbox (badness 2409) in paragraph at lines 267--267
+Underfull \hbox (badness 2409) in paragraph at lines 283--283
 \EU1/texgyretermes(0)/m/n/12 sudėtų vienas po kito, ku-
  []
 
 
-Underfull \hbox (badness 2828) in paragraph at lines 267--267
+Underfull \hbox (badness 2828) in paragraph at lines 283--283
 \EU1/texgyretermes(0)/m/n/12 konvoliucijos ir aktyvavimo
  []
 
 
-Overfull \hbox (17.32082pt too wide) in alignment at lines 255--270
+Overfull \hbox (3.09444pt too wide) in alignment at lines 271--286
  [] [] [] [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 270
+Underfull \vbox (badness 10000) detected at line 286
  []
 
-[9] [10] [11
+[10] [11] [12
+
+] [13
+
+] [14]
+File: img/FT/SGD_acc.png Graphic file (type QTm)
+ <use  "img/FT/SGD_acc.png" >
+File: img/FT/SGD_loss.png Graphic file (type QTm)
+
+<use  "img/FT/SGD_loss.png" >
+File: img/FT/Adam_acc.png Graphic file (type QTm)
+ <use  "img/FT/Adam_acc.png" >
+File: img/FT/Adam_loss.png Graphic file (type QTm)
+
+<use  "img/FT/Adam_loss.png" >
+File: img/FT/Adagrad_loss.png Graphic file (type QTm)
+ <use  "img/FT/Adagrad_loss.png" >
+File: img/FT/Adagrad_acc.png Graphic file (type QTm)
+
+<use  "img/FT/Adagrad_acc.png" > [15]
+File: img/FT/RMSprop_acc.png Graphic file (type QTm)
+ <use  "img/FT/RMSprop_acc.png" >
+File: img/FT/RMSprop_loss.png Graphic file (type QTm)
+
+<use  "img/FT/RMSprop_loss.png" > [16]
+File: img/AL/SGD_acc.png Graphic file (type QTm)
+ <use  "img/AL/SGD_acc.png" >
+File: img/AL/SGD_loss.png Graphic file (type QTm)
+
+<use  "img/AL/SGD_loss.png" >
+File: img/AL/Adam_acc.png Graphic file (type QTm)
+ <use  "img/AL/Adam_acc.png" >
+File: img/AL/Adam_loss.png Graphic file (type QTm)
+
+<use  "img/AL/Adam_loss.png" > [17]
+File: img/AL/Adagrad_acc.png Graphic file (type QTm)
+ <use  "img/AL/Adagrad_acc.png" >
+File: img/AL/Adagrad_loss.png Graphic file (type QTm)
+
+<use  "img/AL/Adagrad_loss.png" >
+File: img/AL/RMSprop_acc.png Graphic file (type QTm)
+ <use  "img/AL/RMSprop_acc.png" >
+File: img/AL/RMSprop_loss.png Graphic file (type QTm)
+
+<use  "img/AL/RMSprop_loss.png" > [18] [19] [20
 
 ]
-
-LaTeX Warning: Citation 'http://adas.cvc.uab.es/task-cv2016/papers/0002.pdf' on
- page 12 undefined on input line 318.
-
-[12
-
-] [13]
-
-! LaTeX Error: Environment subfigure undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.371 \begin{subfigure}
-                       {.5\textwidth}
-? 
-! Missing number, treated as zero.
-<to be read again> 
-                   }
-l.371 \begin{subfigure}{.5\textwidth}
-                                     
-? 
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   }
-l.371 \begin{subfigure}{.5\textwidth}
-                                     
-? 
-
-! LaTeX Error: File `image1' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.373 ...cludegraphics[width=.4\linewidth]{image1}
-                                                  
-? 
-
-! LaTeX Error: \begin{figure} on input line 369 ended by \end{subfigure}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.375 \end{subfigure}
-                     %
-? 
-
-! LaTeX Error: Environment subfigure undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.376 \begin{subfigure}
-                       {.5\textwidth}
-? 
-! Missing number, treated as zero.
-<to be read again> 
-                   }
-l.376 \begin{subfigure}{.5\textwidth}
-                                     
-? 
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   }
-l.376 \begin{subfigure}{.5\textwidth}
-                                     
-? 
-
-! LaTeX Error: File `image1' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.378 ...cludegraphics[width=.4\linewidth]{image1}
-                                                  
-? 
-
-! LaTeX Error: \begin{figure} on input line 369 ended by \end{subfigure}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.380 \end{subfigure}
-                     
-? 
-[14] [15
-
-]
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 420
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 549
 .
- (/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmtt.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmtt.fd
 File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [16
+) [21
 
-]
-(./kursinis.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                kursinis
-(biblatex)                and rerun LaTeX afterwards.
-
+] (./kursinis.aux)
 Package logreq Info: Writing requests to 'kursinis.run.xml'.
 \openout1 = `kursinis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25886 strings out of 493638
- 476352 string characters out of 6146796
- 847804 words of memory out of 5000000
- 28935 multiletter control sequences out of 15000+600000
+ 25883 strings out of 493638
+ 476766 string characters out of 6146796
+ 847860 words of memory out of 5000000
+ 28952 multiletter control sequences out of 15000+600000
  16614 words of font info for 86 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  68i,12n,96p,10497b,2268s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on kursinis.pdf (16 pages).
+Output written on kursinis.pdf (21 pages).

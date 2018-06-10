@@ -136,6 +136,7 @@ Aktyvavimo funkcijos yra skirstomos į:
 \end{itemize}
 \end{itemize}
 
+Šio darbo ekspermento dalyje buvo naudotos ReLU ir sigmoidinė aktyvavimo funckcijos.
 
 \subsection{Nuostolio funkcijos}
 Kai dirbtinis neuroninis tinklas mokosi, jo gaunami rezultatai gali labai skirtis nuo tikėtinų rezultatų. Todėl nuostolio funkcija apskaičiuoja kaip stipriai
@@ -157,9 +158,26 @@ Kelios klasifikacijos nuostolio funkcijos:
 \item Minkštų maržų klasifikatorius.
 \end{itemize}
 
+
 \subsection{Optimizavimo funkcijos}
 Optimizavimo funkcijos naudojamos vidinių tinklo parametrų atnaujinimui, kad sumažinti gaunamų rezultatų netikslumą. 
-Visos optimizavimo funkcijos gali būti suskirtytos į du tipus - nuolatinio mokymosi greičio ir prisitaikančio mokymosi.
+Visos optimizavimo funkcijos gali būti suskirtytos į du tipus - nuolatinio mokymosi greičio ir prisitaikančio mokymosi. 
+Lentelėje 1 išvardinti visos populiariausios optimizavimo funckijos.
+
+\begin{longtable}[h!]{ | p{2cm} | p{2.2cm} | p{2.5cm} | p{2.5cm} | p{4.5cm} | } 
+\hline
+Pavadinimas & Tipas & Privalumai & Trūkumai & Veikimas \\
+\hline
+SGD & Nuolatinio mokymosi greičio & Parametrų atnaujinimai turi aukštą dispersiją, kas leidžia lengviau rasti lokalų minimumą. & Didelis svyravimas trukdo konverguoti. & Parametrų atnaujinimas vykdomas kiekvienai mokymo iteracijai. \\
+\hline
+Adam & Prisitaikančio mokymosi & Greitai konverguoja ir modelio mokymosi greitis yra didelis bei efektyvus. & Praleidžia mažą lokalų minimumą. & Suskaičiuoja mokymosi greitį kiekvienam parametrui bei saugo eksponentiškai nykstantį prieš tai buvusį kvadraditinio gradiento vidurkį ir eksponentiškai mažėjantį prieš tai buvusį gradiento vidurkį, panašų į momentą. \\
+\hline
+Adagrad & Prisitaikančio mokymosi & Nereikia rankiniu būdu derinti mokymosi greičio. & Mokymosi greitis visada yra mažėjantis ir nykstantis, kas lėtina konvergavimą. & Leidžia mokymosi greičiui priklausyti nuo parametrų. Dideli atnaujinimai nedažniems parametrams, maži atnaujinimai dažniems parametrams. \\
+\hline
+RMSprop & Prisitaikančio mokymosi & Greitai konverguoja. & Momentas nedidina funkcijos efektyvumo. & Dalyja mokymosi greitį iš eksponentiškai nykstančio kvadraditinio gradiento vidurkio. \\
+\hline
+\caption{Optimizavimo funkcijos}
+\end{longtable}
 
 Nuolatinio mokymosi greičio funkcijos turi hiperparametrą - mokymosi greitį. Jis privalo būti nustatytas, tačiau 
 pasirinkti tinkamą mokymosi greitį gali būti sudėtinga - pasirinkus per mažą vidiniai parametrai gali labai lėtai 
@@ -174,8 +192,6 @@ mokymosi greitis yra pritaikomas visiems vidinių parametrų atnaujinimams.
 Prisitaikančio mokymosi funkcijos turi atskirus kiekvieno parametro mokymosi greičio metodus, kurie teikia euristikos 
 metodą, nereikalaujant brangaus darbo rankiniu būdu nustatant hiperparametrus mokymosi greičiui. Tačiau šios funkcijos 
 generalizuoja blogiau negu nuolatinio mokymosi greičio funkcijos, nors ir mokymosi metu pasirodo geriau \cite{2017arXiv170508292W}.
-
-% optimizavimo funkciju pvz?
 
 % generalization -> http://www.ra.cs.uni-tuebingen.de/SNNS/UserManual/node16.html
 
@@ -252,7 +268,7 @@ Konvoliuciniai neuroniniai tinklai turi keletą skirtingų architektūrų, kurio
 apie įvairias architektūras.
 
 
-\begin{longtable}[h!]{ | p{4cm} | p{1cm} | p{3cm} | p{5cm} | p{2cm} | } 
+\begin{longtable}[h]{ | p{4cm} | p{1cm} | p{3cm} | p{5cm} | p{1.5cm} | } 
 \hline
 Pavadinimas & Metai & Parametrų kiekis & Veikimas & ILSVRC vieta \\
 \hline
@@ -315,7 +331,7 @@ klasifikaciją - nustatymas ar katė, ar šuo pavaizduotas paveikslėlyje.
 \subsection{Duomenų rinkinys}
 Šiais laikais konvoliuciniai neuroniniai tinklai pranoksta prieš tai buvusias naujausias technologijas naudotas paveiksliukų klasifikacijai. Viena iš pagrindinių priežasčių 
 yra dideli ir gerai aprašyti duomenų rinkiniai, kaip kad ImageNet duomenų bazė. Geriausiai tinklas pasirodo, kai yra apmokomas su bendrinėm ypatybėm ir dar efektyviau 
-pasirodo kai yra sureguliuoti su specifiniu duomenų rinkiniu \cite{http://adas.cvc.uab.es/task-cv2016/papers/0002.pdf}. Optimalus duomenų kiekis, kad gerai sureguliuoti 
+pasirodo kai yra sureguliuoti su specifiniu duomenų rinkiniu \cite{DBLP:conf/eccv/ChuMBHD16}. Optimalus duomenų kiekis, kad gerai sureguliuoti 
 modelį yra apie 10 000 paveiksliukų. 
 
 Tačiau realybėje visų klasių objektų paveiksliukų nėra be galo daug, kadangi reikia skirti labai daug laiko ir žmogiškųjų resursų paveiksliukų žymėjimui bei turėti tiek 
@@ -365,47 +381,155 @@ Mokymosi greitis buvo išrinktas 1e-4, kas yra 0.0001.
 Pasirinkta buvo pradėti ekspermentą nuo modelio modifikavimo, kadangi tokiu būdu galima pamatyti kaip modelio paskutiniai keli sluoksniai yra apmokomi ir kaip tikslumas ir nuostolis 
 keičiasi mokymo metu, kai yra naudojamas negilus modelis.
 
-Taigi, pirmiausiai buvo pasirinkta SGD optimizavimo funkcija. Apmokius modelį buvo gauti grafikai XXX.
-\begin{figure}
-\centering
-\begin{subfigure}{.5\textwidth}
+Taigi, pirmiausiai buvo pasirinkta SGD optimizavimo funkcija. Apmokius modelį buvo gauti grafikai - 3 ir 4 paveiksliukai.
+
+\begin{figure}[!htbp]
   \centering
-  \includegraphics[width=.4\linewidth]{image1}
-  \caption{A subfigure}
-\end{subfigure}%
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[width=.4\linewidth]{image1}
-  \caption{A subfigure}
-\end{subfigure}
-\caption{A figure with two subfigures}
+  \begin{minipage}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{img/FT/SGD_acc.png}
+    \caption{Modelio mokymosi ir validacijos tikslumas naudojant SGD}
+  \end{minipage}
+  \begin{minipage}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{img/FT/SGD_loss.png}
+    \caption{Modelio mokymosi ir validacijos nuostolis naudojant SGD}
+  \end{minipage}
 \end{figure}
-Grafikas (x pav.) parodo, kad tikslumas kyla kuo daugiau modelis išmoksta taip pat validacijos grafikas pranoksta mokymosi. Aukščiausias tikslumo rezultatas yra virš XX procentų.
-Bei grafikas (x pav.) rodo nuostolį per epochas. Tad, jis parodo, kad XXX
 
-Paskui keičiama optimizavimo funkcija į Adam - mokymosi rezultatai matomi grafikuose XX.
+Grafikas (3 pav.) parodo, kad tikslumas kyla kuo daugiau modelis išmoksta ir validacijos funkcija pirmiausiai pranoksta mokymosi, bet vėliau susilygina. Aukščiausias tikslumo rezultatas yra apie 94 procentus.
+Bei grafikas (4 pav.) rodo nuostolį per epochas. Tad, jis parodo, kad mokymosi ir validacijos nuotoliai ties 47 epocha susikerta ir validacijos nuostoliai tampa didesni už mokymosi.
 
-Tikslumo grafikas parodo tą ir tą.
-O nuostolio grafikas parodo aną ir aną.
+Paskui keičiama optimizavimo funkcija į Adam - mokymosi rezultatai matomi grafikuose - 5 ir 6 paveiksliukuose.
 
-Trečiasis testuojama optimizavimo funkcija yra Adagrad. Jos grafikai yra XXX
+\begin{figure}[!htbp]
+  \centering
+  \begin{minipage}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{img/FT/Adam_acc.png}
+    \caption{Modelio mokymosi ir validacijos tikslumas naudojant Adam}
+  \end{minipage}
+  \begin{minipage}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{img/FT/Adam_loss.png}
+    \caption{Modelio mokymosi ir validacijos nuostolis naudojant Adam}
+  \end{minipage}
+\end{figure}
 
+Tikslumo grafikas (5 pav.) parodo, kad mokymosi tikslumas per kelias pirmas epochas pasiekia beveik 100 procentinį tikslumą, tačiau validacijos lieka apie 96 procentus ir daugiau nebekyla.
+O nuostolio grafikas (6 pav.) parodo, kad mokymosi nuostolis stagiai nukrenta iki beveik 0 procentų nuostolių. Tačiau validacijos nuostoliai per kelias epocjas nukrenta, o po to staigiai pradeda augti ir išsilygina ties 24 procentais.
 
-Taigi, tikslumo grafikas parodo, kad XX
-O nuostolio grafikas parodo kad XXX
+Trečiasis testuojama optimizavimo funkcija yra Adagrad. Jos grafikai yra 7 ir 8 paveiksliukai.
+
+\begin{figure}[!htbp]
+  \centering
+  \begin{minipage}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{img/FT/Adagrad_loss.png}
+    \caption{Modelio mokymosi ir validacijos tikslumas naudojant Adagrad}
+  \end{minipage}
+  \begin{minipage}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{img/FT/Adagrad_acc.png}
+    \caption{Modelio mokymosi ir validacijos nuostolis naudojant Adagrad}
+  \end{minipage}
+\end{figure}
+
+Taigi, tikslumo grafikas (7 pav.) parodo, kad mokymosi tikslumas per pirmas 20 epochų pakyla beveik iki 100 procentų, o validacijos tikslumas pakyla iki 96 procentų ir ties tiek pasilieka.
+O nuostolio grafikas (8 pav.) parodo, kad taip pat kaip ir mokymosi tikslumas taip ir nuostolis per pirmas 20 epochų nukrenta iki beveik 0 procentų ir ties ten lieka. Kai validacijos nuostolis nukrenta iki tolygiai auga iki 11 procentų, o po to tolugiai kyla iki 15 procentų.
+
+Paskutinis bandymo optimizavimo funkcija yra RMSprop. Ji yra parodyta 9 ir 10 paveiksliukuose.
+
+\begin{figure}[!htbp]
+  \centering
+  \begin{minipage}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{img/FT/RMSprop_acc.png}
+    \caption{Modelio mokymosi ir validacijos tikslumas naudojant RMSprop}
+  \end{minipage}
+  \begin{minipage}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{img/FT/RMSprop_loss.png}
+    \caption{Modelio mokymosi ir validacijos nuostolis naudojant RMSprop}
+  \end{minipage}
+\end{figure}
+
+Tad, tikslumo grafikas (9 pav.) parodo, kad mokymosi funkcija šokteli iki 100 procentų ir ten išsilaiko, kai validacijos funckija stipriai svyruoja tarp 93 ir 95 procentų, bet per visas epochas neišsilygina.
+O nuostolio grafikas (10 pav.) parodo, kad mokymosi funkcija nukrenta iki beveik 0 procentų ir ten išsilaiko. Tačiau validacijos funkcija labai stipriai svyruoja ir didėja. Pasiekdama aukščiausią nuostolį ties 82 procentais.
 
 \subsubsection{Modelio modifikavimas}
-Po to buvo išnaujo apmokyti modeliai su 14 papildomų sluoksnių. Visi prametrai ir duomenų rinkinys liko tokie patys tik optimizavimo funkcija vėl buvo keičiama tam, kad pamatyti 
-kaip skirsis modelio tikslumas bei nuostolis.
+Išnaujo apmokyti modeliai su 14 papildomų sluoksnių. Visi prametrai ir duomenų rinkinys liko tokie patys tik optimizavimo funkcija vėl buvo keičiama.
 
-Tad, kaip ir prieš tai pirmoji modifikavimo funkcija yra SGD. Jos grafikai matomi XXX
+Tad, kaip ir prieš tai pirmoji modifikavimo funkcija yra SGD. Jos grafikai yra 11 ir 12 paveiksliukai.
 
+\begin{figure}[!htbp]
+  \centering
+  \begin{minipage}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{img/AL/SGD_acc.png}
+    \caption{Gilesnio modelio mokymosi ir validacijos tikslumas naudojant SGD}
+  \end{minipage}
+  \begin{minipage}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{img/AL/SGD_loss.png}
+    \caption{Gilesnio modelio mokymosi ir validacijos nuostolis naudojant SGD}
+  \end{minipage}
+\end{figure}
+
+Tikslumo grafikas (11 pav.) matyti, kad mokymosi funkcija tolygiai svyruojančiai didėja, tačiau valdiacijos tikslumas ties 37 epocha pranoksta mokymosi bei pati validacijos funkcija tolygiai kyla ir neturi 
+tokių svyravimų kaip mokymosi. Beje, palyginus su 3 paveiksliuko tikslumu, po papildomų sluoksnių pridėjimo nei valdiacijos nei mokymosi tikslumas nepasiekia tokio aukšto tiksumo, koks buvo mažesnio gylio modelyje.
+Nuostolio grafike (12 pav.) parodyta, kad mokymosi ir validacijos funkcijos tolygiai mažėja, tačiau mokymosi svyruoja. Tačiau mažiausias nuostolis šiame grafike yra 69 procentai, kai 4 paveiksliuke, kur parodyta 
+netokio gilaus modelio nuostoliai, mažiausi pasiekti nuostoliai yra 20 procentų.
+
+Antra bandoma optimizavimo funkcija yra Adam. Jos grafikai yra 13 ir 14 paveiksliukai.
+
+\begin{figure}[!htbp]
+  \centering
+  \begin{minipage}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{img/AL/Adam_acc.png}
+    \caption{Gilesnio modelio mokymosi ir validacijos tikslumas naudojant Adam}
+  \end{minipage}
+  \begin{minipage}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{img/AL/Adam_loss.png}
+    \caption{Gilesnio modelio mokymosi ir validacijos nuostolis naudojant Adam}
+  \end{minipage}
+\end{figure}
+
+Taigi, tikslumo grafiką (13 pav.) palyginus su 5 paveiksliuku matyti, kad mokymosi tikslumo funkcija pakilo iki 100 procentų, panašiu greičiu. Beje, validacijos funkcija gilesniame modelyje pirmose 25 epochų ganėtinai 
+stipriai svyravo, tačiau po to išsilygino ties 96 procentais. 
+Tačiau nuostolio grafikas (14 pav.) labai skiriasi nuo 6 paveiksliuko, kur parodyta ne tokio gilaus modelio nuostolis. Mokymosi funkcija kaip ir mažesnio gylio modelio mažėja iki 0 procnetų, tačiau validacijos nuostolis 
+daug stipriau svyruoja pirmose 25 epochose, o po to išsilygina ir pradeda tolygiai didėti, pasiekdama didžiausia nuostolį ties 36 procentais.
+
+Prieš paskutinė funkcija yra Adagrad. Šios funkcijos grafikai yra 15 ir 16 paveiksliukai.
+
+\begin{figure}[!htbp]
+  \centering
+  \begin{minipage}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{img/AL/Adagrad_acc.png}
+    \caption{Gilesnio modelio mokymosi ir validacijos tikslumas naudojant Adagrad}
+  \end{minipage}
+  \begin{minipage}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{img/AL/Adagrad_loss.png}
+    \caption{Gilesnio modelio mokymosi ir validacijos nuostolis naudojant Adagrad}
+  \end{minipage}
+\end{figure}
+
+Tikslumo grafikas (15 pav.) yra labai panašus į mažesnio gylio tikslumo grafiką (7 pav.), kadangi mokymosi tikslumo funkcijos yra beveik vienodos, o validacija šiuo atveju yra šiek tiek mažesnio tikslumo gilesniame 
+modelyje - susilygina ties 95 procentais.
+Nuostolio grafikas (16 pav.) kaip ir 8 paveiksliuke, parodo, kad mokymosi nuostolis staigiai mažėja iki 0 procentų. O validacijos nuostolis pirmose 10 epochų stipriai svyruoje ir po to spračiai auga ir pasiekia maksimalią nuostolio 
+reikšmę ties 34 procentais, kai mažesnio gylio modelio yra apie 15 procentų.
+
+Paskutinioji optimizavimo funkcija yra RMSprop. Jos grafikai yra 17 ir 18 paveiksliukai.
+
+\begin{figure}[!htbp]
+  \centering
+  \begin{minipage}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{img/AL/RMSprop_acc.png}
+    \caption{Gilesnio modelio mokymosi ir validacijos tikslumas naudojant RMSprop}
+  \end{minipage}
+  \begin{minipage}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{img/AL/RMSprop_loss.png}
+    \caption{Gilesnio modelio mokymosi ir validacijos nuostolis naudojant RMSprop}
+  \end{minipage}
+\end{figure}
+
+Tad, tikslumo grafike (17 pav.) matyti, kad mokymosi funkcija pakyla iki 100 procentų, o valdiacijos funkcija svyruoja iki 40 epochos, o po to išsilygina ties 95 procentais, kai toks pat rezultatą matomas ir 9 paveikslėlyje, kuriame parodyta mažiau gilaus modelio tikslumas.
+O nuostolio grafikas (18 pav.) parodyta, kad mokymosi funkcija pasiekia 0 procentų. Tačiau validacijos funkcija svyruoja pirmas 45 epochas, o po to išsilygina ties 55 procentais.
 
 \sectionnonum{Rezultaitai ir išvados}
 Darbo rezultatai:
 \begin{itemize}
 \item Pasirinktas tiriamas konvoliucinis neuroninis tinklas - VGG.
-\item Rasta geriausia ir tinkamiausia optimizavimo funkicja - XX.
 \item VGG buvo pritaikytas ir modifikuotas išsikeltam tikslui.
 \item Konvoliucinis neuroninis tinklas buvo apmokytas.
 \end{itemize}
@@ -413,8 +537,12 @@ Darbo rezultatai:
 
 Darbo išvados:
 \begin{itemize}
-\item 
-\item
+\item Apmokius skirtingų gylių neuroninius tinklus, buvo nustatyta, kad gilesnis tinklas mokomojoje dalyje pasirodo labai gerai - tikslumas auga ir nuostolis mažėja, tačiau 
+validacijos metu tikslumas pakyla iki tam tikros reikšmės, o praradimas tolygiai auga. Galima daryti išvadą, kad gilesnis neuroninis tinklas su mažu kiekiu duomenų gali juos 
+įsiminti, o ne išmokti atpažinti.
+\item Modelis apmokytas su kitais duomenimis gali būti pritaikytas atpažinti specifinius objektus.
+\item Pritaikius *dar kol kas ieškomą* optimizavimo funkciją, galima sumažinti praradimo augimą giliuose neuroniniuose tinkluose.
+\item Pritaikius *kitą dar kol kas ieškomą* optimizavimo funkciją, galima pagerinti modelio apmokytas su kitais duomenimis pritaikymą specifiniai užduočiai tikslumą bei praradimą.
 \end{itemize}
 
 \printbibliography[heading=bibintoc] 
