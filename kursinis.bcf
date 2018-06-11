@@ -2053,16 +2053,23 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">Goodfellow-et-al-2016</bcf:citekey>
-    <bcf:citekey order="2">Woodford-2018</bcf:citekey>
-    <bcf:citekey order="3">DBLP:journals/corr/XuWCL15</bcf:citekey>
-    <bcf:citekey order="4">Cameron-loss-fun</bcf:citekey>
-    <bcf:citekey order="5">clas-loss-2017</bcf:citekey>
-    <bcf:citekey order="6">2017arXiv170508292W</bcf:citekey>
-    <bcf:citekey order="7">Convolution-book</bcf:citekey>
-    <bcf:citekey order="8">layers-CS231n</bcf:citekey>
-    <bcf:citekey order="9">layers-fullyconnected</bcf:citekey>
-    <bcf:citekey order="10">DBLP:journals/corr/YosinskiCBL14</bcf:citekey>
-    <bcf:citekey order="11">DBLP:conf/eccv/ChuMBHD16</bcf:citekey>
+    <bcf:citekey order="2">1193152</bcf:citekey>
+    <bcf:citekey order="3">Woodford-2018</bcf:citekey>
+    <bcf:citekey order="4">shiffman2012nature</bcf:citekey>
+    <bcf:citekey order="5">backpropogation</bcf:citekey>
+    <bcf:citekey order="6">activation</bcf:citekey>
+    <bcf:citekey order="7">DBLP:journals/corr/XuWCL15</bcf:citekey>
+    <bcf:citekey order="8">Cameron-loss-fun</bcf:citekey>
+    <bcf:citekey order="9">clas-loss-2017</bcf:citekey>
+    <bcf:citekey order="10">Niknafs2016NeuralNO</bcf:citekey>
+    <bcf:citekey order="11">leondes1998image</bcf:citekey>
+    <bcf:citekey order="12">2017arXiv170508292W</bcf:citekey>
+    <bcf:citekey order="13">CnnImages</bcf:citekey>
+    <bcf:citekey order="14">Convolution-book</bcf:citekey>
+    <bcf:citekey order="15">layers-CS231n</bcf:citekey>
+    <bcf:citekey order="16">layers-fullyconnected</bcf:citekey>
+    <bcf:citekey order="17">DBLP:journals/corr/YosinskiCBL14</bcf:citekey>
+    <bcf:citekey order="18">DBLP:conf/eccv/ChuMBHD16</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="anyt/global" type="entry" sortscheme="anyt" sortnamekeyscheme="global">
   <bcf:sorting>

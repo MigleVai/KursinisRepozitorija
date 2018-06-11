@@ -177,6 +177,32 @@
       \verb http://arxiv.org/abs/1411.1792
       \endverb
     \endentry
+    \entry{CnnImages}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f78d44d71f1f60860befbc60e050a5d6}{%
+           family={Yihong\bibnamedelima ZHANG},
+           family_i={Y\bibinitperiod\bibinitdelim Z\bibinitperiod},
+           given={Adam\bibnamedelima JATOWT},
+           given_i={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=0f3640025674052a747509e891fcd98a}{%
+           family={KAWAI},
+           family_i={K\bibinitperiod},
+           given={Yukiko},
+           given_i={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{2d4fc1011c3dd655458579db54e54584}
+      \strng{fullhash}{2d4fc1011c3dd655458579db54e54584}
+      \field{labelalpha}{YK18}
+      \field{sortinit}{Y}
+      \field{sortinithash}{3cbc1e3d286284cedb5e5218a3248f94}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Picture or Words: Predicting Twitter Image Post Popularity with Deep Learning}
+      \field{year}{2018}
+      \verb{url}
+      \verb http://db-event.jpn.org/deim2018/data/papers/365.pdf
+      \endverb
+    \endentry
     \entry{layers-fullyconnected}{misc}{}
       \name{author}{1}{}{%
         {{hash=985c4475f1e55e59f7bd68f5ac293c6b}{%
@@ -195,6 +221,34 @@
       \field{howpublished}{\url{https://ujjwalkarn.me/2016/08/11/intuitive-explanation-convnets/}}
       \field{title}{An Intuitive Explanation of Convolutional Neural Networks}
       \field{year}{2016}
+    \endentry
+    \entry{leondes1998image}{book}{}
+      \name{author}{1}{}{%
+        {{hash=258e7b25e81c3a80b84e49d9cd211dd2}{%
+           family={Leondes},
+           family_i={L\bibinitperiod},
+           given={C.T.},
+           given_i={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier Science}%
+      }
+      \strng{namehash}{258e7b25e81c3a80b84e49d9cd211dd2}
+      \strng{fullhash}{258e7b25e81c3a80b84e49d9cd211dd2}
+      \field{labelalpha}{Leo98}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780080551449}
+      \field{series}{Neural Network Systems Techniques and Applications}
+      \field{title}{Image Processing and Pattern Recognition}
+      \field{year}{1998}
+      \field{pages}{323\bibrangedash 324}
+      \range{pages}{2}
+      \verb{url}
+      \verb https://books.google.lt/books?id=oDewAeVxr-4C
+      \endverb
     \endentry
     \entry{layers-CS231n}{misc}{}
       \name{author}{1}{}{%
@@ -217,6 +271,24 @@
       \field{howpublished}{\url{https://cs231n.github.io/convolutional-networks/}}
       \field{title}{Convolutional Neural Networks}
       \field{year}{2015}
+    \endentry
+    \entry{Niknafs2016NeuralNO}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=96463314aae8e140df85a7a0ada45478}{%
+           family={Niknafs},
+           family_i={N\bibinitperiod},
+           given={Mina},
+           given_i={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{96463314aae8e140df85a7a0ada45478}
+      \strng{fullhash}{96463314aae8e140df85a7a0ada45478}
+      \field{labelalpha}{Nik16}
+      \field{sortinit}{N}
+      \field{sortinithash}{925374ca63e7594de7fafdb83e64d41d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Neural Network Optimization}
+      \field{year}{2016}
     \endentry
     \entry{Convolution-book}{book}{}
       \name{author}{2}{}{%
@@ -243,6 +315,88 @@
       \field{labeltitlesource}{title}
       \field{title}{Deep Learning}
       \field{year}{2017}
+    \endentry
+    \entry{backpropogation}{article}{}
+      \name{author}{2}{}{%
+        {{hash=8b1308ad0b8c43ab71078b614ba96c15}{%
+           family={Rajab},
+           family_i={R\bibinitperiod},
+           given={Thaqif},
+           given_i={T\bibinitperiod}}}%
+        {{hash=a8271fe843792c9296b75c338a125ab9}{%
+           family={Salleh},
+           family_i={S\bibinitperiod},
+           given={Roselina},
+           given_i={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{ee790f159eabbf9093d981c87ecfd67d}
+      \strng{fullhash}{ee790f159eabbf9093d981c87ecfd67d}
+      \field{labelalpha}{RS17}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{UTM Computing Proceedings Innovations in Computing Technology and Applications}
+      \field{isbn}{978-967-0194-95-0}
+      \field{title}{Classıfıcatıon of Dıabetes Dısease Usıng Backpropagatıon and Radıal Basıs Functıon Network}
+      \field{volume}{2}
+      \field{year}{2017}
+      \field{pages}{3\bibrangedash 4}
+      \range{pages}{2}
+    \endentry
+    \entry{shiffman2012nature}{book}{}
+      \name{author}{1}{}{%
+        {{hash=bb2cae559cb0df38f8fad3220dd275da}{%
+           family={Shiffman},
+           family_i={S\bibinitperiod},
+           given={D.},
+           given_i={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {D. Shiffman}%
+      }
+      \strng{namehash}{bb2cae559cb0df38f8fad3220dd275da}
+      \strng{fullhash}{bb2cae559cb0df38f8fad3220dd275da}
+      \field{labelalpha}{Shi12}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{chapter}{10}
+      \field{isbn}{9780985930806}
+      \field{title}{The Nature of Code}
+      \field{year}{2012}
+      \verb{url}
+      \verb https://books.google.lt/books?id=hoK6lgEACAAJ
+      \endverb
+    \endentry
+    \entry{activation}{article}{}
+      \name{author}{2}{}{%
+        {{hash=19e29c5e76c175ba7dbec8258a75770a}{%
+           family={Vehbi\bibnamedelima Olgac},
+           family_i={V\bibinitperiod\bibinitdelim O\bibinitperiod},
+           given={A},
+           given_i={A\bibinitperiod}}}%
+        {{hash=763d805f58bee8c28ed32815b52a54a0}{%
+           family={Karlik},
+           family_i={K\bibinitperiod},
+           given={Bekir},
+           given_i={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{62bab474116e38e717c0cdfeb798358c}
+      \strng{fullhash}{62bab474116e38e717c0cdfeb798358c}
+      \field{labelalpha}{VK11}
+      \field{sortinit}{V}
+      \field{sortinithash}{d18f5ce25ce0b5ca7f924e3f6c04870e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Journal of Artificial Intelligence And Expert Systems}
+      \field{month}{02}
+      \field{title}{Performance Analysis of Various Activation Functions in Generalized MLP Architectures of Neural Networks}
+      \field{volume}{1}
+      \field{year}{2011}
+      \field{pages}{111\bibrangedash 122}
+      \range{pages}{12}
     \endentry
     \entry{Woodford-2018}{misc}{}
       \name{author}{1}{}{%
@@ -346,6 +500,44 @@
       \endverb
       \verb{url}
       \verb http://arxiv.org/abs/1505.00853
+      \endverb
+    \endentry
+    \entry{1193152}{article}{}
+      \name{author}{3}{}{%
+        {{hash=0936fcdbdebd461f10d66e182c542989}{%
+           family={Zhang},
+           family_i={Z\bibinitperiod},
+           given={Qi-Jun},
+           given_i={Q\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=63743b434e1995cbd8d318b59a59db6e}{%
+           family={Gupta},
+           family_i={G\bibinitperiod},
+           given={K.\bibnamedelimi C.},
+           given_i={K\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=2d4f09bd9c731003f28f916a16066fcc}{%
+           family={Devabhaktuni},
+           family_i={D\bibinitperiod},
+           given={V.\bibnamedelimi K.},
+           given_i={V\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{21dc39221492c3eaeae537b7d4353c1f}
+      \strng{fullhash}{21dc39221492c3eaeae537b7d4353c1f}
+      \field{labelalpha}{ZGD03}
+      \field{sortinit}{Z}
+      \field{sortinithash}{fdda4caaa6b5fa63e0c081dcb159543a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0018-9480}
+      \field{journaltitle}{IEEE Transactions on Microwave Theory and Techniques}
+      \field{month}{04}
+      \field{number}{4}
+      \field{title}{Artificial neural networks for RF and microwave design - from theory to practice}
+      \field{volume}{51}
+      \field{year}{2003}
+      \field{pages}{1339\bibrangedash 1350}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/TMTT.2003.809179
       \endverb
     \endentry
   \endsortlist

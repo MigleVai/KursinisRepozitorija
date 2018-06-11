@@ -52,7 +52,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.3.1.}Modelio reguliavimas}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.2.}Modelio modifikavimas}{17}
+\contentsline {subsubsection}{\numberline {4.3.2.}Modelio modifikavimas}{16}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Rezultatai ir išvados}{20}
 \defcounter {refsection}{0}\relax 
