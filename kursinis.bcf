@@ -2052,24 +2052,34 @@
     <bcf:datasource type="file" datatype="bibtex">bibliografija.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">Goodfellow-et-al-2016</bcf:citekey>
-    <bcf:citekey order="2">1193152</bcf:citekey>
-    <bcf:citekey order="3">Woodford-2018</bcf:citekey>
-    <bcf:citekey order="4">shiffman2012nature</bcf:citekey>
-    <bcf:citekey order="5">backpropogation</bcf:citekey>
-    <bcf:citekey order="6">activation</bcf:citekey>
-    <bcf:citekey order="7">DBLP:journals/corr/XuWCL15</bcf:citekey>
-    <bcf:citekey order="8">Cameron-loss-fun</bcf:citekey>
-    <bcf:citekey order="9">clas-loss-2017</bcf:citekey>
-    <bcf:citekey order="10">Niknafs2016NeuralNO</bcf:citekey>
-    <bcf:citekey order="11">leondes1998image</bcf:citekey>
-    <bcf:citekey order="12">2017arXiv170508292W</bcf:citekey>
-    <bcf:citekey order="13">CnnImages</bcf:citekey>
-    <bcf:citekey order="14">Convolution-book</bcf:citekey>
-    <bcf:citekey order="15">layers-CS231n</bcf:citekey>
-    <bcf:citekey order="16">layers-fullyconnected</bcf:citekey>
-    <bcf:citekey order="17">DBLP:journals/corr/YosinskiCBL14</bcf:citekey>
-    <bcf:citekey order="18">DBLP:conf/eccv/ChuMBHD16</bcf:citekey>
+    <bcf:citekey order="1">firstIdea</bcf:citekey>
+    <bcf:citekey order="2">classificationDef</bcf:citekey>
+    <bcf:citekey order="3">Taigman:2014:DCG:2679600.2680208</bcf:citekey>
+    <bcf:citekey order="4">cancer</bcf:citekey>
+    <bcf:citekey order="5">eyedis</bcf:citekey>
+    <bcf:citekey order="6">deepGlint</bcf:citekey>
+    <bcf:citekey order="7">Raschka:2015:PML:2886323</bcf:citekey>
+    <bcf:citekey order="8">Goodfellow-et-al-2016</bcf:citekey>
+    <bcf:citekey order="9">1193152</bcf:citekey>
+    <bcf:citekey order="10">Woodford-2018</bcf:citekey>
+    <bcf:citekey order="11">shiffman2012nature</bcf:citekey>
+    <bcf:citekey order="12">backpropogation</bcf:citekey>
+    <bcf:citekey order="13">activation</bcf:citekey>
+    <bcf:citekey order="14">DBLP:journals/corr/XuWCL15</bcf:citekey>
+    <bcf:citekey order="15">Cameron-loss-fun</bcf:citekey>
+    <bcf:citekey order="16">clas-loss-2017</bcf:citekey>
+    <bcf:citekey order="17">Niknafs2016NeuralNO</bcf:citekey>
+    <bcf:citekey order="18">leondes1998image</bcf:citekey>
+    <bcf:citekey order="19">2017arXiv170508292W</bcf:citekey>
+    <bcf:citekey order="20">CnnImages</bcf:citekey>
+    <bcf:citekey order="21">Convolution-book</bcf:citekey>
+    <bcf:citekey order="22">DBLP:journals/corr/abs-1708-08711</bcf:citekey>
+    <bcf:citekey order="23">CNNbasic</bcf:citekey>
+    <bcf:citekey order="24">layers-CS231n</bcf:citekey>
+    <bcf:citekey order="25">7927440</bcf:citekey>
+    <bcf:citekey order="26">layers-fullyconnected</bcf:citekey>
+    <bcf:citekey order="27">DBLP:journals/corr/YosinskiCBL14</bcf:citekey>
+    <bcf:citekey order="28">DBLP:conf/eccv/ChuMBHD16</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="anyt/global" type="entry" sortscheme="anyt" sortnamekeyscheme="global">
   <bcf:sorting>

@@ -25,8 +25,8 @@
 \faculty{Matematikos ir informatikos fakultetas}
 \department{Programų sistemų katedra}
 \papertype{Kursinis darbas}
-\title{Labai panašių neuroninių klasių atskyrimas dirbtiniais neuroniniais tinklais}
-\titleineng{(Separation of very similar neuronal classes by artificial neural networks)}
+\title{Mažos duomenų imties problemos poveikis klasifikacijos tikslumui naudojant dirbtinius neuroninius tinklus}
+\titleineng{(The Effect of a Small Dataset Problem on Classification Accuracy Using Artificial Neural Networks)}
 \status{3 kurso 5 grupės studentė}
 \author{Miglė Vaitulevičiūtė}
 \supervisor{dr. Vytautas Valaitis}
@@ -49,35 +49,31 @@
 \tableofcontents
 
 \sectionnonum{Įvadas}
-Dirbtinių neuroninių tinklų idėja buvo sugalvota 1943 metais, bet dėl resursų trūkumo dirbtinių neuroninių tinklų efektyviai ir naudingai taikyti neišėjo. 
+Dirbtinių neuroninių tinklų idėja buvo sugalvota 1943 metais \cite{firstIdea}, bet dėl resursų trūkumo dirbtinių neuroninių tinklų efektyviai ir naudingai taikyti neišėjo. 
 Tobulėjant technologijoms bei kompiuteriams galint vykdyti vis daugiau ir daugiau skaičiavimų dirbtiniai neuroniniai tinklai sparčiai įgijo populiarumą.
 
-Vienas iš pagrindinių sprendžiamų uždavinių yra klasifikacija - tai yra paveiksliukų skirstymas į aprašytas klases. Tokį uždavinį atlieka dirbtinių neuroninių 
-tinklų tipas - konvoliuciniai neuroniniai tinklai. Jie yra patys efektyviausi šio uždavinio sprendimui, kadangi jų įeities duomenys gali būti tik paveiksliukai.
-Klasifikacijos uždavinys yra aktualus, kadangi jo panaudojimas yra labai skirtingas - nuo medicinos iki savi-vairuojančių mašinų.
+Vienas iš pagrindinių sprendžiamų uždavinių yra klasifikacija - procesas, kurio metu yra ieškoma panašių ypatybių tarp skirtingų objektų, pavyzdžiui paveiksliukų, ir jie yra skirstomi į atitinkamas klases \cite{classificationDef}. Tokį uždavinį gali atlikti dirbtinių neuroninių 
+tinklų tipas - konvoliuciniai neuroniniai tinklai. Klasifikacijos uždavinys yra aktualus, kadangi jo panaudojimas yra labai skirtingas - nuo medicinos iki savivaldžių automobilių.
 
 Konvoliuciniai neuroniniai tinklai gali būti naudojami:
 \begin{itemize}
-\item Veido atpažinimui - identifikuoti arba verifikuoti asmenį. Pavyzdžiui, ,,DeepFace'' sistema sukurta ,,FaceBook'', kuri atpažįsta žmonių veidus nuotraukose 
-arba ,,Face ID'' sistema sukurta ,,Apple'', kuri yra skirta identifikuoti asmenį, kuris bando atrakinti telefoną. 
-\item Medicinoje - širdies, plaučių, prostatos vėžių ir akių ligų diagnozavimui.
-\item Žmonių elgesio analizė realiu laiku - ,,DeepGlint'' nustato žmones nuotraukose ir nuspėja jų pozas.
-\item Vertimas - ,,Google Translate'' gali versti tekstą iš paveiksliukų realiu laiku.
+\item Veido atpažinimui - identifikuoti arba verifikuoti asmenį. Pavyzdžiui, DeepFace sistema sukurta FaceBook \cite{Taigman:2014:DCG:2679600.2680208}, kuri atpažįsta žmonių veidus nuotraukose, 
+arba Face ID sistema sukurta Apple, kuri yra skirta identifikuoti asmenį, kuris bando atrakinti telefoną. 
+\item Medicinoje - širdies, plaučių, prostatos, krūties vėžių \cite{cancer}, akių ligų diagnozavimui \cite{eyedis}.
+\item Žmonių elgesio analizė realiu laiku - DeepGlint nustato žmones nuotraukose ir nuspėja jų elgesį \cite{deepGlint}.
+\item Vertimas - Google Translate gali versti tekstą iš paveiksliukų realiu laiku \cite{Raschka:2015:PML:2886323}.
 \end{itemize}
 
-Daugiausia resursų išnaudojanti dirbinių neuroninių tinklų dalis yra mokymas. Jiems reikia skirti ne vien daug laiko - žmonių ir paties mokymo, bet ir turėti didelį paveiksliukų rinkinį, kuriame kiekvienas paveiksliukas turėtų aprašymą. Tačiau realiame pasaulyje paveiksliukų kiekis ir žmogiškieji bei laiko resursai yra riboti, 
-todėl yra siekiama keičiant dirbtinio neuroninio tinklo architektūra, parametrus bei naudojamas funkcijas gauti kuo didesnį tikslumą bei mažiausią įmanomą nuostolį. 
-Dirbtinio neuroninio tinklo teisingumą lemią ne vien kokybiški duomenys, didelį poveikį turi ir tinklo gylis - kiek daug sluoksnių turi dirbtinis neuroninis 
+Daugiausia resursų išnaudojanti dirbinių neuroninių tinklų dalis yra mokymas. Jam reikia skirti daug laiko ir turėti didelę duomenų imtį (angl. dataset), kuriame kiekvienas paveiksliukas turėtų žymę (angl. label). Tačiau realiame pasaulyje duomenų kiekis ir žmogiškieji bei laiko resursai yra riboti, 
+todėl yra siekiama keičiant dirbtinio neuroninio tinklo architektūra bei jo parametrus gauti kuo didesnį tikslumą. 
+Dirbtinio neuroninio tinklo tikslumą lemią ne vien kokybiški duomenys, didelį poveikį turi ir tinklo gylis - kiek daug sluoksnių turi dirbtinis neuroninis 
 tinklas. 
 
-Šio darbo tikslas yra palyginti skirtingų gylių dirbtinius neuroninius tinklus pagal mokymosi tikslumą bei nuostolių dydį, kai mokymui yra naudojamas mažas 
-paveikslėlių rinkinys ir keičiamos optimizavimo funkcijos.
+Šio darbo tikslas yra palyginti skirtingų gylių dirbtinius neuroninius tinklus pagal tikslumą, kai mokymui yra naudojama maža duomenų imtis.
 
 Užduotys:
 \begin{enumerate}
-\item Pasirinkti naudojamą dirbtinio neuroninio tinklo architektūrą.
-\item Sukurti programą, kuri reguliuotų ir modifikuotų jau egzistuojantį pasirinktos architektūros modelį.
-\item Apmokyti reguliuotą ir modifikuotą modelį.
+\item DAR REIKIA SUGALVOTIIII
 \item Palyginti SGD, Adam, Adagrad ir RMSprop optimizavimo funkcijas.
 \end{enumerate}
 
@@ -86,37 +82,31 @@ Užduotys:
 Pagal apibendrintą žmogaus smegenų veikimą buvo sugalvoti dirbtiniai neuroniniai tinklai \cite{Goodfellow-et-al-2016}. Bendrai žmogaus smegenys turi šimtus
 milijardų neuronų, kurie yra sujungti sinapsėsmis. Per šiuos neuronus sklinda elektroniniai impulsai, perduodantys informaciją. Tokiu būdu žmonės gali 
 atpažinti objektus, garsus ir t.t. Dirbtiniai neuroniniai tinklai veikia panašiai. Jie turi daug besijungiančių neuronų, kurie gauna informaciją ir 
-pagal tą informaciją gali nuspręsti koks objektas yra paveikslėlyje. Tačiau ties tuo ir baigiasi žmogaus smegenų ir dirbtinių neuroninių tinklų panašumas, 
-kadangi dirbtiniai neuroniniai tinklai yra kompiuterinė simuliacija - matematinis algoritmas su aritmetiniais kintamaisiais. Ši simuliacija yra suvokiama 
-tik žmogui, kuris suprogramavo dirbtinį neuroninį tinklą, pačiam tinklui simuliacija nieko nereiškia, nuovokos nesuteikia.
+pagal tą informaciją gali nuspręsti koks tai objektas. Tačiau ties tuo ir baigiasi žmogaus smegenų ir dirbtinių neuroninių tinklų panašumas, 
+kadangi dirbtiniai neuroniniai tinklai yra matematinis algoritmas su aritmetiniais kintamaisiais. Algoritmas yra suvokiamas 
+tik žmogui, kuris suprogramavo dirbtinį neuroninį tinklą, pačiam tinklui algoritmas nieko nereiškia, nuovokos nesuteikia.
 
 \subsection{Dirbtinio neuroninio tinklo sudėtis}
-Dirbtinis neuroninis tinklas yra sluoksnių rinkinys (1 pav.) - neuronų grupė sudaro sluoksnį, kuris yra sujungtas tarpusavyje su kitais sluoksniais \cite{1193152}. Vienas iš
+Dirbtinis neuroninis tinklas yra sluoksnių rinkinys - neuronų grupė sudaro sluoksnį, kuris yra sujungtas tarpusavyje su kitais sluoksniais \cite{1193152}. Vienas iš
 sluoksnių privalo būti įvesties sluoksnis, kuris atitinkamai pagal užduoti gali gauti įvairios formos informaciją - paveiksliukai, vaizdo
 medžiaga, garsas ir t.t. Ši informacija yra reikalinga tam, kad tinklas galėtų ją išanalizuoti ir išmokti. Tuo tikslu, kad vėliau gavęs panašią
-informaciją galėtų ją atpažinti - tam reikalingas išeities sluoksnis. Jis yra priešingame dirbtinio neuroninio tinklo gale negu įeities sluoksnis.
-Tarp anksčiau apibūdintų sluoksnių yra įvairaus dydžio sluoksnių sistema, kuri atlieka pagrindinį darbą \cite{Woodford-2018}.
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.5\textwidth]{img/NTSluoksniuSistema.jpeg}
-\caption{Sluoksnių rinkinys}
-\end{figure}
+informaciją galėtų ją atpažinti - tam reikalingas išvesties sluoksnis. Jis yra priešingame dirbtinio neuroninio tinklo gale negu įvesties sluoksnis.
+Tarp anksčiau apibūdintų sluoksnių yra įvairaus dydžio vidinė sluoksnių sistema, kuri atlieka pagrindinį darbą \cite{Woodford-2018}.
 
 \subsection{Dirbtinio neuroninio tinklo veikimas}
 Jungtys tarp neuronų yra pateiktos skaitine išraiška ir vadinamos svoriu. Kuo didesnis šis svoris tuo didesnę įtaką turi vienas neuronas kitam.
 Vienam neuronui yra pateikiama visų prieš jį buvusių neuronų informacija ir jungčių svoriai. Kiekvieno neurono informacija yra sudauginama su
-jo svoriu ir visi šie duomenys yra sudedami tarpusavyje. Taip iš vektoriaus gaunamas vienas rezultatas ir jei šis rezultatas tinka aktyvavimo
-funkcijai, jis yra perduodamas tolimesniems neuronams \cite{shiffman2012nature}. Tokio tipo veikimo dizainas yra vadinamas ,,feedforward'' tinklu.
+jo svoriu ir visi šie duomenys yra sudedami tarpusavyje bei pridedama slenksčio reikšmė (angl. bias). Taip iš vektoriaus gaunamas vienas rezultatas ir jei šis rezultatas tinka aktyvavimo
+funkcijai, jis yra perduodamas tolimesniems neuronams \cite{shiffman2012nature}. Tokio tipo veikimo projektavimas yra vadinamas ,,feedforward'' tinklu.
 
 Tačiau jungčių svoriai nėra pastovūs. Kai dirbtinis neuroninis tinklas mokosi, galutinis rezultatas yra lyginamas su tikėtinu teisingu rezultatu, jei šie
 rezultatai skiriasi, svoriai yra keičiami atitinkamai \cite{backpropogation}, tai vadinama ,,backpropagation''. Tokiu būdu yra gerinamas rezultatas ir mažinamas skirtumas
 tarp tikėtino ir gauto atsakymų.
 
 \subsection{Aktyvavimo funkcijos}
-Aktyvavimo funkcijų yra įvairių, todėl specifinės problemos gali reikalauti vienos ar daugiau konkrečių aktyvavimo funkcijų \cite{activation}.
+Aktyvavimo funkcijų (angl. activation function) yra įvairių, todėl specifinės problemos gali reikalauti vienos ar daugiau konkrečių aktyvavimo funkcijų \cite{activation}.
 Pagrinde yra dviejų tipų aktyvavimo funkcijos - tiesinės ir netiesinės. Tiesinės nėra tokios populiarios, kadangi jos neleidžia įvesčiai
-būti lanksčiai. Nors tiesinė funkcija labai dažnai naudojama išeities sluoksnyje.
+būti lanksčiai. Nors tiesinė funkcija labai dažnai naudojama išvesties sluoksnyje.
 Netiesinės funkcijos dažniausiai naudojamos vidiniuose sluoksniuose. Šiuo metu labiausiai naudojama yra ReLU, kadangi naudojant šią funkciją mokymo
 rezultatai nuolatos gerėja, tačiau ReLU funkcijos spraustumas nesuteikia efektyvumo tinklui \cite{DBLP:journals/corr/XuWCL15}.
 
@@ -124,13 +114,13 @@ Aktyvavimo funkcijos yra skirstomos į:
 \begin{itemize}
 \item Tiesinė: 
 \begin{itemize}
-\item Žingsninė (binarinė) - išėjimas yra 0 arba 1.
+\item Žingsninė (angl. step function) - išėjimas yra 0 arba 1.
 \end{itemize}
 \item Netiesinė: 
 \begin{itemize}
-\item Sigmoidinė - išėjimas intervale [0; 1].
-\item Hiperbolinio tangento - išėjimas intervale [-1; 1].
-\item Minkštojo maksimumo - sunormuoja išėjimo vektorių į 1.
+\item Sigmoidinė (angl. sigmoid function) - išėjimas intervale [0; 1].
+\item Hiperbolinio tangento (angl. hyperbolic tangent) - išėjimas intervale [-1; 1].
+\item Minkštojo maksimumo (angl. softmax function) - sunormuoja išėjimo vektorių į 1.
 \item ReLU - išėjimas intervale [0; begalybė].
 \end{itemize}
 \end{itemize}
@@ -144,17 +134,17 @@ Paprasčiausia ir dažniausiai naudojama nuostolio funkcija yra vidutinio kvadra
 ir gauto rezultatų. Tačiau šios funkcijos vienas iš didesnių trūkumų - neproporcingas išskyrimas didelių rezultatų. Kadangi funkcija didėja kvadratiniai,
 o ne tiesiniai, kai gaunamas rezultatas tolsta nuo tikėtino rezultato.
 
-Priklausomai nuo to kokią problemą yra bandoma išspręsti yra naudojamos skirtingos funkcijos. Viena iš problemų yra klasifikacijos - dažniausiai išeities
+Priklausomai nuo to kokią problemą yra bandoma išspręsti yra naudojamos skirtingos funkcijos. Viena iš problemų yra klasifikacijos - dažniausiai išvesties
 rezultatas yra tikimybės vertė f(x). Bendrai, funkcijos reikšmės dydis parodo gauto rezultato tikslumą. Dauguma klasifikacijos nuostolių funkcijos stengiasi
 maksimaliai padidinti tikslumą \cite{clas-loss-2017}. 
 
 
 Kelios klasifikacijos nuostolio funkcijos:
 \begin{itemize}
-\item Binarinė kryžiaus entropija.
-\item Neigiama registravimo tikimybė.
-\item Maržos klasifikatorius.
-\item Minkštų maržų klasifikatorius.
+\item Binarinė kryžiaus entropija (angl. binary cross entropy).
+\item Neigiama registravimo tikimybė (angl. negative log likelihood).
+\item Maržos klasifikatorius (angl. margin classifier).
+\item Minkštų maržų klasifikatorius (angl. soft margin classifier).
 \end{itemize}
 
 \subsection{Optimizavimo funkcijos}
@@ -163,6 +153,7 @@ Visos optimizavimo funkcijos gali būti suskirstytos į du tipus - nuolatinio mo
 Lentelėje 1 išvardinti visos populiariausios optimizavimo funkcijos.
 
 \begin{longtable}[h!]{ | p{2cm} | p{2.2cm} | p{2.5cm} | p{2.5cm} | p{4.5cm} | } 
+\caption{Optimizavimo funkcijos}
 \hline
 Pavadinimas & Tipas & Privalumai & Trūkumai & Veikimas \\
 \hline
@@ -174,7 +165,6 @@ Adagrad & Prisitaikančio mokymosi & Nereikia rankiniu būdu derinti mokymosi gr
 \hline
 RMSprop & Prisitaikančio mokymosi & Greitai konverguoja. & Momentas nedidina funkcijos efektyvumo. & Dalija mokymosi greitį iš eksponentiškai nykstančio kvadratinio gradiento vidurkio. \\
 \hline
-\caption{Optimizavimo funkcijos}
 \end{longtable}
 
 Nuolatinio mokymosi greičio funkcijos turi hiperparametrą - mokymosi greitį. Jis privalo būti nustatytas, tačiau 
@@ -195,7 +185,7 @@ generalizuoja blogiau negu nuolatinio mokymosi greičio funkcijos, nors ir mokym
 
 \section{Konvoliucinis neuroninis tinklas}
 Konvoliuciniai neuroniniai tinklai yra labai panašūs į paprastus dirbtinius neuroninius tinklus (daugiau informacijos skyriuje ,,Dirbtinis neuroninis
-tinklas''). Tačiau pagrindinis skirtumas tarp šių tinklų yra, kad konvoliucinio įeities sluoksnis priima tik tai paveiksliukus, 
+tinklas''). Tačiau pagrindinis skirtumas tarp šių tinklų yra, kad konvoliucinio įvesties sluoksnis priima tik tai paveiksliukus, 
 kurie jei padaryti su standartine skaitmenine kamera, turi tris komponentus - raudoną, žalią ir mėlyną. Šiuos komponentus galima 
 įsivaizduoti kaip tris 2D matricas sudėtas viena ant kitos. Kiekvienos matricos i-osios eilutės ir j-ojo stulpelio elementas 
 atitinka nuotraukos pikselį, kurio reikšmė yra intervale nuo 0 iki 255. Kadangi naudojamos informacijos tipas yra specifinis, 
@@ -208,12 +198,12 @@ Objektų atpažinimas paveiksliukuose yra sudėtingas dėl šių iššūkių:
 \item Šviesa - pikselių intensyvumas gali būti paveiktas šviesos šaltinio ar pačio objekto.
 \item Deformacija - objektai gali būti deformuoti įvairiais būdais, pavyzdžiui, kiekvieno žmogaus ranka parašyti skaičiai skiriasi.
 \item Galimybės - objektų klasės dažnai nustatomos pagal tai kaip patys objektai yra naudojami, pavyzdžiui, kėdės yra objektai sukurti sėdėti, tačiau jos gali turėti įvairų dizainą.
-\item Žvilgsnio taškas - keičiant vietą iš kurios yra žiūrima gali keistis objekto forma, informacija šokinėja per įeities sluoksnio dimensiją (t.y. pikselius). 
+\item Žvilgsnio taškas - keičiant vietą iš kurios yra žiūrima gali keistis objekto forma, informacija šokinėja per įvesties sluoksnio dimensiją (t.y. pikselius). 
 \end{itemize}
 
 \subsection{Konvoliucija}
 Konvoliucija yra matematinė operacija, kuri apibūdina taisyklę, kuri parodo kaip reikia sujungti du informacijos rinkinius \cite{Convolution-book}. 
-Paveiksliukų analizėje, statinė ir pagrindinė funkcija yra įeities paveiksliukas, kuris yra analizuojamas, o antroji, judanti funkcija, žinoma 
+Paveiksliukų analizėje, statinė ir pagrindinė funkcija yra įvesties paveiksliukas, kuris yra analizuojamas, o antroji, judanti funkcija, žinoma 
 kaip filtras, nes ji išskiria paveiksliuko ypatybę. Abi funkcijos yra susietos daugyba (2 pav.). 
 
 \begin{figure}[h]
@@ -222,52 +212,53 @@ kaip filtras, nes ji išskiria paveiksliuko ypatybę. Abi funkcijos yra susietos
 \caption{Konvoliucijos veikimas}
 \end{figure}
 
-Tačiau konvoliuciniai tinklai turi daug filtrų, kurie pereina per vieną paveiksliuką, kiekvienas išskirdamas skirtingą paveiksliuko ypatybę.
+Tačiau konvoliuciniai tinklai turi daug filtrų, kurie pereina per vieną paveiksliuką, kiekvienas išskirdamas skirtingą paveiksliuko ypatybę \cite{DBLP:journals/corr/abs-1708-08711}.
 Pirmuose sluoksniuose šiuos filtrus galima apibūdinti kaip horizontalių, vertikalių ar įstrižų linijų filtrus, kurie sukuria paveikslėlio 
 kraštų planą. Tinklas paima visus filtrus, gabaliukus paveiksliukų ypatybių vietų, ir juos sudeda į planą, kuris parodo ypatybės vietą. 
 Mokydamasis skirtingų proporcijų ypatybių, tinklas leidžia lengvai kurti greitą ypatybių atpažinimą.
 
 \subsection{Konvoliucinio neuroninio tinklo sluoksniai}
-Konvoliuciniai neuroniniai tinklai tai yra sluoksnių rinkinys, kuris turi įeities, vidinius ir išeities sluoksnius. Tačiau priklausomai 
+Konvoliuciniai neuroniniai tinklai tai yra sluoksnių rinkinys, kuris turi įvesties, vidinius ir išvesties sluoksnius. Tačiau priklausomai 
 kokio tipo konvoliucinis neuroninis tinklas vidiniai sluoksniai gali skirtis. Konvoliuciniai neuroniniai tinklai turi tris pagrindinius 
-sluoksnių tipus, kurie sudaro vidinį sluoksnį. Šie tipai yra konvoliucinis, sujungimo ir pilno sujungimo sluoksniai.
+sluoksnių tipus, kurie sudaro vidinį sluoksnį. Šie tipai yra konvoliucinis, sujungimo ir pilno sujungimo sluoksniai \cite{CNNbasic}.
 
 \subsubsection{Konvoliucinis sluoksnis}
 Konvoliucinis sluoksnis yra pagrindinis konvoliucinio neuroninio tinklo sluoksnis, kuris atlieka daugiausia skaičiavimų, nustato visas paveiksliuko ypatybes.
-Kadangi, įeities informacija (paveiksliukas) yra didelės dimensijos neefektyvu visų neuronų sujungti vienus su kitais, todėl neuronai yra sujungiami
+Kadangi, įvesties informacija (paveiksliukas) yra didelės dimensijos neefektyvu visų neuronų sujungti vienus su kitais, todėl neuronai yra sujungiami
 su lokaliu informacijos kiekiu, kuris yra lygus filtro dydžiui ir vadinamas erdviniu mastu \cite{layers-CS231n}.
 
 Neuronų kiekis po konvoliucijos (ypatybių plano dydis) yra nustatomas trimis parametrais:
 \begin{itemize}
 \item Gylis - atitinka filtrų skaičių.
-\item Žingsnis - pikselių kiekis, kuris parodo per kiek reikia slinkti filtro matrica per įeities informacijos matricą.
-\item Nulių pamušalas - įeities informacijos matricos kraštus užpildyti nuliais.
+\item Žingsnis - pikselių kiekis, kuris parodo per kiek reikia slinkti filtro matrica per įvesties informacijos matricą.
+\item Nulių pamušalas - įvesties informacijos matricos kraštus užpildyti nuliais.
 \end{itemize}
 
 
 \subsubsection{Sujungimo sluoksnis}
 Periodiškai sujungimo sluoksnis yra įterpiamas tarp konvoliucinių. Pagrindinis sluoksnio tikslas yra laipsniškai mažinti erdvinį filtruojamo paveiksliuko mąstą.
 Šis veiksmas yra atliekamas tam, kad sumažinti parametrų ir skaičiavimų kiekį bei kontroliuoti perjungimą. Sujungimo sluoksnis veikia nepriklausomai nuo kiekvieno
-gabalėlio gylio ir keičia jo dydį erdviškai, naudodamas MAX operaciją. Dažniausiai šis sluoksnis yra naudojamas su 2x2 dydžio filtru - kas antras po konvoliucijos 
+gabalėlio gylio ir keičia jo dydį erdviškai, naudodamas MAX operaciją \cite{7927440}. Dažniausiai šis sluoksnis yra naudojamas su 2x2 dydžio filtru - kas antras po konvoliucijos 
 gauto gabaliuko kiekvienas gylio sluoksnis yra mažinamas per pusę ties ilgiu ir pločiu, taip yra atsikratoma 75 procentų aktyvacijų. Po šios operacijos gabaliuko 
 gylis nepasikeičia.
 
 Dažniausiai yra naudojamos dvi šio sluoksnio variacijos. Pirmasis yra vadinamas persidengiantis sujungimas, kur filtro dydis yra lygus 3 ir žingsnis yra lygus 2. 
-O kitas dažniau naudojamas turi filtro dydį lygų 2 ir žingsnį taip pat 2. Sujungimo sluoksniai su labai dideliais parametrais yra labai destruktyvūs.
+O kitas dažniau naudojamas turi filtro dydį lygų 2 ir žingsnį taip pat 2. Sujungimo sluoksniai su labai dideliais parametrais yra destruktyvūs.
 
 \subsubsection{Pilno sujungimo sluoksnis}
-Konvoliucinio ir sujungimo sluoksnių išeitys yra aukšto lygio ypatybės, kurios yra gautos iš įeities paveiksliuko. Pilno sujungimo sluoksnis yra sujungtas su visais 
+Konvoliucinio ir sujungimo sluoksnių išeitys yra aukšto lygio ypatybės, kurios yra gautos iš įvesties paveiksliuko. Pilno sujungimo sluoksnis yra sujungtas su visais 
 neuronais iš sluoksnio buvusio prieš jį. Šio sluoksnio tikslas yra panaudojant tas ypatybes, kurios yra gautos iš prieš tai buvusių sluoksnių, nustatyti kokioms 
-klasėms priklauso įeities paveiksliukas pagal mokymo informacijos rinkinį, kai neuroninio tinklo problema yra klasifikacija \cite{layers-fullyconnected}. Jei šiam sluoksniui yra naudojama 
+klasėms priklauso įvesties paveiksliukas pagal mokymo informacijos rinkinį, kai neuroninio tinklo problema yra klasifikacija \cite{layers-fullyconnected}. Jei šiam sluoksniui yra naudojama 
 minkštojo maksimumo funkcija tuomet sudėtis visų gautų galimybių turi būti lygi 1. Minkštojo maksimumo funkcija priima vektorių įvertinimų ir jį suspaudžia į 
-vektorių, kuriame yra klasių tikimybių įvertinimai intervale nuo 0 iki 1, kur tikimybė arčiausiai vieneto reiškia, kad labiausiai užtikrintas dėl tos klasės.
+vektorių, kuriame yra klasių tikimybių įvertinimai intervale nuo 0 iki 1, kur tikimybė arčiausiai vieneto reiškia, kad yra užtikrintas dėl tos klasės.
 
 \subsection{Architektūros}
-Konvoliuciniai neuroniniai tinklai turi keletą skirtingų architektūrų, kurios yra naudojamos atitinkamai pagal sprendžiamą problemą. 1 lentelėje pateikta informaciją 
+Konvoliuciniai neuroniniai tinklai turi keletą skirtingų architektūrų, kurios naudojamos pagal sprendžiamą problemą. 1 lentelėje pateikta informaciją 
 apie įvairias architektūras.
 
 
 \begin{longtable}[h]{ | p{4cm} | p{1cm} | p{3cm} | p{5cm} | p{1.5cm} | } 
+\caption{Konvoliucinių neuroninių tinklų architektūros}
 \hline
 Pavadinimas & Metai & Parametrų kiekis & Veikimas & ILSVRC vieta \\
 \hline
@@ -279,10 +270,11 @@ GoogLeNet/Inception & 2014 & 4 000 000 & Vidiniai sluoksniai sudėti paraleliai,
 \hline
 VGGNet & 2014 & 138 000 000 & Panašus veikimas į AlexNet, tačiau daug gilesnis. Naudojamų filtrų dydis yra 3x3 ir jie yra sudėti vienas po kito. & antra \\
 \hline
-ResNet & 2015 & 25 000 000 & Turi labai daug sluoksnių, sudėtų vienas po kito, kurie turi liekamąjį bloką, kuris įeities informaciją perduoda tolimesniam sluoksniui ją pridėdamas ir taip sumažina konvoliucijos ir aktyvavimo funkcijų kiekį.  & pirma \\
+ResNet & 2015 & 25 000 000 & Turi labai daug sluoksnių, sudėtų vienas po kito, kurie turi liekamąjį bloką, kuris įvesties informaciją perduoda tolimesniam sluoksniui ją pridėdamas ir taip sumažina konvoliucijos ir aktyvavimo funkcijų kiekį.  & pirma \\
 \hline
-\caption{Konvoliucinių neuroninių tinklų architektūros}
 \end{longtable}
+
+
 
 \subsection{Modelio reguliavimas}
 Pilnas konvoliucinio neuroninio tinklo apmokymas gali užtrukti labai ilgą laiką ir išnaudoti daug resursų. Todėl yra kai kurios įstaigos arba žmonės, kurie apmoko savo 
@@ -305,7 +297,7 @@ yra grupuojami į sinonimų rinkinius, kurie turi apibūdinimus ir naudojimo pav
 100 000 sinonimų rinkinių, kur didžioji dalis yra daiktavardžiai (80 000+). 
 
 ImageNet projektas kiekvienais metais daro konkursą vadinamą ,,ImageNet Large Scale Visual Recognition Challenge'' (trumpinys ILSVRC). Konkurso užduotis yra 
-išmokinti modelį, kuris galėtų įeities paveiksliuką teisingai klasifikuoti į 1000 skirtingų objektų klasių, kurios atitinka realius daiktus, gyvūnus ir t.t. Modeliai 
+išmokinti modelį, kuris galėtų įvesties paveiksliuką teisingai klasifikuoti į 1000 skirtingų objektų klasių, kurios atitinka realius daiktus, gyvūnus ir t.t. Modeliai 
 yra apmokomi su apie 1.2 milijonų paveiksliukų ir dar 50 000 paveiksliukų yra naudojami validacijai mokymo metu bei 100 000 paveiksliukų yra panaudojami galutiniam 
 modelio testavimui. Šis konkursas yra paveiksliukų klasifikacijos algoritmų etalonas.
 

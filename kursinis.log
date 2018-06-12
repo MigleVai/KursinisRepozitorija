@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.5.17)  11 JUN 2018 22:59
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.5.17)  12 JUN 2018 21:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1163,11 +1163,11 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'kursinis.bbl' found.
 (./kursinis.bbl
-LaTeX Font Info:    Try loading font information for U+msa on input line 84.
+LaTeX Font Info:    Try loading font information for U+msa on input line 116.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 84.
+LaTeX Font Info:    Try loading font information for U+msb on input line 116.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1186,281 +1186,318 @@ Package biblatex Info: Reference segment=0 on input line 41.
 
 ] [3
 
-]
-File: img/NTSluoksniuSistema.jpeg Graphic file (type QTm)
- <use  "img/NTSluoksniuSistema.jpeg" > [4
+] [4
 
-] [5]
-Overfull \hbox (3.5265pt too wide) in paragraph at lines 167--167
+]
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
+l.157 \hline
+            
+? 
+! Misplaced \omit.
+\multispan ->\omit 
+                   \@multispan 
+l.158 P
+       avadinimas & Tipas & Privalumai & Trūkumai & Veikimas \\
+? 
+! Extra alignment tab has been changed to \cr.
+<template> \endtemplate 
+                        
+l.158 P
+       avadinimas & Tipas & Privalumai & Trūkumai & Veikimas \\
+? 
+
+Overfull \hbox (3.5265pt too wide) in paragraph at lines 158--158
 []|\EU1/texgyretermes(0)/m/n/12 Pavadinimas| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--169
+Underfull \hbox (badness 10000) in paragraph at lines 160--160
 []|\EU1/texgyretermes(0)/m/n/12 Nuolatinio
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--169
+Underfull \hbox (badness 10000) in paragraph at lines 160--160
 \EU1/texgyretermes(0)/m/n/12 mokymosi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--169
+Underfull \hbox (badness 10000) in paragraph at lines 160--160
 []|\EU1/texgyretermes(0)/m/n/12 Parametrų
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--169
+Underfull \hbox (badness 10000) in paragraph at lines 160--160
 \EU1/texgyretermes(0)/m/n/12 atnaujinimai
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--169
+Underfull \hbox (badness 10000) in paragraph at lines 160--160
 \EU1/texgyretermes(0)/m/n/12 turi aukštą
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--169
+Underfull \hbox (badness 10000) in paragraph at lines 160--160
 \EU1/texgyretermes(0)/m/n/12 dispersiją,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--169
+Underfull \hbox (badness 10000) in paragraph at lines 160--160
 \EU1/texgyretermes(0)/m/n/12 kas leidžia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--169
+Underfull \hbox (badness 10000) in paragraph at lines 160--160
 \EU1/texgyretermes(0)/m/n/12 lengviau
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--169
+Underfull \hbox (badness 10000) in paragraph at lines 160--160
 \EU1/texgyretermes(0)/m/n/12 rasti lokalų
  []
 
 
-Underfull \hbox (badness 1242) in paragraph at lines 169--169
+Underfull \hbox (badness 1242) in paragraph at lines 160--160
 []|\EU1/texgyretermes(0)/m/n/12 Didelis svyra-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--169
+Underfull \hbox (badness 10000) in paragraph at lines 160--160
 \EU1/texgyretermes(0)/m/n/12 vimas trukdo
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
 []|\EU1/texgyretermes(0)/m/n/12 Parametrų atnaujinimas
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
 \EU1/texgyretermes(0)/m/n/12 vykdomas kiekvienai
  []
 
 
-Overfull \hbox (3.64404pt too wide) in paragraph at lines 171--171
+Overfull \hbox (3.64404pt too wide) in paragraph at lines 162--162
 []|\EU1/texgyretermes(0)/m/n/12 Prisitaikančio
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--171
+Underfull \hbox (badness 10000) in paragraph at lines 162--162
 []|\EU1/texgyretermes(0)/m/n/12 Greitai kon-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--171
+Underfull \hbox (badness 10000) in paragraph at lines 162--162
 \EU1/texgyretermes(0)/m/n/12 verguoja ir
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--171
+Underfull \hbox (badness 10000) in paragraph at lines 162--162
 \EU1/texgyretermes(0)/m/n/12 modelio mo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 []|\EU1/texgyretermes(0)/m/n/12 Suskaičiuoja mokymo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 \EU1/texgyretermes(0)/m/n/12 si greitį kiekvienam
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 \EU1/texgyretermes(0)/m/n/12 parametrui bei saugo
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 \EU1/texgyretermes(0)/m/n/12 eksponentiškai nykstantį
  []
 
 
-Underfull \hbox (badness 3780) in paragraph at lines 171--172
+Underfull \hbox (badness 3780) in paragraph at lines 162--163
 \EU1/texgyretermes(0)/m/n/12 prieš tai buvusį kvadra-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 \EU1/texgyretermes(0)/m/n/12 eksponentiškai mažėjantį
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 \EU1/texgyretermes(0)/m/n/12 prieš tai buvusį gradi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 \EU1/texgyretermes(0)/m/n/12 ento vidurkį, panašų į
  []
 
 
-Overfull \hbox (3.64404pt too wide) in paragraph at lines 173--173
+Overfull \hbox (3.64404pt too wide) in paragraph at lines 164--164
 []|\EU1/texgyretermes(0)/m/n/12 Prisitaikančio
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--173
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
 []|\EU1/texgyretermes(0)/m/n/12 Nereikia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--173
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
 \EU1/texgyretermes(0)/m/n/12 rankiniu bū-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--173
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
 \EU1/texgyretermes(0)/m/n/12 du derinti
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--173
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
 \EU1/texgyretermes(0)/m/n/12 mokymosi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--173
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
 []|\EU1/texgyretermes(0)/m/n/12 Mokymosi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--173
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
 \EU1/texgyretermes(0)/m/n/12 greitis visada
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--173
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
 \EU1/texgyretermes(0)/m/n/12 ir nykstantis,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--173
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
 \EU1/texgyretermes(0)/m/n/12 kas lėtina
  []
 
 
-Overfull \hbox (3.64404pt too wide) in paragraph at lines 175--175
+Overfull \hbox (3.64404pt too wide) in paragraph at lines 166--166
 []|\EU1/texgyretermes(0)/m/n/12 Prisitaikančio
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--175
+Underfull \hbox (badness 10000) in paragraph at lines 166--166
 []|\EU1/texgyretermes(0)/m/n/12 Greitai kon-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--175
+Underfull \hbox (badness 10000) in paragraph at lines 166--166
 []|\EU1/texgyretermes(0)/m/n/12 Momentas
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--175
+Underfull \hbox (badness 10000) in paragraph at lines 166--166
 \EU1/texgyretermes(0)/m/n/12 nedidina
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--175
+Underfull \hbox (badness 10000) in paragraph at lines 166--166
 \EU1/texgyretermes(0)/m/n/12 funkcijos
  []
 
 
-Underfull \hbox (badness 2608) in paragraph at lines 175--176
+Underfull \hbox (badness 2608) in paragraph at lines 166--167
 \EU1/texgyretermes(0)/m/n/12 kvadratinio gradiento vi-
  []
 
-
-Underfull \vbox (badness 10000) detected at line 178
- []
-
-[6] [7]
+[5] [6] [7]
 File: img/Konvoliucija.png Graphic file (type QTm)
  <use  "img/Konvoliucija.png" > [8
 
 ] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
+l.262 \hline
+            
+? 
+! Misplaced \omit.
+\multispan ->\omit 
+                   \@multispan 
+l.263 P
+       avadinimas & Metai & Parametrų kiekis & Veikimas & ILSVRC vieta \\
+? 
+! Extra alignment tab has been changed to \cr.
+<template> \endtemplate 
+                        
+l.263 P
+       avadinimas & Metai & Parametrų kiekis & Veikimas & ILSVRC vieta \\
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
 []|\EU1/texgyretermes(0)/m/n/12 ILSVRC
  []
 
 
-Underfull \hbox (badness 1990) in paragraph at lines 274--274
+Underfull \hbox (badness 1990) in paragraph at lines 265--265
 \EU1/texgyretermes(0)/m/n/12 rašytus skaičius. Susideda
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 269--269
 []|\EU1/texgyretermes(0)/m/n/12 Vidiniai sluoksniai sudėti
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 269--269
 \EU1/texgyretermes(0)/m/n/12 paraleliai, naudojami In-
  []
 
 
-Underfull \hbox (badness 4391) in paragraph at lines 278--278
+Underfull \hbox (badness 4391) in paragraph at lines 269--269
 \EU1/texgyretermes(0)/m/n/12 ception moduliai. Vienas
  []
 
 
-Underfull \hbox (badness 1661) in paragraph at lines 278--278
+Underfull \hbox (badness 1661) in paragraph at lines 269--269
 \EU1/texgyretermes(0)/m/n/12 ir 5x5 dydžių konvoliucijos
  []
 
 
-Underfull \hbox (badness 1210) in paragraph at lines 278--278
+Underfull \hbox (badness 1210) in paragraph at lines 269--269
 \EU1/texgyretermes(0)/m/n/12 filtrų bei vidurkio sudėjimo
  []
 
 
-Underfull \hbox (badness 6220) in paragraph at lines 282--282
-[]|\EU1/texgyretermes(0)/m/n/12 Turi labai daug sluoksnių,
+Underfull \hbox (badness 3168) in paragraph at lines 273--273
+\EU1/texgyretermes(0)/m/n/12 dėtų vienas po kito, kurie
  []
 
 
-Underfull \hbox (badness 2409) in paragraph at lines 282--282
-\EU1/texgyretermes(0)/m/n/12 sudėtų vienas po kito, ku-
+Underfull \hbox (badness 4699) in paragraph at lines 273--273
+\EU1/texgyretermes(0)/m/n/12 turi liekamąjį bloką, kuris
  []
 
 
-Underfull \hbox (badness 2828) in paragraph at lines 282--282
+Underfull \hbox (badness 2591) in paragraph at lines 273--273
+\EU1/texgyretermes(0)/m/n/12 įvesties informaciją perduo-
+ []
+
+
+Underfull \hbox (badness 2828) in paragraph at lines 273--273
 \EU1/texgyretermes(0)/m/n/12 konvoliucijos ir aktyvavimo
  []
 
 
-Overfull \hbox (3.09444pt too wide) in alignment at lines 270--285
+Overfull \hbox (3.09444pt too wide) in alignment at lines 260--275
  [] [] [] [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 285
- []
+Overfull \vbox (3.24416pt too high) has occurred while \output is active []
+
 
 [10] [11] [12
 
@@ -1507,19 +1544,26 @@ File: img/AL/RMSprop_acc.png Graphic file (type QTm)
 File: img/AL/RMSprop_loss.png Graphic file (type QTm)
  <use  "img/AL/RMSprop_loss.png" > [18]
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 539--540
+Underfull \hbox (badness 10000) in paragraph at lines 531--532
 
  []
 
 [20
 
 ]
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 552
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 544
 .
  (/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmtt.fd
 File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Underfull \hbox (badness 1968) in paragraph at lines 552--552
+! Misplaced alignment tab character &.
+<to be read again> ...and soft computing science &
+                                                   engineering (ijecscse)
+l.544 \printbibliography[heading=bibintoc]
+                                          
+? 
+
+Underfull \hbox (badness 1968) in paragraph at lines 544--544
 \EU1/texgyretermes(0)/m/it/12 tems Techniques and Applications\EU1/texgyreterme
 s(0)/m/n/12 . Elsevier Science, 1998, p. 323–324. \EU1/texgyretermes(0)/m/sc/12
  isbn\EU1/texgyretermes(0)/m/n/12 :
@@ -1527,18 +1571,23 @@ s(0)/m/n/12 . Elsevier Science, 1998, p. 323–324. \EU1/texgyretermes(0)/m/sc/1
 
 [21
 
-] [22] (./kursinis.aux)
+]
+
+Package biblatex Warning: No driver for entry type 'artice'.
+(biblatex)                Using fallback driver on input line 544.
+
+[22] [23] (./kursinis.aux)
 Package logreq Info: Writing requests to 'kursinis.run.xml'.
 \openout1 = `kursinis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25890 strings out of 493638
- 477021 string characters out of 6146796
- 848960 words of memory out of 5000000
- 28959 multiletter control sequences out of 15000+600000
+ 25899 strings out of 493638
+ 477932 string characters out of 6146796
+ 853174 words of memory out of 5000000
+ 28970 multiletter control sequences out of 15000+600000
  16614 words of font info for 86 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 68i,11n,96p,10497b,2290s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,11n,96p,10497b,2297s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on kursinis.pdf (22 pages).
+Output written on kursinis.pdf (23 pages).

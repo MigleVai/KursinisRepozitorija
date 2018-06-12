@@ -38,6 +38,38 @@
       \field{title}{Loss Functions and Optimization Algorithms}
       \field{year}{2017}
     \endentry
+    \entry{deepGlint}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=5262f0ebd66a4f3f22500666f4bef797}{%
+           family={Bian\bibnamedelima Ziyang},
+           family_i={B\bibinitperiod\bibinitdelim Z\bibinitperiod},
+           suffix={Xu\bibnamedelima Tingfa},
+           suffix_i={X\bibinitperiod\bibinitdelim T\bibinitperiod},
+           given={Su\bibnamedelima Chang},
+           given_i={S\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=497edae2b7e27c44eedc04f2e9bcb066}{%
+           family={Xuan},
+           family_i={X\bibinitperiod},
+           given={Luo},
+           given_i={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{4edda3bf0db51e83867a07220dec30b7}
+      \strng{fullhash}{4edda3bf0db51e83867a07220dec30b7}
+      \field{labelalpha}{BX16}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2015 International Conference on Communications, Signal Processing, and Systems}
+      \field{isbn}{978-3-662-49831-6}
+      \field{title}{Human Abnormal Behavior Detection Based on RGBD Video's Skeleton Information Entropy}
+      \field{year}{2016}
+      \field{pages}{715\bibrangedash 723}
+      \range{pages}{9}
+    \endentry
     \entry{DBLP:conf/eccv/ChuMBHD16}{inproceedings}{}
       \name{author}{5}{}{%
         {{hash=2c29bf6f697b27998dad5c2def172fb6}{%
@@ -103,6 +135,56 @@
       \field{title}{Bayesian Methods for Hackers}
       \field{year}{2015}
     \endentry
+    \entry{DBLP:journals/corr/abs-1708-08711}{article}{}
+      \name{author}{1}{}{%
+        {{hash=a1b0cda4d77b3f99550206e326da1700}{%
+           family={Eppel},
+           family_i={E\bibinitperiod},
+           given={Sagi},
+           given_i={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{a1b0cda4d77b3f99550206e326da1700}
+      \strng{fullhash}{a1b0cda4d77b3f99550206e326da1700}
+      \field{labelalpha}{Epp17}
+      \field{sortinit}{E}
+      \field{sortinithash}{fefc5210ef4721525b2a478df41efcd4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Setting an attention region for convolutional neural networks using region selective features, for recognition of materials within glass vessels}
+      \field{volume}{abs/1708.08711}
+      \field{year}{2017}
+      \verb{eprint}
+      \verb 1708.08711
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1708.08711
+      \endverb
+    \endentry
+    \entry{eyedis}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f234b4146192cf38636bb33ff1ff903c}{%
+           family={Gauri\bibnamedelima Borkhade},
+           family_i={G\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Ranjana\bibnamedelima Raut},
+           given_i={R\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{f234b4146192cf38636bb33ff1ff903c}
+      \strng{fullhash}{f234b4146192cf38636bb33ff1ff903c}
+      \field{labelalpha}{Gau15}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{nternational Journal of Electronics, Communication and Soft Computing Science & Engineering (IJECSCSE)}
+      \field{note}{Published By International Journal of Electronics, Communication and Soft Computing Science and Engineering}
+      \field{title}{Application of Neural Network for Diagnosing Eye Disease}
+      \field{volume}{4}
+      \field{year}{2015}
+      \field{pages}{174\bibrangedash 176}
+      \range{pages}{3}
+    \endentry
     \entry{Goodfellow-et-al-2016}{book}{}
       \name{author}{3}{}{%
         {{hash=5d2585c11210cf1d4512e6e0a03ec315}{%
@@ -134,6 +216,46 @@
       \field{note}{\url{http://www.deeplearningbook.org}}
       \field{title}{Deep Learning}
       \field{year}{2016}
+    \endentry
+    \entry{cancer}{article}{}
+      \name{author}{4}{}{%
+        {{hash=958f6d58c7a7e3957d7279be2f2f1c18}{%
+           family={Ganesan},
+           family_i={G\bibinitperiod},
+           given={N.},
+           given_i={N\bibinitperiod}}}%
+        {{hash=a12d4a2325f07929eb2ae5bf72ca35fd}{%
+           family={Venkatesh},
+           family_i={V\bibinitperiod},
+           given={K.},
+           given_i={K\bibinitperiod}}}%
+        {{hash=5dbb31da86890be15fb7b26e6b979447}{%
+           family={Rama},
+           family_i={R\bibinitperiod},
+           given={M.\bibnamedelimi A.},
+           given_i={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=72e9ea66771af1e651958eb479970357}{%
+           family={Palani},
+           family_i={P\bibinitperiod},
+           given={A.\bibnamedelimi Malathi},
+           given_i={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{32f6ddbf4242472129f85b8d92d6f302}
+      \strng{fullhash}{32f6ddbf4242472129f85b8d92d6f302}
+      \field{labelalpha}{GVR\textsuperscript {+}10}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Computer Applications}
+      \field{month}{02}
+      \field{note}{Published By Foundation of Computer Science}
+      \field{number}{26}
+      \field{title}{Article:Application of Neural Networks in Diagnosing Cancer Disease using Demographic Data}
+      \field{volume}{1}
+      \field{year}{2010}
+      \field{pages}{76\bibrangedash 85}
+      \range{pages}{10}
     \endentry
     \entry{DBLP:journals/corr/YosinskiCBL14}{article}{}
       \name{author}{4}{}{%
@@ -250,6 +372,45 @@
       \verb https://books.google.lt/books?id=oDewAeVxr-4C
       \endverb
     \endentry
+    \entry{7927440}{article}{}
+      \name{author}{3}{}{%
+        {{hash=02ef65682d9eba74b54cf4367002ae4d}{%
+           family={Lee},
+           family_i={L\bibinitperiod},
+           given={C.\bibnamedelimi Y.},
+           given_i={C\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=c09ac461048991b41ecf6ff10e69ed53}{%
+           family={Gallagher},
+           family_i={G\bibinitperiod},
+           given={P.},
+           given_i={P\bibinitperiod}}}%
+        {{hash=a94d5f16f0bad74ea73e9eae868a95f2}{%
+           family={Tu},
+           family_i={T\bibinitperiod},
+           given={Z.},
+           given_i={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{bc679cec7ef1020dec4e712906726d3e}
+      \strng{fullhash}{bc679cec7ef1020dec4e712906726d3e}
+      \field{labelalpha}{LGT18}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0162-8828}
+      \field{journaltitle}{IEEE Transactions on Pattern Analysis and Machine Intelligence}
+      \field{month}{04}
+      \field{number}{4}
+      \field{title}{Generalizing Pooling Functions in CNNs: Mixed, Gated, and Tree}
+      \field{volume}{40}
+      \field{year}{2018}
+      \field{pages}{863\bibrangedash 875}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1109/TPAMI.2017.2703082
+      \endverb
+      \keyw{computational complexity;feedforward neural nets;learning (artificial intelligence);neural net architecture;trees (mathematics);2-level tree pooling operators;average pooling;computational overhead;deep neural network architectures;generalized pooling operation;learned pooling masks;max pooling;pooling filters;pooling function;pooling methods;tree-structured fusion;Computer architecture;Decision trees;Logic gates;Machine learning;Neural networks;Standards;Training;Convolutional neural networks;deep learning;pooling functions;supervised classification}
+    \endentry
     \entry{layers-CS231n}{misc}{}
       \name{author}{1}{}{%
         {{hash=9147b1a8523fee33e02ea8ada6fde536}{%
@@ -290,6 +451,30 @@
       \field{title}{Neural Network Optimization}
       \field{year}{2016}
     \endentry
+    \entry{classificationDef}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5eea6780b5663f84a046f334432ce907}{%
+           family={Paul\bibnamedelimb O’\bibnamedelima Dea},
+           family_i={P\bibinitperiod\bibinitdelim O\bibinitperiod\bibinitdelim D\bibinitperiod},
+           suffix={Josephine\bibnamedelima Griffith},
+           suffix_i={J\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Colm\bibnamedelimb O’\bibnamedelima Riordan},
+           given_i={C\bibinitperiod\bibinitdelim O\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{5eea6780b5663f84a046f334432ce907}
+      \strng{fullhash}{5eea6780b5663f84a046f334432ce907}
+      \field{labelalpha}{Pau01}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Intelligent Exploration of the Web}
+      \field{month}{07}
+      \field{title}{Combining Feature Selection and Neural Networks for Solving Classification Problems}
+      \field{year}{2001}
+      \field{pages}{389\bibrangedash 401}
+      \range{pages}{13}
+    \endentry
     \entry{Convolution-book}{book}{}
       \name{author}{2}{}{%
         {{hash=b437b3540ca6290b1af286f81e1918f1}{%
@@ -315,6 +500,96 @@
       \field{labeltitlesource}{title}
       \field{title}{Deep Learning}
       \field{year}{2017}
+    \endentry
+    \entry{firstIdea}{article}{}
+      \name{author}{1}{}{%
+        {{hash=57931b7c97c9defe4d90fab25cf2a7a2}{%
+           family={Pitts},
+           family_i={P\bibinitperiod},
+           given={Warren\bibnamedelimb S.\bibnamedelimi McCullochWalter},
+           given_i={W\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Kluwer Academic Publishers}%
+      }
+      \strng{namehash}{57931b7c97c9defe4d90fab25cf2a7a2}
+      \strng{fullhash}{57931b7c97c9defe4d90fab25cf2a7a2}
+      \field{labelalpha}{Pit43}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0007-4985}
+      \field{journaltitle}{Bulletin of Mathematical Biophysics}
+      \field{month}{12}
+      \field{title}{A Logical Calculus of Ideas Immanent in Nervous Activity}
+      \field{volume}{5}
+      \field{year}{1943}
+      \field{pages}{115\bibrangedash 133}
+      \range{pages}{19}
+      \verb{doi}
+      \verb https://doi.org/10.1007/BF02478259
+      \endverb
+    \endentry
+    \entry{Raschka:2015:PML:2886323}{book}{}
+      \name{author}{1}{}{%
+        {{hash=bb679961e3f3f4bba79fc1cf3aa7df1c}{%
+           family={Raschka},
+           family_i={R\bibinitperiod},
+           given={Sebastian},
+           given_i={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Packt Publishing}%
+      }
+      \strng{namehash}{bb679961e3f3f4bba79fc1cf3aa7df1c}
+      \strng{fullhash}{bb679961e3f3f4bba79fc1cf3aa7df1c}
+      \field{labelalpha}{Ras15}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{1783555130, 9781783555130}
+      \field{title}{Python Machine Learning}
+      \field{year}{2015}
+      \field{pages}{342\bibrangedash 343}
+      \range{pages}{2}
+    \endentry
+    \entry{CNNbasic}{artice}{}
+      \name{author}{4}{}{%
+        {{hash=e5195ab112b5e30a8da0820e84bea06e}{%
+           family={Reiazi},
+           family_i={R\bibinitperiod},
+           given={Reza},
+           given_i={R\bibinitperiod}}}%
+        {{hash=3633efc99ee675d179fff32409403941}{%
+           family={Paydar},
+           family_i={P\bibinitperiod},
+           given={Reza},
+           given_i={R\bibinitperiod}}}%
+        {{hash=1b3f1ecbd5ebe2f30e5b3b9c46b953f6}{%
+           family={Abbasian\bibnamedelima Ardakani},
+           family_i={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Ali},
+           given_i={A\bibinitperiod}}}%
+        {{hash=f9a8b87c44e9bb40985ce6d7af159efc}{%
+           family={Etedadialiabadi},
+           family_i={E\bibinitperiod},
+           given={Maryam},
+           given_i={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{c7c15a186293c2b2e959ca2897042223}
+      \strng{fullhash}{c7c15a186293c2b2e959ca2897042223}
+      \field{labelalpha}{RPA\textsuperscript {+}18}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{Mammography Lesion Detection Using Faster R-CNN Detector}
+      \field{year}{2018}
+      \field{pages}{111\bibrangedash 115}
+      \range{pages}{5}
     \endentry
     \entry{backpropogation}{article}{}
       \name{author}{2}{}{%
@@ -368,6 +643,44 @@
       \field{year}{2012}
       \verb{url}
       \verb https://books.google.lt/books?id=hoK6lgEACAAJ
+      \endverb
+    \endentry
+    \entry{Taigman:2014:DCG:2679600.2680208}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=7be9d76415aba9116e61437d9bfa924a}{%
+           family={Taigman\bibnamedelima Yaniv},
+           family_i={T\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           suffix={Yang\bibnamedelima Ming},
+           suffix_i={Y\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Ranzato\bibnamedelima Marc'Aurelio},
+           given_i={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=e2e97feaeed55200b1f1b60197c97dea}{%
+           family={Lior},
+           family_i={L\bibinitperiod},
+           given={Wolf},
+           given_i={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Computer Society}%
+      }
+      \strng{namehash}{9de2068d9da27ea1a4b224fcb5391b8d}
+      \strng{fullhash}{9de2068d9da27ea1a4b224fcb5391b8d}
+      \field{labelalpha}{TL14}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2014 IEEE Conference on Computer Vision and Pattern Recognition}
+      \field{isbn}{978-1-4799-5118-5}
+      \field{title}{DeepFace: Closing the Gap to Human-Level Performance in Face Verification}
+      \field{year}{2014}
+      \field{pages}{1701\bibrangedash 1708}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/CVPR.2014.220
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1109/CVPR.2014.220
       \endverb
     \endentry
     \entry{activation}{article}{}
