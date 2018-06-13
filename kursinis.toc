@@ -1,3 +1,4 @@
+\select@language {lithuanian}
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
 \select@language {lithuanian}
@@ -12,11 +13,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.2.}Dirbtinio neuroninio tinklo veikimas}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.}Aktyvavimo funkcijos}{4}
+\contentsline {subsection}{\numberline {1.3.}Aktyvavimo funkcijos}{5}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.4.}Nuostolio funkcijos}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.5.}Optimizavimo funkcijos}{5}
+\contentsline {subsection}{\numberline {1.5.}Optimizavimo funkcijos}{6}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.}Konvoliucinis neuroninis tinklas}{8}
 \defcounter {refsection}{0}\relax 
@@ -28,11 +29,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.2.2.}Sujungimo sluoksnis}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.3.}Pilno sujungimo sluoksnis}{9}
+\contentsline {subsubsection}{\numberline {2.2.3.}Pilno sujungimo sluoksnis}{10}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.}Architektūros}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.}Modelio reguliavimas}{11}
+\contentsline {subsection}{\numberline {2.4.}Modelio derinimas}{11}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.}Technologijos}{12}
 \defcounter {refsection}{0}\relax 
@@ -44,16 +45,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.}Eksperimentas}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.}Duomenų rinkinys}{13}
+\contentsline {subsection}{\numberline {4.1.}Programos veikimas}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.}Programos veikimas}{13}
+\contentsline {subsection}{\numberline {4.2.}Modelių mokymas}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.}Modelių mokymas}{14}
+\contentsline {subsubsection}{\numberline {4.2.1.}Modelio derinimas}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.1.}Modelio reguliavimas}{14}
+\contentsline {subsubsection}{\numberline {4.2.2.}Modelio modifikavimas}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.2.}Modelio modifikavimas}{16}
+\contentsline {section}{Rezultatai ir išvados}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Rezultatai ir išvados}{20}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{Literatūra}{21}
+\contentsline {section}{Literatūra}{20}

@@ -19,25 +19,6 @@
 
 \refsection{0}
   \sortlist[entry]{anyt/global}
-    \entry{clas-loss-2017}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=3c47cd8758bd54bec1b7dbf8d04328ac}{%
-           family={Agrawal},
-           family_i={A\bibinitperiod},
-           given={Apoorva},
-           given_i={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{3c47cd8758bd54bec1b7dbf8d04328ac}
-      \strng{fullhash}{3c47cd8758bd54bec1b7dbf8d04328ac}
-      \field{labelalpha}{Agr17}
-      \field{sortinit}{A}
-      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://medium.com/data-science-group-iitr/loss-functions-and-optimization-algorithms-demystified-bb92daff331c}}
-      \field{title}{Loss Functions and Optimization Algorithms}
-      \field{year}{2017}
-    \endentry
     \entry{deepGlint}{inproceedings}{}
       \name{author}{2}{}{%
         {{hash=5262f0ebd66a4f3f22500666f4bef797}{%
@@ -69,50 +50,6 @@
       \field{year}{2016}
       \field{pages}{715\bibrangedash 723}
       \range{pages}{9}
-    \endentry
-    \entry{DBLP:conf/eccv/ChuMBHD16}{inproceedings}{}
-      \name{author}{5}{}{%
-        {{hash=2c29bf6f697b27998dad5c2def172fb6}{%
-           family={Chu},
-           family_i={C\bibinitperiod},
-           given={Brian},
-           given_i={B\bibinitperiod}}}%
-        {{hash=8f1c0df53b87aa308e99e41904c28b1d}{%
-           family={Madhavan},
-           family_i={M\bibinitperiod},
-           given={Vashisht},
-           given_i={V\bibinitperiod}}}%
-        {{hash=0c3325985f73ff54cb6bd5443fd77c0e}{%
-           family={Beijbom},
-           family_i={B\bibinitperiod},
-           given={Oscar},
-           given_i={O\bibinitperiod}}}%
-        {{hash=98392893f850ec17a67d971c57631579}{%
-           family={Hoffman},
-           family_i={H\bibinitperiod},
-           given={Judy},
-           given_i={J\bibinitperiod}}}%
-        {{hash=90180e1a30742e0d15328bfe637c2ef4}{%
-           family={Darrell},
-           family_i={D\bibinitperiod},
-           given={Trevor},
-           given_i={T\bibinitperiod}}}%
-      }
-      \strng{namehash}{4aaee6f3acfea21d765ce52d447c090f}
-      \strng{fullhash}{4aaee6f3acfea21d765ce52d447c090f}
-      \field{labelalpha}{CMB\textsuperscript {+}16}
-      \field{sortinit}{C}
-      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Computer Vision - {ECCV} 2016 Workshops - Amsterdam, The Netherlands, October 8-10 and 15-16, 2016, Proceedings, Part {III}}
-      \field{title}{Best Practices for Fine-Tuning Visual Classifiers to New Domains}
-      \field{year}{2016}
-      \field{pages}{435\bibrangedash 442}
-      \range{pages}{8}
-      \verb{url}
-      \verb https://doi.org/10.1007/978-3-319-49409-8_34
-      \endverb
     \endentry
     \entry{Cameron-loss-fun}{book}{}
       \name{author}{1}{}{%
@@ -343,6 +280,84 @@
       \field{howpublished}{\url{https://ujjwalkarn.me/2016/08/11/intuitive-explanation-convnets/}}
       \field{title}{An Intuitive Explanation of Convolutional Neural Networks}
       \field{year}{2016}
+    \endentry
+    \entry{DBLP:journals/corr/KingmaB14}{article}{}
+      \name{author}{2}{}{%
+        {{hash=1e072d74f4ac1094c9c26e1b592cea4a}{%
+           family={Kingma},
+           family_i={K\bibinitperiod},
+           given={Diederik\bibnamedelima P.},
+           given_i={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=8aa66e8231cc2fdbe67aa4f18ca970c6}{%
+           family={Ba},
+           family_i={B\bibinitperiod},
+           given={Jimmy},
+           given_i={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{c1670936fba733d1cb2d4c23bce95c6e}
+      \strng{fullhash}{c1670936fba733d1cb2d4c23bce95c6e}
+      \field{labelalpha}{KB14}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Adam: {A} Method for Stochastic Optimization}
+      \field{volume}{abs/1412.6980}
+      \field{year}{2014}
+      \verb{eprint}
+      \verb 1412.6980
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1412.6980
+      \endverb
+    \endentry
+    \entry{2016arXiv161106652K}{article}{}
+      \name{author}{5}{}{%
+        {{hash=df5a4eabd8a547271170a3b67dcad667}{%
+           family={{Krummenacher}},
+           family_i={K\bibinitperiod},
+           given={G.},
+           given_i={G\bibinitperiod}}}%
+        {{hash=86380591f3b5bf60a54a6a00696778d3}{%
+           family={{McWilliams}},
+           family_i={M\bibinitperiod},
+           given={B.},
+           given_i={B\bibinitperiod}}}%
+        {{hash=e55506c8cb1f90ac1771296fef1d2fb2}{%
+           family={{Kilcher}},
+           family_i={K\bibinitperiod},
+           given={Y.},
+           given_i={Y\bibinitperiod}}}%
+        {{hash=60ca0ff89d21cd895fcce98f266eebfa}{%
+           family={{Buhmann}},
+           family_i={B\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=9ea835a5b9afb38893f072fcb5efa9eb}{%
+           family={{Meinshausen}},
+           family_i={M\bibinitperiod},
+           given={N.},
+           given_i={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{6a32f504ec9c40a4483c2f09e3db6969}
+      \strng{fullhash}{6a32f504ec9c40a4483c2f09e3db6969}
+      \field{labelalpha}{KMK\textsuperscript {+}16}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{stat.ML}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{ArXiv e-prints}
+      \field{month}{11}
+      \field{title}{{Scalable Adaptive Stochastic Optimization Using Random Projections}}
+      \field{year}{2016}
+      \verb{eprint}
+      \verb 1611.06652
+      \endverb
+      \keyw{Statistics - Machine Learning,Computer Science - Learning}
     \endentry
     \entry{leondes1998image}{book}{}
       \name{author}{1}{}{%
@@ -729,91 +744,6 @@
       \field{howpublished}{\url{https://www.explainthatstuff.com/introduction-to-neural-networks.html}}
       \field{title}{Neural networks}
       \field{year}{2018}
-    \endentry
-    \entry{2017arXiv170508292W}{article}{}
-      \name{author}{5}{}{%
-        {{hash=069271a54542f736463e2b42c889659f}{%
-           family={{Wilson}},
-           family_i={W\bibinitperiod},
-           given={A.\bibnamedelimi C.},
-           given_i={A\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-        {{hash=a0e0be45ba9cb79c40e04719e73a9666}{%
-           family={{Roelofs}},
-           family_i={R\bibinitperiod},
-           given={R.},
-           given_i={R\bibinitperiod}}}%
-        {{hash=be5c0e6194ce1643a72bbab3ef190e94}{%
-           family={{Stern}},
-           family_i={S\bibinitperiod},
-           given={M.},
-           given_i={M\bibinitperiod}}}%
-        {{hash=22ee81ed3b344045c439198282893b11}{%
-           family={{Srebro}},
-           family_i={S\bibinitperiod},
-           given={N.},
-           given_i={N\bibinitperiod}}}%
-        {{hash=779741d02dd621b30432bcf63c8f9a8e}{%
-           family={{Recht}},
-           family_i={R\bibinitperiod},
-           given={B.},
-           given_i={B\bibinitperiod}}}%
-      }
-      \strng{namehash}{42b46e04ed1fa80a8844f7229f53dc6c}
-      \strng{fullhash}{42b46e04ed1fa80a8844f7229f53dc6c}
-      \field{labelalpha}{WRS\textsuperscript {+}17}
-      \field{sortinit}{W}
-      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprintclass}{stat.ML}
-      \field{journaltitle}{ArXiv e-prints}
-      \field{title}{{The Marginal Value of Adaptive Gradient Methods in Machine Learning}}
-      \field{year}{2017}
-      \verb{eprint}
-      \verb 1705.08292
-      \endverb
-    \endentry
-    \entry{DBLP:journals/corr/XuWCL15}{article}{}
-      \name{author}{4}{}{%
-        {{hash=743dd6cdaa6639320289d219d351d7b7}{%
-           family={Xu},
-           family_i={X\bibinitperiod},
-           given={Bing},
-           given_i={B\bibinitperiod}}}%
-        {{hash=7b94afca49a5fad9a08434bbb6abf1ce}{%
-           family={Wang},
-           family_i={W\bibinitperiod},
-           given={Naiyan},
-           given_i={N\bibinitperiod}}}%
-        {{hash=48461ccdf50ba5a54e29a354aa734c0b}{%
-           family={Chen},
-           family_i={C\bibinitperiod},
-           given={Tianqi},
-           given_i={T\bibinitperiod}}}%
-        {{hash=c4a02f87e51fc72ab3f841de1a3982a7}{%
-           family={Li},
-           family_i={L\bibinitperiod},
-           given={Mu},
-           given_i={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{bae11344e4dd597130a8235917d040c9}
-      \strng{fullhash}{bae11344e4dd597130a8235917d040c9}
-      \field{labelalpha}{XWC\textsuperscript {+}15}
-      \field{sortinit}{X}
-      \field{sortinithash}{2999ebab86052e6d71b434385f8b4ed2}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{CoRR}
-      \field{title}{Empirical Evaluation of Rectified Activations in Convolutional Network}
-      \field{volume}{abs/1505.00853}
-      \field{year}{2015}
-      \verb{eprint}
-      \verb 1505.00853
-      \endverb
-      \verb{url}
-      \verb http://arxiv.org/abs/1505.00853
-      \endverb
     \endentry
     \entry{1193152}{article}{}
       \name{author}{3}{}{%

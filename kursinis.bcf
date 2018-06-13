@@ -2065,21 +2065,19 @@
     <bcf:citekey order="11">shiffman2012nature</bcf:citekey>
     <bcf:citekey order="12">backpropogation</bcf:citekey>
     <bcf:citekey order="13">activation</bcf:citekey>
-    <bcf:citekey order="14">DBLP:journals/corr/XuWCL15</bcf:citekey>
-    <bcf:citekey order="15">Cameron-loss-fun</bcf:citekey>
-    <bcf:citekey order="16">clas-loss-2017</bcf:citekey>
-    <bcf:citekey order="17">Niknafs2016NeuralNO</bcf:citekey>
-    <bcf:citekey order="18">leondes1998image</bcf:citekey>
-    <bcf:citekey order="19">2017arXiv170508292W</bcf:citekey>
-    <bcf:citekey order="20">CnnImages</bcf:citekey>
-    <bcf:citekey order="21">Convolution-book</bcf:citekey>
-    <bcf:citekey order="22">DBLP:journals/corr/abs-1708-08711</bcf:citekey>
-    <bcf:citekey order="23">CNNbasic</bcf:citekey>
-    <bcf:citekey order="24">layers-CS231n</bcf:citekey>
-    <bcf:citekey order="25">7927440</bcf:citekey>
-    <bcf:citekey order="26">layers-fullyconnected</bcf:citekey>
-    <bcf:citekey order="27">DBLP:journals/corr/YosinskiCBL14</bcf:citekey>
-    <bcf:citekey order="28">DBLP:conf/eccv/ChuMBHD16</bcf:citekey>
+    <bcf:citekey order="14">Cameron-loss-fun</bcf:citekey>
+    <bcf:citekey order="15">Niknafs2016NeuralNO</bcf:citekey>
+    <bcf:citekey order="16">leondes1998image</bcf:citekey>
+    <bcf:citekey order="17">CnnImages</bcf:citekey>
+    <bcf:citekey order="18">Convolution-book</bcf:citekey>
+    <bcf:citekey order="19">DBLP:journals/corr/abs-1708-08711</bcf:citekey>
+    <bcf:citekey order="20">CNNbasic</bcf:citekey>
+    <bcf:citekey order="21">layers-CS231n</bcf:citekey>
+    <bcf:citekey order="22">7927440</bcf:citekey>
+    <bcf:citekey order="23">layers-fullyconnected</bcf:citekey>
+    <bcf:citekey order="24">DBLP:journals/corr/YosinskiCBL14</bcf:citekey>
+    <bcf:citekey order="25">2016arXiv161106652K</bcf:citekey>
+    <bcf:citekey order="26">DBLP:journals/corr/KingmaB14</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="anyt/global" type="entry" sortscheme="anyt" sortnamekeyscheme="global">
   <bcf:sorting>
