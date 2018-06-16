@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.5.17)  13 JUN 2018 23:18
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.5.17)  15 JUN 2018 08:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1174,11 +1174,11 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'kursinis.bbl' found.
 (./kursinis.bbl
-LaTeX Font Info:    Try loading font information for U+msa on input line 196.
+LaTeX Font Info:    Try loading font information for U+msa on input line 219.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 196.
+LaTeX Font Info:    Try loading font information for U+msb on input line 219.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1527,20 +1527,26 @@ Overfull \hbox (3.09444pt too wide) in alignment at lines 281--296
  [] [] [] [] [] 
  []
 
-[10] [11] [12
+[10] [11] [12] [13
 
-] [13
+]
+Underfull \hbox (badness 1496) in paragraph at lines 342--342
+[]\EU1/texgyretermes(0)/bx/n/17.28 Modelio derinimas ir modifikavimas-derinimas
+ su mažu
+ []
+
+[14
 
 ]
 File: img/FT/SGD_acc.png Graphic file (type QTm)
  <use  "img/FT/SGD_acc.png" >
 File: img/FT/SGD_loss.png Graphic file (type QTm)
- <use  "img/FT/SGD_loss.png" >
+ <use  "img/FT/SGD_loss.png" > [15]
 File: img/FT/Adam_acc.png Graphic file (type QTm)
 
 <use  "img/FT/Adam_acc.png" >
 File: img/FT/Adam_loss.png Graphic file (type QTm)
- <use  "img/FT/Adam_loss.png" > [14]
+ <use  "img/FT/Adam_loss.png" >
 File: img/FT/Adagrad_loss.png Graphic file (type QTm)
 
 <use  "img/FT/Adagrad_loss.png" >
@@ -1550,12 +1556,12 @@ File: img/FT/RMSprop_acc.png Graphic file (type QTm)
 
 <use  "img/FT/RMSprop_acc.png" >
 File: img/FT/RMSprop_loss.png Graphic file (type QTm)
- <use  "img/FT/RMSprop_loss.png" > [15]
+ <use  "img/FT/RMSprop_loss.png" > [16]
 File: img/AL/SGD_acc.png Graphic file (type QTm)
 
 <use  "img/AL/SGD_acc.png" >
 File: img/AL/SGD_loss.png Graphic file (type QTm)
- <use  "img/AL/SGD_loss.png" > [16]
+ <use  "img/AL/SGD_loss.png" > [17]
 File: img/AL/Adam_acc.png Graphic file (type QTm)
 
 <use  "img/AL/Adam_acc.png" >
@@ -1565,20 +1571,25 @@ File: img/AL/Adagrad_acc.png Graphic file (type QTm)
 
 <use  "img/AL/Adagrad_acc.png" >
 File: img/AL/Adagrad_loss.png Graphic file (type QTm)
- <use  "img/AL/Adagrad_loss.png" > [17]
+ <use  "img/AL/Adagrad_loss.png" > [18]
 File: img/AL/RMSprop_acc.png Graphic file (type QTm)
 
 <use  "img/AL/RMSprop_acc.png" >
 File: img/AL/RMSprop_loss.png Graphic file (type QTm)
- <use  "img/AL/RMSprop_loss.png" > [18]
-Underfull \hbox (badness 10000) in paragraph at lines 538--539
+ <use  "img/AL/RMSprop_loss.png" > [19]
+Underfull \hbox (badness 10000) in paragraph at lines 540--541
 
  []
 
-[19
 
-]
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 553
+Underfull \hbox (badness 10000) in paragraph at lines 551--552
+
+ []
+
+[20
+
+] [21]
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 572
 .
  (/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmtt.fd
 File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1586,35 +1597,34 @@ File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ! Misplaced alignment tab character &.
 <to be read again> ...and soft computing science &
                                                    engineering (ijecscse)
-l.553 \printbibliography[heading=bibintoc]
+l.572 \printbibliography[heading=bibintoc]
                                           
 ? 
+[22
 
-Underfull \hbox (badness 1859) in paragraph at lines 553--553
+]
+Underfull \hbox (badness 1859) in paragraph at lines 572--572
 \EU1/texgyretermes(0)/m/it/12 tems Techniques and Applications\EU1/texgyreterme
 s(0)/m/n/12 . Elsevier Science, 1998, p. 323–324. \EU1/texgyretermes(0)/m/sc/12
  isbn\EU1/texgyretermes(0)/m/n/12 :
  []
 
-[20
-
-]
 
 Package biblatex Warning: No driver for entry type 'artice'.
-(biblatex)                Using fallback driver on input line 553.
+(biblatex)                Using fallback driver on input line 572.
 
-[21] (./kursinis.aux)
+[23] [24] (./kursinis.aux)
 Package logreq Info: Writing requests to 'kursinis.run.xml'.
 \openout1 = `kursinis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25903 strings out of 493638
- 477980 string characters out of 6146796
- 852292 words of memory out of 5000000
- 28974 multiletter control sequences out of 15000+600000
+ 25907 strings out of 493638
+ 478129 string characters out of 6146796
+ 852363 words of memory out of 5000000
+ 28978 multiletter control sequences out of 15000+600000
  16614 words of font info for 86 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 68i,12n,96p,10497b,2297s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,12n,96p,10497b,2291s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on kursinis.pdf (21 pages).
+Output written on kursinis.pdf (24 pages).

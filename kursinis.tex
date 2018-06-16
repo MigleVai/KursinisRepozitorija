@@ -30,10 +30,10 @@
 \department{Programų sistemų katedra}
 \papertype{Kursinis darbas}
 \title{Mažos duomenų imties problemos poveikis klasifikacijos tikslumui naudojant dirbtinius neuroninius tinklus}
-\titleineng{(The Effect of a Small Dataset Problem on Classification Accuracy Using Artificial Neural Networks)}
+\titleineng{The Effect of a Small Dataset Problem on Classification Accuracy Using Artificial Neural Networks}
 \status{3 kurso 5 grupės studentė}
 \author{Miglė Vaitulevičiūtė}
-\supervisor{dr. Vytautas Valaitis}
+\supervisor{asist. dr. Vytautas Valaitis}
 \date{Vilnius – \the\year}
 
 % Nustatymai
@@ -57,7 +57,7 @@ Dirbtinių neuroninių tinklų idėja buvo sugalvota 1943 metais \cite{firstIdea
 Tobulėjant technologijoms bei kompiuteriams galint vykdyti vis daugiau ir daugiau skaičiavimų dirbtiniai neuroniniai tinklai sparčiai įgijo populiarumą.
 
 Vienas iš pagrindinių sprendžiamų uždavinių yra klasifikacija - procesas, kurio metu yra ieškoma panašių ypatybių (angl. feature) tarp skirtingų objektų, pavyzdžiui paveiksliukų, ir jie yra skirstomi į atitinkamas klases \cite{classificationDef}. Tokį uždavinį gali atlikti dirbtinių neuroninių 
-tinklų tipas - konvoliuciniai neuroniniai tinklai. Klasifikacijos uždavinys yra aktualus, kadangi jo panaudojimas yra labai skirtingas - nuo medicinos iki savivaldžių automobilių.
+tinklų tipas - konvoliuciniai neuroniniai tinklai \cite{fukushima, LeCun:1999:ORG:646469.691875}. Klasifikacijos uždavinys yra aktualus, kadangi jo panaudojimas yra labai skirtingas - nuo medicinos iki savivaldžių automobilių.
 
 Konvoliuciniai neuroniniai tinklai gali būti naudojami:
 \begin{itemize}
@@ -73,15 +73,15 @@ todėl yra siekiama keičiant dirbtinio neuroninio tinklo architektūra bei jo p
 Dirbtinio neuroninio tinklo tikslumą lemią ne vien kokybiški duomenys, didelį poveikį turi ir tinklo gylis - kiek daug sluoksnių turi dirbtinis neuroninis 
 tinklas. 
 
-Šio darbo tikslas yra palyginti skirtingų gylių dirbtinius neuroninius tinklus pagal tikslumą, kai mokymui yra naudojama maža duomenų imtis.
+Šio darbo tikslas yra palyginti skirtingų gylių dirbtinius neuroninius tinklus pagal tikslumą, kai mokymui yra naudojamas mažas duomenų rinkinys.
 
 Užduotys:
 \begin{enumerate}
-\item Atlikti dirbtinių neuroninių tinklų ir konvoliucinių neuroninių tinklų analizę.
-\item Suderinti (angl. fine-tune) egzistuojantį modelį su pasirinkta duomenų imtimi.
-\item Modifikuoti egzistuojantį modelį, pridedant papildomų sluoksnių, ir jį suderinti su pasirinkta duomenų imtimi.
-\item Palyginti ir įvertinti suderinto ir modifikuoto-suderinto modelių tikslumą.
-\item Palyginti SGD, Adam, Adagrad ir RMSprop optimizavimo funkcijas.
+\item Apžvelgti dirbtinių neuroninių tinklų ir konvoliucinių neuroninių tinklų sudėtį ir veikimą.
+\item Suderinti (angl. fine-tune) egzistuojantį modelį su pasirinktu mažu duomenų rinkiniu.
+\item Modifikuoti egzistuojantį modelį, pridedant papildomų sluoksnių, ir jį suderinti su pasirinktu mažu duomenų rinkiniu.
+\item Palyginti ir įvertinti suderinto ir modifikuoto-suderinto modelių tikslumą pagal gautą derinimo informaciją.
+\item Palyginti SGD, Adam, Adagrad ir RMSprop optimizavimo funkcijas naudojant suderintą ir modifikuotą-suderintą modelius, kurie apmokyti su mažu kiekiu duomenų.
 \end{enumerate}
 
 \section{Dirbtinis neuroninis tinklas}
@@ -110,9 +110,9 @@ rezultatai skiriasi, slenksčio reikšmės ir svoriai yra keičiami atitinkamai 
 Mokymo metu duomenys neuroniniu tinklu keliauja į priekį - nuo įvesties į išvesties sluoksnį. Kai išvesties sluoksnis yra pasiekiamas, gautas rezultatas yra palyginamas su norimu rezultatu bei 
 apskaičiuojama nuostolio funkcija - kaip stipriai skiriasi gautas ir norimas rezultatai. Pagal šią reikšmę matoma, kaip reiktų keisti gautą rezultatą, kad nuostolio funkcijos reikšmė pasiektų lokalų 
 minimumą. Tačiau siekiant aukštesnio tikslumo reikia keisti viso neuroninio tinklo parametrus - svorius, slenksčio reikšmes. Taigi, iš išvesties rezultatų galima matyti, kaip reikia pakeisti - 
-didinti arba mažinti - prieš tai buvusio sluoksnio parametrus, kad būtų gautas geriausias tikslumas. Šis procesas yra iteratyviai kartojamas kiekvienam neuronui su prieš jį einančiu sluoksniu bei jį galima įvardinti kaip funkciją (1).
+didinti arba mažinti - prieš tai buvusio sluoksnio parametrus, kad būtų gautas geriausias tikslumas. Šis procesas yra iteratyviai kartojamas kiekvienam neuronui su prieš jį einančiu sluoksniu bei jį galima įvardinti kaip funkciją (1):
 \begin{equation}
-\frac{\partial{C_{0}}}{\partial{w^{L}}} = \frac{\partial{z^{L}}}{\partial{w^{L}}} \frac{\partial{a^{L}}}{\partial{z^{L}}} \frac{\partial{C_{0}}}{\partial{a^{L}}}
+\frac{\partial{C_{0}}}{\partial{w^{L}}} = \frac{\partial{z^{L}}}{\partial{w^{L}}} \frac{\partial{a^{L}}}{\partial{z^{L}}} \frac{\partial{C_{0}}}{\partial{a^{L}}}.
 \end{equation}
 Šioje funkcijoje vienas sluoksnis turi vieną neuroną, priklausomai nuo neuronų ir sluoksnių skaičiaus prie funkcijos parametrų prisidėtų atitinkami indeksai. Funkcija parodo dalinės nuostolio funkcijos 
 išvestinės ir dalinės svorio (arba slenksčio reikšmės) išvestinės santykį, kur \(w^{L}\) yra svoris, kurį galima pakeisti į \(b^{L}\) (slenksčio reikšmė), \(C_{0}\) yra nuostolio funkcijos reikšmė, 
@@ -121,9 +121,9 @@ išvestinės ir dalinės svorio (arba slenksčio reikšmės) išvestinės santyk
 \subsection{Aktyvavimo funkcijos}
 Aktyvavimo funkcijų (angl. activation function) yra įvairių, todėl specifinės problemos gali reikalauti vienos ar daugiau konkrečių aktyvavimo funkcijų \cite{activation}.
 Aktyvavimo funkcija yra skirta tam, kad nustatytų ar neuronui reikia būti aktyvuotam ar ne. Tai yra nusprendžiama pagal duomenis, kuriuos neuronas gauna, jeigu jie yra aktualūs, neuronas yra aktyvuojamas, jeigu ne - ignoruojamas.
-Šią funkciją galima aprašyti žemiau pateikta formule (2).
+Šią funkciją galima aprašyti žemiau pateikta formule (2):
 \begin{equation}
-Y = A(\Sigma{(w * d) + b})
+Y = A(\Sigma{(w * d) + b}).
 \end{equation}
 
 Formulėje (2) pateikta raidė \(A\) reiškia bet kokia pasirinkta aktyvavimo funkcija, o jos parametrai \(w\) yra svoris, \(d\) yra įvesties duomenys ir \(b\) yra slenksčio reikšmė. Taigi, ar neuronas bus aktyvuotas priklauso nuo prieš jį 
@@ -164,6 +164,7 @@ Lentelėje 1 išvardinti visos populiariausios optimizavimo funkcijos.
 \begin{longtable}[h!]{ | p{2cm} | p{2.2cm} | p{2.5cm} | p{2.5cm} | p{4.5cm} | } 
 \caption{Optimizavimo funkcijos}
 \hline
+\beginhead
 Pavadinimas & Tipas & Privalumai & Trūkumai & Veikimas \\
 \hline
 \endhead
@@ -276,6 +277,7 @@ apie įvairias architektūras.
 \begin{longtable}[h]{ | p{4cm} | p{1cm} | p{3cm} | p{5cm} | p{1.5cm} | } 
 \caption{Konvoliucinių neuroninių tinklų architektūros}
 \hline
+\beginhead
 Pavadinimas & Metai & Parametrų kiekis & Veikimas & ILSVRC vieta \\
 \hline
 \endhead
@@ -302,6 +304,15 @@ ir pritaikyti specifiniai užduočiai spręsti. Modelį derinti galima nustačiu
 Toks suderinimas yra galimas, nes pirmuosiuose sluoksniuose neuroniniai tinklai išmoksta ypatybių panašių į Gaboro filtrą 
 (tiesinis filtras naudojamas tekstūroms analizuoti) ir spalvų dėmes. Šios pirmojo sluoksnio ypatybės nepriklauso nuo duomenų rinkinio, bet yra bendros ir tinkamos 
 daugeliui duomenų rinkinių ir užduočių \cite{DBLP:journals/corr/YosinskiCBL14}.
+
+\subsection{Tikslumas}
+Tikslumas (angl. accuracy) yra matavimas, kuris parodo santykį tarp teisingai spėjimų (angl. prediction) ir iš viso darytų spėjimų.
+Taigi, klasifikavimo tikslumas yra apibrėžtas šiomis sąvokomis - tikras teigiamas (angl. true positive), tikras neigiamas (angl. true negative), klaidingas teigiamas (angl. false positive) ir klaidingas neigiamas (angl. false negative). Atitinkamai tikras teigiamas reiškia objektas \(X_{i}\) priskirtas klasei \(C_{j}\), ir iš tiesų jis jai priklauso, o tikras neigiamas - objektas \(X_{i}\) nepriskirtas klasei \(C_{j}\), ir iš tiesų jis jai nepriklauso. Šie du rodmenys apskaičiuoja bendrą klasifikacijos tikslumą (3):
+\begin{equation}
+tikslumas = \frac{TT + TN}{N}.
+\end{equation}
+
+Formulės prametras \(TT\) yra skaičius tikrų teigiamų spėjimų, \(TN\) yra skaičius tikrų neigiamų spėjimų, o \(N\) yra visų objekų skaičius.
 
 \section{Technologijos}
 Naudojamų technologijų išsirinkimas yra pradinis žingsnis siekiant įvykdyti kursiniame darbe išsikeltas užduotis. Šiame skyriuje pateiktos populiariausios šių laikų technologijos 
@@ -330,19 +341,19 @@ TensorFlow yra atviros programinės įrangos biblioteka skirta aukšto našumo s
 platformose - procesoriuose, grafikos procesoriuose. Sukurtas "Google" dirbtinio intelekto skyriaus, tad yra labai palaikomas automatinis ir gilusis mokymasis, tačiau 
 dėl bibliotekos ir skaičiavimų lankstumo yra naudojamas įvairiose mokslinėse srityse.
 
-\section{Eksperimentas}
-Šio eksperimento tikslas yra išanalizuoti mokymosi tikslumą su skirtingų gylių neuroninais tinklais, kai mokymui yra naudojamas mažas paveikslėlių rinkinys. Taigi, pirmas 
+\section{Modelio derinimas ir modifikavimas-derinimas su mažu duomenų rinkiniu}
+Šio eksperimento tikslas yra išanalizuoti mokymosi tikslumą su skirtingų gylių neuroninais tinklais, kai mokymui yra naudojama maža paveikslėlių imtis. Taigi, pirmas 
 šio eksperimento žingsnis - išsirinkti konvoliucinį neuroninį tinklą. Poskyriuje "Architektūros" yra trumpai apibūdinti pagrindiniai konvolicinių neuroninių tinklų tipai. 
 Iš jų buvo išsirinktas VGG, kadangi jis neturi specialių blokų kaip kad GoogleNet turi inception arba ResNet turi liekamąjį, todėl yra paprasta suvokti kaip duomenys sklinda per tinklą. Buvo nuspręsta daryti paprastą, binarinę paveikslėlių 
 klasifikaciją - nustatymas ar katė, ar šuo pavaizduotas paveikslėlyje. Buvo surasta ir naudota duomenų imtis, kuri turi 10 000 paveikslėlių - 8 000 mokymosi tikslui ir 2 000 validacijos.
 
-% \subsection{Duomenų rinkinys}
+% \subsection{Duomenų imtis}
 % Tinklas turi aukščiausią tikslumą, kai yra apmokomas su bendriniais duomenimis ir dar efektyviau 
 % pasirodo kai yra suderintas su specifiniu duomenų rinkiniu \cite{DBLP:conf/eccv/ChuMBHD16}. Optimalus duomenų kiekis, kad gerai suderinti 
 % modelį yra apie 10 000 paveiksliukų. 
 % Tačiau realybėje visų klasių objektų paveiksliukų nėra be galo daug, kadangi reikia turėti daug paveiksliukų ir skirti labai
 % daug laiko bei žmogiškųjų resursų jų žymėjimui. Todėl tenka tinklus apmokyti su limituotais duomenų rinkiniais. Pagal šią realaus pasaulio problemą buvo įvykdyta viena iš eksperimento tikslo sąlygų - 
-% mažas duomenų rinkinys. Buvo surasta ir naudota duomenų imtis, kuri turi 10 000 paveikslėlių - 8 000 mokymosi tikslui ir 2 000 validacijos.
+% maža duomenų itmis. Buvo surasta ir naudota duomenų imtis, kuri turi 10 000 paveikslėlių - 8 000 mokymosi tikslui ir 2 000 validacijos.
 
 \subsection{Programos veikimas}
 Ankstesniame skyriuje "Technologijos" yra išvardintos visos technologijos, kurios buvo naudotos šio eksperimento programai parašyti.
@@ -357,10 +368,10 @@ paveiksliukai naudojami ir kiek spalvų sluoksnių jie turi (standartiniai pavei
 mokinti ir kuriuos - ne. Iš visų esamų sluoksnių mokinimui buvo parinkti tik paskutiniai 4, kadangi jie yra atsakingi už specifinių ypatybių išmokimą. Po šių egzistuojančio 
 modelio paruošimų reikia sukurti naują Kero modelį, prie kurio reikia pridėti paruoštą egzistuojantį modelį bei pridėti kelis kitus sluoksnius tam tikru išsidėstymu - 
 plokštinimo (angl. flatten), tankumo (angl. dense), išmetimo (angl. dropout) ir vėl tankumo. Pirmasis tankumo sluoksnis turi aktyvacijos funkciją ReLU, o paskutinis - sigmoidinę. Po visų sluoksnių pridėjimo modelis iš 
-viso turėjo 40 406 849 parametrų, iš kurių mokinami buvo 32 771 585, o tik 7 635 264 buvo nekeičiami. 
+viso turėjo 40 406 849 parametrų, iš kurių mokinami buvo 32 771 585, o tik 7 635 264 buvo nekeičiami. Pavyzdžiui, architektūra ResNet, kuri yra laikoma giliu tinklu dėl turimų sluoksnių skaičiaus, turi 25 000 000 parametrų \cite{DBLP:journals/corr/HeZRS15}.
 
 Po modelio paruošimo, reikia nustatyti kokio dydžio paveikslėlių partijomis (angl. batch) bus mokomas ir validuojamas modelis. Geriausias partijos dydis naudotam kompiuteriui buvo mokymosi partijai 100 paveikslėlių, o validacijos - 25.
-Tuomet nustatomas paveikslėlių aplankalo kelias, jų ir partijos dydis bei nustatomas klasės režimas į binarinį, nes duomenų rinkinys susideda iš dviejų klasių - kačių ir šunų.
+Tuomet nustatomas paveikslėlių aplankalo kelias, jų ir partijos dydis bei nustatomas klasės režimas į binarinį, nes duomenų imtis susideda iš dviejų klasių - kačių ir šunų.
 
 Paruošę modelį bei paveikslėlių rinkinį, galima pradėti mokinti ir validuoti modelį. Taigi, nustatomas modelio kompiliavimo metodas, kur turi būti - nuostolio ir 
 optimizavimo funkcijos. Daugiau apie nuostolio ir optimizavimo funkcijas galima skaityti skyriuose "Nuostolio funkcijos" ir "Optimizavimo funkcijos". Tačiau nuotolio 
@@ -449,7 +460,7 @@ Tad, tikslumo grafikas (9 pav.) parodo, kad mokymosi funkcija šokteli iki 100 p
 O nuostolio grafikas (10 pav.) parodo, kad mokymosi funkcija nukrenta iki beveik 0 procentų ir ten išsilaiko. Tačiau validacijos funkcija labai stipriai svyruoja ir didėja. Pasiekdama aukščiausią nuostolį ties 82 procentais.
 
 \subsubsection{Modelio modifikavimas}
-Iš naujo apmokyti modeliai su 14 papildomų sluoksnių. Visi parametrai ir duomenų rinkinys liko tokie patys tik optimizavimo funkcija vėl buvo keičiama.
+Iš naujo apmokyti modeliai su 14 papildomų sluoksnių. Visi parametrai ir duomenų itmis liko tokie patys tik optimizavimo funkcija vėl buvo keičiama.
 
 Kaip ir prieš tai pirmoji modifikavimo funkcija yra SGD. Jos grafikai yra 11 ir 12 paveiksliukai.
 
@@ -526,28 +537,38 @@ Tikslumo grafike (17 pav.) matyti, kad mokymosi funkcija pakyla iki 100 procent�
 Nuostolio grafikas (18 pav.) parodo, kad mokymosi funkcija pasiekia 0 procentų. Tačiau validacijos funkcija svyruoja pirmas 45 epochas, o po to išsilygina ties 55 procentais.
 
 \sectionnonum{Rezultatai ir išvados}
+Šio darbo metu buvo tirta dirbtinių neuroninių tinklų ir konvolicinių neuroninių tinklų veikimas ir jų sudedamosios dalys bei surinkta informacija iš litertūros šaltinių. Atliktas eksperimentas, kurio tikslas buvo pamatyti kokį efektą turi konvolicinio neuroninio tinklo gylis ir jo suderinimui naudojamas mažas duomenų rinkinys neuroninio tinklo tikslumui.
+
+\hfill\break
+
 Darbo rezultatai:
 \begin{enumerate}
 \item Buvo atlikta bendra dirbtinių neuroninių tinklų ir konvoliucinių neuroninių tinklų analizė.
-\item Egzistuojantis modelis buvo suderintas su pasirinkta kačių ir šunų duomenų imtimi.
-\item Egzistuojantis modelis buvo modifikuotas, pridėjus papildomus 14 sluoksnių, ir suderintas su kačių ir šunų duomenų imtimi.
+\item Egzistuojančio modelio, kuris atitiko VGG architektūra, 4 paskutiniai sluoksniai buvo suderinti su pasirinkta mažo kiekio kačių ir šunų paveiksliukų rinkiniu (iš viso 8 000 paveiksliukų).
+\item Egzistuojantis modelis, kuris atitiko VGG architektūra, buvo modifikuotas, pridėjus papildomus 14 sluoksnių, ir suderintas su kačių ir šunų duomenų rinkiniu.
 \item Gauti suderinto ir modifikuoto-suderinto modelių mokymo ir validacijos tikslumo grafikai.
-\item Suderinimo metu buvo keičiamos optimizavimo funkcijos - iš viso panaudotos SGD, Adam, Adagrad ir RMSprop funkcijos, kurios buvo palyginus naudojantis mokymo ir validacijos grafais.
+\item Suderinimo metu buvo keičiamos optimizavimo funkcijos - iš viso panaudotos SGD, Adam, Adagrad ir RMSprop funkcijos, kurios buvo palyginus naudojantis mokymo ir validacijos grafikais.
 \end{enumerate}
 
 \hfill\break
 
 Darbo išvados:
 \begin{enumerate}
-\item Apmokius skirtingų gylių neuroninius tinklus, buvo nustatyta, kad gilesnis tinklas mokomojoje dalyje pasirodo labai gerai - tikslumas auga ir nuostolis mažėja iki 0 procentų, tačiau 
-validacijos metu tikslumas pakyla iki tam tikros reikšmės ir pasidaro pastovus, o praradimas tolygiai auga. Galima daryti išvadą, kad gilesnis neuroninis tinklas su mažu kiekiu duomenų gali juos 
-įsiminti, o ne išmokti atpažinti.
-\item Atliktas eksperimentas parodė, kad su naudota duomenų imtimi ir parametrais, mažo gylio modeliuose geriausia naudoti Adagrad optimizavimo funkciją, kadangi jos pasiektas validacijos tikslumas yra 96 procentai, nors ir Adam funkcija pasiekė tokį 
-patį tikslumą. Tačiau Adam funkcijos validacijos nuostolis 80 epochoje siekė 25 procentus, kai Adagrad siekė tik 15 procentų ir augimo tendencija buvo daug mažesnė. Šiuo atveju, Adagrad funkcija yra geriau, kadangi ji pritaiko mokymosi greitį pagal 
-parametrus - maži pakeitimai (žemas mokymosi greitis) prametrams, kurie pasikartoja dažnai, ir dideli pakeitimai (aukštas mokymosi greitis), kai parametrai nėra dažni. Todėl ši funkcija labai gerai pasirodo su maža duomenų imtimi \cite{2016arXiv161106652K}.
-\item Eksperimentas parodė, kad su naudota duomenų imtimi ir parametrais, didesnio gylio modeliuose geriau naudoti Adam optimizavimo funkciją, kadangi validacijos tikslumas yra 96 procentai, o nuostolio funkcija pasiekia 35 procentus. O Adagrad 
-funkcija pasiekia tikslumą 95 procentų ir nuostolį 35 procentų, tačiau turi labai didelę augimo tendenciją. Adam funkcija yra geriau, nes kaip ir Adagrad apskaičiuoja ir saugo mokymosi greitį kiekvienam parametrui, bet ir fiksuoja momento (angl. 
-momentum) pasikeitimus, kas leidžia greičiau surasti lokalų minimumą ir konverguoti. Todėl su dideliu kiekiu parametrų veikia Adam geriau \cite{DBLP:journals/corr/KingmaB14}.
+\item Apmokius skirtingų gylių dirbtinius neuroninius tinklus, buvo nustatyta, kad gilesnis tinklas mokomojoje dalyje pasirodo labai gerai - tikslumas auga ir nuostolis mažėja iki 0, tačiau 
+validacijos metu tikslumas pakyla iki tam tikros reikšmės ir pasidaro pastovus, o praradimas tolygiai auga. Kita vertus, trumpesnio tinklo tikslumas yra labai panašus į gilesnio bei nuostolis nepasiekia 0. Galima daryti išvadą, kad gilesnis neuroninis tinklas su mažu kiekiu duomenų gali juos 
+įsiminti, o ne išmokti atpažinti, nes nuostolio funkcijos reikšmė pasiekia 0.
+% \item Atliktas eksperimentas parodė, kad su naudota duomenų imtimi ir parametrais, mažo gylio modeliuose geriausia naudoti Adagrad optimizavimo funkciją, kadangi jos pasiektas validacijos tikslumas yra 96 procentai, nors ir Adam funkcija pasiekė tokį 
+% patį tikslumą. Tačiau Adam funkcijos validacijos nuostolis 80 epochoje siekė 25 procentus, kai Adagrad siekė tik 15 procentų ir augimo tendencija buvo daug mažesnė. Šiuo atveju, Adagrad funkcija yra geriau, kadangi ji pritaiko mokymosi greitį pagal 
+% parametrus - maži pakeitimai (žemas mokymosi greitis) prametrams, kurie pasikartoja dažnai, ir dideli pakeitimai (aukštas mokymosi greitis), kai parametrai nėra dažni. Todėl ši funkcija labai gerai pasirodo su maža duomenų imtimi \cite{2016arXiv161106652K}.
+% \item Eksperimentas parodė, kad su naudota duomenų imtimi ir parametrais, didesnio gylio modeliuose geriau naudoti Adam optimizavimo funkciją, kadangi validacijos tikslumas yra 96 procentai, o nuostolio funkcija pasiekia 35 procentus. O Adagrad 
+% funkcija pasiekia tikslumą 95 procentų ir nuostolį 35 procentų, tačiau turi labai didelę augimo tendenciją. Adam funkcija yra geriau, nes kaip ir Adagrad apskaičiuoja ir saugo mokymosi greitį kiekvienam parametrui, bet ir fiksuoja momento (angl. 
+% momentum) pasikeitimus, kas leidžia greičiau surasti lokalų minimumą  ir konverguoti. Todėl su dideliu kiekiu parametrų veikia Adam geriau \cite{DBLP:journals/corr/KingmaB14}.
+\item Atliktas eksperimentas parode, kad su naudotu duomenų rinkiniu ir parametrais, mažo ir didelio gylio modeliuose geriausia naudoti Adagrad arba Adam optimizavimo funkcijas, kadangi mažame ir gilesniame modeliuose Adagrad ir Adam pasiektas 
+validacijos tikslumas siekia 96 procentus. Tačiau pagal gautus nuostolio funkcijos grafus matyti, kad mažesnio gylio modeliuose mokymo ir validacijos nuostolis mažėja arba nestipriai didėja. Didesnio gylio modeliuose mokymo nuostolis artėja 
+link 0, o validacijos nuostolis turi augimo tendenciją.
+Iš visų šio eksperimento metu bandytų optimizavimo funkcijų Adagrad ir Adam pasirodė geriausiai. Adagrad funkcija yra geriau, kadangi ji pritaiko mokymosi greitį pagal 
+parametrus - maži pakeitimai (žemas mokymosi greitis) prametrams, kurie pasikartoja dažnai, ir dideli pakeitimai (aukštas mokymosi greitis), kai parametrai nėra dažni. Todėl ši funkcija labai gerai pasirodo su maža duomenų imtimi \cite{2016arXiv161106652K}. O Adam funkcija yra geriau, nes kaip ir Adagrad apskaičiuoja ir saugo mokymosi greitį kiekvienam parametrui, bet ir fiksuoja momento (angl. 
+momentum) pasikeitimus, kas leidžia greičiau surasti lokalų minimumą ir konverguoti. Todėl su dideliu kiekiu parametrų ir mažu duomenų kiekiu Adam veikia geriau \cite{DBLP:journals/corr/KingmaB14}.
 \end{enumerate}
 
 \printbibliography[heading=bibintoc] 

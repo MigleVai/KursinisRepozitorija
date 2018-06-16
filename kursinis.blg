@@ -1,32 +1,32 @@
 [0] Config.pm:340> INFO - This is Biber 2.4
 [1] Config.pm:343> INFO - Logfile is 'kursinis.blg'
-[45] biber:287> INFO - === Wed Jun 13, 2018, 23:18:35
-[172] Biber.pm:348> INFO - Reading 'kursinis.bcf'
-[328] Biber.pm:742> INFO - Found 26 citekeys in bib section 0
-[337] Biber.pm:3151> INFO - Processing section 0
-[381] Biber.pm:3308> INFO - Looking for bibtex format file 'bibliografija.bib' for section 0
-[438] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
-[486] bibtex.pm:974> INFO - Found BibTeX data source 'bibliografija.bib'
-[571] Utils.pm:147> WARN - ISBN '1783555130, 9781783555130' in entry 'Raschka:2015:PML:2886323' is invalid - run biber with '--validate_datamodel' for details.
-[742] Utils.pm:147> WARN - BibTeX subsystem: /tmp/XuoRJZfUr9/bibliografija.bib_81.utf8, line 4, warning: 148 characters of junk seen at toplevel
-[744] Utils.pm:147> WARN - BibTeX subsystem: /tmp/XuoRJZfUr9/bibliografija.bib_81.utf8, line 95, warning: 7 characters of junk seen at toplevel
-[745] Utils.pm:147> WARN - BibTeX subsystem: /tmp/XuoRJZfUr9/bibliografija.bib_81.utf8, line 104, warning: 7 characters of junk seen at toplevel
-[746] Utils.pm:147> WARN - BibTeX subsystem: /tmp/XuoRJZfUr9/bibliografija.bib_81.utf8, line 111, warning: 7 characters of junk seen at toplevel
-[746] Utils.pm:147> WARN - BibTeX subsystem: /tmp/XuoRJZfUr9/bibliografija.bib_81.utf8, line 119, warning: 7 characters of junk seen at toplevel
-[747] Utils.pm:147> WARN - BibTeX subsystem: /tmp/XuoRJZfUr9/bibliografija.bib_81.utf8, line 126, warning: 7 characters of junk seen at toplevel
-[747] Utils.pm:147> WARN - BibTeX subsystem: /tmp/XuoRJZfUr9/bibliografija.bib_81.utf8, line 144, warning: 7 characters of junk seen at toplevel
-[748] Utils.pm:147> WARN - BibTeX subsystem: /tmp/XuoRJZfUr9/bibliografija.bib_81.utf8, line 155, warning: 7 characters of junk seen at toplevel
-[748] Utils.pm:147> WARN - BibTeX subsystem: /tmp/XuoRJZfUr9/bibliografija.bib_81.utf8, line 168, warning: 7 characters of junk seen at toplevel
-[748] Utils.pm:147> WARN - BibTeX subsystem: /tmp/XuoRJZfUr9/bibliografija.bib_81.utf8, line 178, warning: 7 characters of junk seen at toplevel
-[749] Utils.pm:147> WARN - BibTeX subsystem: /tmp/XuoRJZfUr9/bibliografija.bib_81.utf8, line 188, warning: 7 characters of junk seen at toplevel
-[750] Utils.pm:147> WARN - BibTeX subsystem: /tmp/XuoRJZfUr9/bibliografija.bib_81.utf8, line 194, warning: 7 characters of junk seen at toplevel
-[750] Utils.pm:147> WARN - BibTeX subsystem: /tmp/XuoRJZfUr9/bibliografija.bib_81.utf8, line 205, warning: 7 characters of junk seen at toplevel
-[751] Utils.pm:147> WARN - BibTeX subsystem: /tmp/XuoRJZfUr9/bibliografija.bib_81.utf8, line 212, warning: 7 characters of junk seen at toplevel
-[752] Utils.pm:147> WARN - BibTeX subsystem: /tmp/XuoRJZfUr9/bibliografija.bib_81.utf8, line 228, warning: 7 characters of junk seen at toplevel
-[755] Utils.pm:147> WARN - BibTeX subsystem: /tmp/XuoRJZfUr9/bibliografija.bib_81.utf8, line 236, warning: 7 characters of junk seen at toplevel
-[1129] UCollate.pm:65> INFO - Overriding locale 'lt-LT' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1129] UCollate.pm:65> INFO - Overriding locale 'lt-LT' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1130] Biber.pm:3028> INFO - Sorting list 'anyt/global' of type 'entry' with scheme 'anyt' and locale 'lt-LT'
-[1170] bbl.pm:519> INFO - Writing 'kursinis.bbl' with encoding 'UTF-8'
-[1261] bbl.pm:615> INFO - Output to kursinis.bbl
-[1266] Biber.pm:109> INFO - WARNINGS: 17
+[55] biber:287> INFO - === Fri Jun 15, 2018, 07:11:33
+[200] Biber.pm:348> INFO - Reading 'kursinis.bcf'
+[352] Biber.pm:742> INFO - Found 29 citekeys in bib section 0
+[383] Biber.pm:3151> INFO - Processing section 0
+[498] Biber.pm:3308> INFO - Looking for bibtex format file 'bibliografija.bib' for section 0
+[564] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
+[616] bibtex.pm:974> INFO - Found BibTeX data source 'bibliografija.bib'
+[780] Utils.pm:147> WARN - ISBN '1783555130, 9781783555130' in entry 'Raschka:2015:PML:2886323' is invalid - run biber with '--validate_datamodel' for details.
+[936] Utils.pm:147> WARN - BibTeX subsystem: /tmp/9dGFAdAX06/bibliografija.bib_24.utf8, line 4, warning: 148 characters of junk seen at toplevel
+[937] Utils.pm:147> WARN - BibTeX subsystem: /tmp/9dGFAdAX06/bibliografija.bib_24.utf8, line 118, warning: 7 characters of junk seen at toplevel
+[939] Utils.pm:147> WARN - BibTeX subsystem: /tmp/9dGFAdAX06/bibliografija.bib_24.utf8, line 127, warning: 7 characters of junk seen at toplevel
+[940] Utils.pm:147> WARN - BibTeX subsystem: /tmp/9dGFAdAX06/bibliografija.bib_24.utf8, line 134, warning: 7 characters of junk seen at toplevel
+[940] Utils.pm:147> WARN - BibTeX subsystem: /tmp/9dGFAdAX06/bibliografija.bib_24.utf8, line 142, warning: 7 characters of junk seen at toplevel
+[941] Utils.pm:147> WARN - BibTeX subsystem: /tmp/9dGFAdAX06/bibliografija.bib_24.utf8, line 149, warning: 7 characters of junk seen at toplevel
+[941] Utils.pm:147> WARN - BibTeX subsystem: /tmp/9dGFAdAX06/bibliografija.bib_24.utf8, line 167, warning: 7 characters of junk seen at toplevel
+[942] Utils.pm:147> WARN - BibTeX subsystem: /tmp/9dGFAdAX06/bibliografija.bib_24.utf8, line 178, warning: 7 characters of junk seen at toplevel
+[942] Utils.pm:147> WARN - BibTeX subsystem: /tmp/9dGFAdAX06/bibliografija.bib_24.utf8, line 191, warning: 7 characters of junk seen at toplevel
+[943] Utils.pm:147> WARN - BibTeX subsystem: /tmp/9dGFAdAX06/bibliografija.bib_24.utf8, line 201, warning: 7 characters of junk seen at toplevel
+[943] Utils.pm:147> WARN - BibTeX subsystem: /tmp/9dGFAdAX06/bibliografija.bib_24.utf8, line 211, warning: 7 characters of junk seen at toplevel
+[944] Utils.pm:147> WARN - BibTeX subsystem: /tmp/9dGFAdAX06/bibliografija.bib_24.utf8, line 217, warning: 7 characters of junk seen at toplevel
+[944] Utils.pm:147> WARN - BibTeX subsystem: /tmp/9dGFAdAX06/bibliografija.bib_24.utf8, line 228, warning: 7 characters of junk seen at toplevel
+[945] Utils.pm:147> WARN - BibTeX subsystem: /tmp/9dGFAdAX06/bibliografija.bib_24.utf8, line 235, warning: 7 characters of junk seen at toplevel
+[945] Utils.pm:147> WARN - BibTeX subsystem: /tmp/9dGFAdAX06/bibliografija.bib_24.utf8, line 251, warning: 7 characters of junk seen at toplevel
+[945] Utils.pm:147> WARN - BibTeX subsystem: /tmp/9dGFAdAX06/bibliografija.bib_24.utf8, line 259, warning: 7 characters of junk seen at toplevel
+[1395] UCollate.pm:65> INFO - Overriding locale 'lt-LT' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1396] UCollate.pm:65> INFO - Overriding locale 'lt-LT' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1396] Biber.pm:3028> INFO - Sorting list 'anyt/global' of type 'entry' with scheme 'anyt' and locale 'lt-LT'
+[1443] bbl.pm:519> INFO - Writing 'kursinis.bbl' with encoding 'UTF-8'
+[1549] bbl.pm:615> INFO - Output to kursinis.bbl
+[1556] Biber.pm:109> INFO - WARNINGS: 17

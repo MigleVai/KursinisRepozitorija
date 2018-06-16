@@ -99,6 +99,29 @@
       \verb http://arxiv.org/abs/1708.08711
       \endverb
     \endentry
+    \entry{fukushima}{article}{}
+      \name{author}{1}{}{%
+        {{hash=23d96062ed18321873ac4b8b6e2fc816}{%
+           family={Fukushima},
+           family_i={F\bibinitperiod},
+           given={Kunihiko},
+           given_i={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{23d96062ed18321873ac4b8b6e2fc816}
+      \strng{fullhash}{23d96062ed18321873ac4b8b6e2fc816}
+      \field{labelalpha}{Fuk80}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Biological cybernetics}
+      \field{month}{02}
+      \field{title}{Neocognitron: A self-organizing neural network model for a mechanism of pattern recognition unaffected by shift in position}
+      \field{volume}{36}
+      \field{year}{1980}
+      \field{pages}{193\bibrangedash 202}
+      \range{pages}{10}
+    \endentry
     \entry{eyedis}{article}{}
       \name{author}{1}{}{%
         {{hash=f234b4146192cf38636bb33ff1ff903c}{%
@@ -193,6 +216,48 @@
       \field{year}{2010}
       \field{pages}{76\bibrangedash 85}
       \range{pages}{10}
+    \endentry
+    \entry{DBLP:journals/corr/HeZRS15}{article}{}
+      \name{author}{4}{}{%
+        {{hash=6b4b60e909e78633945f3f9c9dc83e01}{%
+           family={He},
+           family_i={H\bibinitperiod},
+           given={Kaiming},
+           given_i={K\bibinitperiod}}}%
+        {{hash=5e72bc22dbcf0984c6d113d280e36990}{%
+           family={Zhang},
+           family_i={Z\bibinitperiod},
+           given={Xiangyu},
+           given_i={X\bibinitperiod}}}%
+        {{hash=bb295293acacd54387339079ebbe4ead}{%
+           family={Ren},
+           family_i={R\bibinitperiod},
+           given={Shaoqing},
+           given_i={S\bibinitperiod}}}%
+        {{hash=f85751488058842b5777c7b4074077b5}{%
+           family={Sun},
+           family_i={S\bibinitperiod},
+           given={Jian},
+           given_i={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \strng{fullhash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \field{labelalpha}{HZR\textsuperscript {+}15}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Deep Residual Learning for Image Recognition}
+      \field{volume}{abs/1512.03385}
+      \field{year}{2015}
+      \verb{eprint}
+      \verb 1512.03385
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1512.03385
+      \endverb
     \endentry
     \entry{DBLP:journals/corr/YosinskiCBL14}{article}{}
       \name{author}{4}{}{%
@@ -425,6 +490,52 @@
       \verb 10.1109/TPAMI.2017.2703082
       \endverb
       \keyw{computational complexity;feedforward neural nets;learning (artificial intelligence);neural net architecture;trees (mathematics);2-level tree pooling operators;average pooling;computational overhead;deep neural network architectures;generalized pooling operation;learned pooling masks;max pooling;pooling filters;pooling function;pooling methods;tree-structured fusion;Computer architecture;Decision trees;Logic gates;Machine learning;Neural networks;Standards;Training;Convolutional neural networks;deep learning;pooling functions;supervised classification}
+    \endentry
+    \entry{LeCun:1999:ORG:646469.691875}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=6a1aa6b7eab12b931ca7c7e3f927231d}{%
+           family={LeCun},
+           family_i={L\bibinitperiod},
+           given={Yann},
+           given_i={Y\bibinitperiod}}}%
+        {{hash=844e183692f08a63f99285330fcf90cc}{%
+           family={Haffner},
+           family_i={H\bibinitperiod},
+           given={Patrick},
+           given_i={P\bibinitperiod}}}%
+        {{hash=ac762f2592005edf6bad58f566967c6c}{%
+           family={Bottou},
+           family_i={B\bibinitperiod},
+           given={Léon},
+           given_i={L\bibinitperiod}}}%
+        {{hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           family_i={B\bibinitperiod},
+           given={Yoshua},
+           given_i={Y\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {London, UK, UK}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag}%
+      }
+      \strng{namehash}{c925d33d5337913af4e1c4748666266a}
+      \strng{fullhash}{c925d33d5337913af4e1c4748666266a}
+      \field{labelalpha}{LHB\textsuperscript {+}99}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Shape, Contour and Grouping in Computer Vision}
+      \field{isbn}{3-540-66722-9}
+      \field{title}{Object Recognition with Gradient-Based Learning}
+      \field{year}{1999}
+      \field{pages}{319\bibrangedash}
+      \range{pages}{-1}
+      \verb{url}
+      \verb http://dl.acm.org/citation.cfm?id=646469.691875
+      \endverb
     \endentry
     \entry{layers-CS231n}{misc}{}
       \name{author}{1}{}{%
