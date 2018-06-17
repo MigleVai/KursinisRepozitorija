@@ -61,7 +61,7 @@ tinklų tipas - konvoliuciniai neuroniniai tinklai \cite{fukushima, LeCun:1999:O
 
 Konvoliuciniai neuroniniai tinklai gali būti naudojami:
 \begin{itemize}
-\item Veido atpažinimui - identifikuoti arba verifikuoti asmenį. Pavyzdžiui, „DeepFace“ sistema sukurta „FaceBook“ \cite{Taigman:2014:DCG:2679600.2680208}, kuri atpažįsta žmonių veidus nuotraukose, 
+\item Veido atpažinimui - identifikuoti arba verifikuoti asmenį. Pavyzdžiui, „DeepFace“ sistema sukurta „Facebook“ \cite{Taigman:2014:DCG:2679600.2680208}, kuri atpažįsta žmonių veidus nuotraukose, 
 arba „Face ID“ sistema sukurta Apple, kuri yra skirta identifikuoti asmenį, kuris bando atrakinti telefoną. 
 \item Medicinoje - širdies, plaučių, prostatos, krūties vėžių \cite{cancer}, akių ligų diagnozavimui \cite{eyedis}.
 \item Žmonių elgesio analizė realiu laiku – „DeepGlint“ nustato žmones nuotraukose ir nuspėja jų elgesį \cite{deepGlint}.
@@ -130,7 +130,7 @@ Formulėje (2) pateikta raidė \(A\) reiškia bet kokia pasirinkta aktyvavimo fu
 buvusio sluoksnio jungčių dydžio, kurios parodo kiek svarbi yra jungtis tarp neuronų, kadangi kuo didesnis svoris tuo didesnis rezultatas gaunamas svorį sudauginus su įvesties duomenimis. Taip pat slenksčio reikšmė parodo ar reikia 
 sustiprinti ar susiplinti gaunamą rezultatą. \(Y\) reikšmė priklauso nuo pasirinktos aktyvavimo funkcijos išvesties intervalo. Žemiau yra pateiktos kelios aktyvavimo funkcijos su išvesties intervalais.  
 
-Aktyvavimo funkcijos yra skirstomos į:
+Kelios aktyvavimo funkcijos:
 \begin{itemize}
 \item Sigmoidinė (angl. sigmoid function) - išvesties intervale [0; 1].
 \item Hiperbolinio tangento (angl. hyperbolic tangent) - išvesties intervale [-1; 1].
@@ -141,7 +141,7 @@ Aktyvavimo funkcijos yra skirstomos į:
 \subsection{Nuostolio funkcijos}
 Mokantis dirbtiniam neuroniniam tinklui jo gaunami rezultatai gali labai skirtis nuo tikėtinų rezultatų, todėl nuostolio funkcija apskaičiuoja kaip stipriai
 skiriasi gautas rezultatas nuo tikėtino. Kuo didesnis nuostolis tuo toliau nuo teisingo atsakymo yra dirbtinis neuroninis tinklas \cite{Cameron-loss-fun}.
-Paprasčiausia ir dažniausiai naudojama nuostolio funkcija yra vidutinio kvadrato klaida. Ši funkcija apskaičiuoja kvadratinį skirtumą tarp tikėtino 
+Paprasčiausia ir dažniausiai naudojama nuostolio funkcija yra vidutinio kvadratinio nuokrypio (angl. mean squared error). Ši funkcija apskaičiuoja kvadratinį skirtumą tarp tikėtino 
 ir gauto rezultatų. Tačiau šios funkcijos vienas iš didesnių trūkumų - neproporcingas išskyrimas didelių rezultatų. Kadangi funkcija didėja kvadratiniai,
 o ne tiesiniai, kai gaunamas rezultatas tolsta nuo tikėtino rezultato.
 
@@ -202,7 +202,7 @@ kad žemiausia vieta bus peršokta ir bus tolstama nuo jos.
 
 \section{Konvoliucinis neuroninis tinklas}
 Konvoliuciniai neuroniniai tinklai yra labai panašūs į paprastus dirbtinius neuroninius tinklus (daugiau informacijos skyriuje "Dirbtinis neuroninis
-tinklas"). Tačiau pagrindinis skirtumas tarp šių tinklų yra, kad konvoliucinio įvesties sluoksnis priima duomenis, kurie gali būti konvertuojami į 2D matricą, pavyzdžiui, paveiksliukai, 
+tinklas"). Tačiau pagrindinis skirtumas tarp šių tinklų yra, kad konvoliucinio neuroninio tinklo įvesties sluoksnis priima duomenis, kurie gali būti konvertuojami į 2D matricą, pavyzdžiui, paveiksliukai, 
 kurie jei padaryti su standartine skaitmenine kamera, turi tris komponentus - raudoną, žalią ir mėlyną. Šiuos komponentus galima 
 įsivaizduoti kaip tris 2D matricas sudėtas viena ant kitos. Kiekvienos matricos i-osios eilutės ir j-ojo stulpelio elementas 
 atitinka nuotraukos pikselį, kurio reikšmė yra intervale nuo 0 iki 255. Kadangi naudojamos informacijos tipas yra specifinis, 
@@ -222,7 +222,7 @@ Konvoliucija yra matematinė operacija, kuri apibūdina taisyklę, kuri parodo k
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.5\textwidth]{img/Konvoliucija.png}
+\includegraphics[width=1\textwidth]{img/matrix.png}
 \caption{Konvoliucijos veikimas}
 \end{figure}
 
@@ -274,7 +274,7 @@ sluoksniui yra priskiriama aktyvacijos funkcija, kuri neprivalo būti tokia pati
 Konvoliuciniai neuroniniai tinklai turi keletą skirtingų architektūrų, kurios naudojamos pagal sprendžiamą problemą. 1 lentelėje pateikta informaciją 
 apie įvairias architektūras.
 
-\begin{longtable}[h]{ | p{4cm} | p{1cm} | p{3cm} | p{5cm} | p{1.5cm} | } 
+\begin{longtable}[h]{ | p{2cm} | p{1cm} | p{3cm} | p{7cm} | p{1.5cm} | } 
 \caption{Konvoliucinių neuroninių tinklų architektūros}
 \hline
 \beginhead
@@ -285,7 +285,7 @@ LeNet & 1998 & 60 000 & Geriausiai atpažįsta ranka parašytus skaičius. Susid
 \hline
 AlexNet & 2012 & 60 000 000 & Veikimu panašus į LeNet, tačiau turi daug daugiau parametrų ir filtrų bei sudėtus konvoliucinius sluoksnius.  & pirma \\
 \hline
-GoogLeNet/Inception & 2014 & 4 000 000 & Vidiniai sluoksniai sudėti paraleliai, naudojami Inception moduliai. Vienas modulis savyje turi 1x1, 3x3 ir 5x5 dydžių konvoliucijos filtrų bei vidurkio sudėjimo sluoksnius. & pirma \\
+GoogLeNet & 2014 & 4 000 000 & Vidiniai sluoksniai sudėti paraleliai, naudojami "Inception" moduliai. Vienas modulis savyje turi 1x1, 3x3 ir 5x5 dydžių konvoliucijos filtrų bei vidurkio sudėjimo sluoksnius. & pirma \\
 \hline
 VGGNet & 2014 & 138 000 000 & Panašus veikimas į AlexNet, tačiau daug gilesnis. Naudojamų filtrų dydis yra 3x3 ir jie yra sudėti vienas po kito. & antra \\
 \hline
@@ -343,7 +343,7 @@ dėl bibliotekos ir skaičiavimų lankstumo yra naudojamas įvairiose mokslinės
 
 \section{Modelio derinimas ir modifikavimas-derinimas su mažu duomenų rinkiniu}
 Šio eksperimento tikslas yra išanalizuoti mokymosi tikslumą su skirtingų gylių neuroninais tinklais, kai mokymui yra naudojama maža paveikslėlių imtis. Taigi, pirmas 
-šio eksperimento žingsnis - išsirinkti konvoliucinį neuroninį tinklą. Poskyriuje "Architektūros" yra trumpai apibūdinti pagrindiniai konvolicinių neuroninių tinklų tipai. 
+šio eksperimento žingsnis - išsirinkti konvoliucinį neuroninį tinklą. Poskyriuje "Architektūros" yra trumpai apibūdinti pagrindiniai konvoliucinių neuroninių tinklų tipai. 
 Iš jų buvo išsirinktas VGG, kadangi jis neturi specialių blokų kaip kad GoogleNet turi inception arba ResNet turi liekamąjį, todėl yra paprasta suvokti kaip duomenys sklinda per tinklą. Buvo nuspręsta daryti paprastą, binarinę paveikslėlių 
 klasifikaciją - nustatymas ar katė, ar šuo pavaizduotas paveikslėlyje. Buvo surasta ir naudota duomenų imtis, kuri turi 10 000 paveikslėlių - 8 000 mokymosi tikslui ir 2 000 validacijos.
 
@@ -359,7 +359,7 @@ klasifikaciją - nustatymas ar katė, ar šuo pavaizduotas paveikslėlyje. Buvo 
 Ankstesniame skyriuje "Technologijos" yra išvardintos visos technologijos, kurios buvo naudotos šio eksperimento programai parašyti.
 
 Ruošiantis eksperimentui reikia paruošti kompiuterį darbui - įrašyti "Python" programavimo įrankius, paruošti "Anaconda" komandinę eilutę, "NVIDIA CUDA" įrankius, Keras ir 
-TensorFlow. Tačiau kompiuteris privalo turėti tinkamą procesorių ar grafinį procesoriaus bloką - kompiuteris, kurį naudojau turėjo Nvidia 1080 Ti. Programa, kuri 
+TensorFlow. Tačiau kompiuteris privalo turėti tinkamą procesorių ar grafinį procesoriaus bloką - kompiuteris, kuris buvo naudotas eksperimentui, turėjo Nvidia 1080 Ti. Programa, kuri 
 derina modelį ir modifikuoja, nelabai skiriasi, tad modelio derinimo eiga buvo vėliau pritaikyta ir modifikavimo daliai. 
  
 Keras pateikia modelius, apmokytus su ImageNet, ir jų svorius, tad reikia tik importuoti 
@@ -373,11 +373,11 @@ viso turėjo 40 406 849 parametrų, iš kurių mokinami buvo 32 771 585, o tik 7
 Po modelio paruošimo, reikia nustatyti kokio dydžio paveikslėlių partijomis (angl. batch) bus mokomas ir validuojamas modelis. Geriausias partijos dydis naudotam kompiuteriui buvo mokymosi partijai 100 paveikslėlių, o validacijos - 25.
 Tuomet nustatomas paveikslėlių aplankalo kelias, jų ir partijos dydis bei nustatomas klasės režimas į binarinį, nes duomenų imtis susideda iš dviejų klasių - kačių ir šunų.
 
-Paruošę modelį bei paveikslėlių rinkinį, galima pradėti mokinti ir validuoti modelį. Taigi, nustatomas modelio kompiliavimo metodas, kur turi būti - nuostolio ir 
+Paruošę modelį bei paveikslėlių rinkinį, buvo galima pradėti mokinti ir validuoti modelį. Taigi, nustatomas modelio kompiliavimo metodas, kur turi būti - nuostolio ir 
 optimizavimo funkcijos. Daugiau apie nuostolio ir optimizavimo funkcijas galima skaityti skyriuose "Nuostolio funkcijos" ir "Optimizavimo funkcijos". Tačiau nuotolio 
 funkcija šiame modelyje yra binarinė kryžiaus entropija, kuri nebuvo keičiama. Šio eksperimento metu bus naudojamos keturios optimizavimo funkcijos - SGD, 
 Adam, Adagrad ir RMSprop. Po modelio sukompiliavimo yra aprašomas mokymo metodas, kuriam turi būti pateikta - paruošti paveiksliukai, žingsnis per epochą, epochų kiekis, 
-paruošti validacijos paveiksliukai ir jų žingsnis. Taigi, šiame eksperimente epocha yra nustatyta 80, kadangi tokia išeina pagal visų turimų paveiksliukų skaičių ir paketo dydį.
+paruošti validacijos paveiksliukai ir jų žingsnis. Taigi, šiame eksperimente epocha yra nustatyta 80, kadangi tokia atitinka pagal visų turimų paveiksliukų skaičių ir partijos dydį.
 
 Modelio modifikavimo veikimas yra toks pats išskyrus, kad pridedami ne 4 sluoksniai, o 14 sluoksnių, kurie visi yra tankumo sluoksniai su aktyvacijos funkcija ReLu. Jie yra 
 pridedami tarp plokštinimo ir kito tankumo sluoksnio. Po visų sluoksnių pridėjimo iš viso buvo 51 952 449 parametrų, iš kurių buvo 44 317 185 mokinami, o tiek pat buvo nemokinami 
@@ -385,161 +385,159 @@ kaip ir derinant modelį. Taigi, modifikavimo metu prisidėjo papildomi 11 545 6
 
 \subsection{Modelių mokymas}
 Parašius programas, kurios derina bei modifikuoja modelį, buvo pradėta jį mokyti ir validuoti su skirtingomis optimizavimo funkcijomis.
-Mokymosi greitis buvo išrinktas 1e-4, kas yra 0.0001.
+Mokymosi greitis buvo išrinktas 1e-4.%, kas yra 0.0001.
 \subsubsection{Modelio derinimas}
 Pasirinkta buvo pradėti eksperimentą nuo modelio modifikavimo, kadangi tokiu būdu galima pamatyti kaip modelio paskutiniai keli sluoksniai yra apmokomi ir kaip tikslumas ir nuostolis 
 keičiasi mokymo metu, kai yra naudojamas negilus modelis.
 
-Taigi, pirmiausiai buvo pasirinkta SGD optimizavimo funkcija. Apmokius modelį buvo gauti grafikai - 3 ir 4 paveiksliukai.
+Taigi, pirmiausiai buvo pasirinkta SGD optimizavimo funkcija. Apmokius modelį buvo gauti grafikai - 2 ir 3 paveiksliukai.
 
 \begin{figure}[!htbp]
   \centering
   \begin{minipage}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{img/FT/SGD_acc.png}
+    \includegraphics[width=\textwidth]{img/FT/SGD_acc1.png}
     \caption{Modelio mokymosi ir validacijos tikslumas naudojant SGD}
   \end{minipage}
   \begin{minipage}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{img/FT/SGD_loss.png}
+    \includegraphics[width=\textwidth]{img/FT/SGD_loss1.png}
     \caption{Modelio mokymosi ir validacijos nuostolis naudojant SGD}
   \end{minipage}
 \end{figure}
 
-Grafikas (3 pav.) parodo, kad tikslumas kyla kuo daugiau modelis išmoksta ir validacijos funkcija pirmiausiai pranoksta mokymosi, bet vėliau susilygina. Aukščiausias tikslumo rezultatas yra apie 94 procentus.
-Grafikas (4 pav.) rodo nuostolį per epochas. Iš jo matoma, kad mokymosi ir validacijos nuotoliai ties 47 epocha susikerta ir validacijos nuostoliai tampa didesni už mokymosi.
+Grafikas (2 pav.) parodo, kad tikslumas kyla kuo daugiau modelis išmoksta ir validacijos funkcija pirmiausiai pranoksta mokymosi, bet vėliau susilygina. Aukščiausias tikslumo rezultatas yra apie 94 procentus.
+Grafikas (3 pav.) rodo nuostolį per epochas. Iš jo matoma, kad mokymosi ir validacijos nuotolio funkcijos reikšmių grafikai ties 47 epocha susikerta ir validacijos nuostoliai tampa didesni už mokymosi.
 
-Vėliau keičiama optimizavimo funkcija į Adam - mokymosi rezultatai matomi grafikuose - 5 ir 6 paveiksliukuose.
+Vėliau keičiama optimizavimo funkcija į Adam - mokymosi rezultatai matomi grafikuose - 4 ir 5 paveiksliukuose.
 
 \begin{figure}[!htbp]
   \centering
   \begin{minipage}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{img/FT/Adam_acc.png}
+    \includegraphics[width=\textwidth]{img/FT/Adam_acc1.png}
     \caption{Modelio mokymosi ir validacijos tikslumas naudojant Adam}
   \end{minipage}
   \begin{minipage}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{img/FT/Adam_loss.png}
+    \includegraphics[width=\textwidth]{img/FT/Adam_loss1.png}
     \caption{Modelio mokymosi ir validacijos nuostolis naudojant Adam}
   \end{minipage}
 \end{figure}
 
-Tikslumo grafikas (5 pav.) parodo, kad mokymosi tikslumas per kelias pirmas epochas pasiekia beveik 100 procentinį tikslumą, tačiau validacijos lieka apie 96 procentus ir daugiau nebekyla.
-O nuostolio grafikas (6 pav.) parodo, kad mokymosi nuostolis staigiai nukrenta iki beveik 0 procentų nuostolių. Tačiau validacijos nuostoliai per kelias epochas nukrenta, o po to staigiai pradeda augti ir išsilygina ties 24 procentais.
+Tikslumo grafikas (4 pav.) parodo, kad mokymosi tikslumas per kelias pirmas epochas pasiekia beveik 100 procentinį tikslumą, tačiau validacijos lieka apie 96 procentus ir daugiau nebekyla.
+O nuostolio grafikas (5 pav.) parodo, kad mokymosi nuostolio funkcijos reikšmė staigiai nukrenta iki beveik 0. Tačiau validacijos nuostolio funkcija per kelias epochas nukrenta, o po to staigiai pradeda augti ir išsitiesina ties 0,24.
 
-Trečiasis testuojama optimizavimo funkcija yra Adagrad. Jos grafikai yra 7 ir 8 paveiksliukai.
+Trečioji testuojama optimizavimo funkcija yra Adagrad. Jos grafikai yra 6 ir 7 paveiksliukai.
 
 \begin{figure}[!htbp]
   \centering
   \begin{minipage}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{img/FT/Adagrad_loss.png}
+    \includegraphics[width=\textwidth]{img/FT/Adagrad_acc1.png}
     \caption{Modelio mokymosi ir validacijos tikslumas naudojant Adagrad}
   \end{minipage}
   \begin{minipage}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{img/FT/Adagrad_acc.png}
+    \includegraphics[width=\textwidth]{img/FT/Adagrad_loss1.png}
     \caption{Modelio mokymosi ir validacijos nuostolis naudojant Adagrad}
   \end{minipage}
 \end{figure}
 
-Galima daryti išvadą, jog tikslumo grafikas (7 pav.) parodo, kad mokymosi tikslumas per pirmas 20 epochų pakyla beveik iki 100 procentų, o validacijos tikslumas pakyla iki 96 procentų ir ties tiek pasilieka.
-O nuostolio grafikas (8 pav.) parodo, kad taip pat kaip ir mokymosi tikslumas taip ir nuostolis per pirmas 20 epochų nukrenta iki beveik 0 procentų ir ties ten lieka. Kai validacijos nuostolis 
-nukrenta iki tolygiai auga iki 11 procentų, o po to tolygiai kyla iki 15 procentų.
+Galima daryti išvadą, jog tikslumo grafikas (6 pav.) parodo, kad mokymosi tikslumas per pirmas 20 epochų pakyla beveik iki 100 procentų, o validacijos tikslumas pakyla iki 96 procentų ir ties tiek pasilieka.
+O nuostolio grafikas (7 pav.) parodo, kad taip pat kaip ir mokymosi tikslumas taip ir nuostolio funkcijos reikšmė per pirmas 20 epochų nukrenta iki beveik 0 ir ties ten lieka. Kai validacijos nuostolio funkcijos reikšmės maksimumas yra 0,15.
 
-Paskutinis bandymo optimizavimo funkcija yra RMSprop. Ji yra parodyta 9 ir 10 paveiksliukuose.
+Paskutinis bandymo optimizavimo funkcija yra RMSprop. Ji yra parodyta 8 ir 9 paveiksliukuose.
 
 \begin{figure}[!htbp]
   \centering
   \begin{minipage}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{img/FT/RMSprop_acc.png}
+    \includegraphics[width=\textwidth]{img/FT/RMSprop_acc1.png}
     \caption{Modelio mokymosi ir validacijos tikslumas naudojant RMSprop}
   \end{minipage}
   \begin{minipage}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{img/FT/RMSprop_loss.png}
+    \includegraphics[width=\textwidth]{img/FT/RMSprop_loss1.png}
     \caption{Modelio mokymosi ir validacijos nuostolis naudojant RMSprop}
   \end{minipage}
 \end{figure}
 
-Tad, tikslumo grafikas (9 pav.) parodo, kad mokymosi funkcija šokteli iki 100 procentų ir ten išsilaiko, kai validacijos funkcija stipriai svyruoja tarp 93 ir 95 procentų, bet per visas epochas neišsilygina.
-O nuostolio grafikas (10 pav.) parodo, kad mokymosi funkcija nukrenta iki beveik 0 procentų ir ten išsilaiko. Tačiau validacijos funkcija labai stipriai svyruoja ir didėja. Pasiekdama aukščiausią nuostolį ties 82 procentais.
+Tad, tikslumo grafikas (8 pav.) parodo, kad mokymosi funkcija šokteli iki 100 procentų ir ten išsilaiko, kai validacijos funkcija stipriai svyruoja tarp 93 ir 95 procentų, bet per visas epochas neišsilygina.
+O nuostolio grafikas (9 pav.) parodo, kad mokymosi funkcija nukrenta iki beveik 0 ir ten išsilaiko. Tačiau validacijos funkcija labai stipriai svyruoja ir didėja. Pasiekdama aukščiausią nuostolio funkcijos reikšmę ties 0,82.
 
 \subsubsection{Modelio modifikavimas}
-Iš naujo apmokyti modeliai su 14 papildomų sluoksnių. Visi parametrai ir duomenų itmis liko tokie patys tik optimizavimo funkcija vėl buvo keičiama.
+Suderinti modeliai su 14 papildomų sluoksnių - visi parametrai ir duomenų imtis nekeisti. % tokie patys tik optimizavimo funkcija vėl buvo keičiama.
 
-Kaip ir prieš tai pirmoji modifikavimo funkcija yra SGD. Jos grafikai yra 11 ir 12 paveiksliukai.
+Pirmoji modifikavimo funkcija yra SGD. Jos grafikai yra 10 ir 11 paveiksliukai.
 
 \begin{figure}[!htbp]
   \centering
   \begin{minipage}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{img/AL/SGD_acc.png}
+    \includegraphics[width=\textwidth]{img/AL/SGD_acc1.png}
     \caption{Gilesnio modelio mokymosi ir validacijos tikslumas naudojant SGD}
   \end{minipage}
   \begin{minipage}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{img/AL/SGD_loss.png}
+    \includegraphics[width=\textwidth]{img/AL/SGD_loss1.png}
     \caption{Gilesnio modelio mokymosi ir validacijos nuostolis naudojant SGD}
   \end{minipage}
 \end{figure}
 
-Tikslumo grafikas (11 pav.) matyti, kad mokymosi funkcija tolygiai svyruojančiai didėja, tačiau validacijos tikslumas ties 37 epocha pranoksta mokymosi bei pati validacijos funkcija tolygiai kyla ir neturi 
-tokių svyravimų kaip mokymosi. Palyginus su 3 paveiksliuko tikslumu, po papildomų sluoksnių pridėjimo nei validacijos nei mokymosi tikslumas nepasiekia tokio aukšto tikslumo, koks buvo mažesnio gylio modelyje.
-Nuostolio grafike (12 pav.) parodyta, kad mokymosi ir validacijos funkcijos tolygiai mažėja, tačiau mokymosi svyruoja. Tačiau mažiausias nuostolis šiame grafike yra 69 procentai, kai 4 paveiksliuke, kur parodyta 
-ne tokio gilaus modelio nuostoliai, mažiausi pasiekti nuostoliai yra 20 procentų.
+Tikslumo grafikas (10 pav.) matyti, kad mokymosi funkcija tolygiai svyruojančiai didėja, tačiau validacijos tikslumas ties 37 epocha pranoksta mokymosi bei pati validacijos funkcija tolygiai kyla ir neturi 
+tokių svyravimų kaip mokymosi. Palyginus su 2 paveiksliuko tikslumu, po papildomų sluoksnių pridėjimo abiejų grafų tikslumas nepasiekia tokios aukštos reikšmės, koks buvo mažesnio gylio modelyje.
+Nuostolio grafike (11 pav.) parodyta, kad mokymosi ir validacijos funkcijos tolygiai mažėja, tačiau mokymosi svyruoja. Mažiausia nuostolio funkcijos reikšmė šiame grafike yra 0,69, kai 3 paveiksliuke, kur parodyta 
+ne tokio gilaus modelio nuostoliai, mažiausi pasiekti nuostoliai yra 0,20.
 
-Antra bandoma optimizavimo funkcija yra Adam. Jos grafikai yra 13 ir 14 paveiksliukai.
+Antra bandoma optimizavimo funkcija yra Adam. Jos grafikai yra 12 ir 13 paveiksliukai.
 
 \begin{figure}[!htbp]
   \centering
   \begin{minipage}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{img/AL/Adam_acc.png}
+    \includegraphics[width=\textwidth]{img/AL/Adam_acc1.png}
     \caption{Gilesnio modelio mokymosi ir validacijos tikslumas naudojant Adam}
   \end{minipage}
   \begin{minipage}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{img/AL/Adam_loss.png}
+    \includegraphics[width=\textwidth]{img/AL/Adam_loss1.png}
     \caption{Gilesnio modelio mokymosi ir validacijos nuostolis naudojant Adam}
   \end{minipage}
 \end{figure}
 
-Tikslumo grafiką (13 pav.) palyginus su 5 paveiksliuku matyti, kad mokymosi tikslumo funkcija pakilo iki 100 procentų, panašiu greičiu. Validacijos funkcija gilesniame modelyje pirmose 25 epochų ganėtinai 
+Tikslumo grafiką (12 pav.) palyginus su 4 paveiksliuku matyti, kad mokymosi tikslumo funkcija pakilo iki 100 procentų. Validacijos funkcija pirmose 25 epochų 
 stipriai svyravo, tačiau po to išsilygino ties 96 procentais. 
-Tačiau nuostolio grafikas (14 pav.) labai skiriasi nuo 6 paveiksliuko, kur parodyta ne tokio gilaus modelio nuostolis. Mokymosi funkcija kaip ir mažesnio gylio modelio mažėja iki 0 procentų, tačiau validacijos nuostolis 
-daug stipriau svyruoja pirmose 25 epochose, o po to išsilygina ir pradeda tolygiai didėti, pasiekdama didžiausia nuostolį ties 36 procentais.
+Tačiau nuostolio grafikas (13 pav.) labai skiriasi nuo 5 paveiksliuko, kur parodyta negilaus modelio nuostolio funkcija. Mokymosi funkcija mažėja iki 0, tačiau validacijos nuostolis svyruoja pirmose 25 epochose, o po to išsilygina ir pradeda tolygiai didėti.
 
-Prieš paskutinė funkcija yra Adagrad. Šios funkcijos grafikai yra 15 ir 16 paveiksliukai.
+%Prieš paskutinė funkcija yra Adagrad. Šios funkcijos grafikai yra 14 ir 15 paveiksliukai.
 
 \begin{figure}[!htbp]
   \centering
   \begin{minipage}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{img/AL/Adagrad_acc.png}
+    \includegraphics[width=\textwidth]{img/AL/Adagrad_acc1.png}
     \caption{Gilesnio modelio mokymosi ir validacijos tikslumas naudojant Adagrad}
   \end{minipage}
   \begin{minipage}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{img/AL/Adagrad_loss.png}
+    \includegraphics[width=\textwidth]{img/AL/Adagrad_loss1.png}
     \caption{Gilesnio modelio mokymosi ir validacijos nuostolis naudojant Adagrad}
   \end{minipage}
 \end{figure}
 
-Tikslumo grafikas (15 pav.) yra labai panašus į mažesnio gylio tikslumo grafiką (7 pav.), kadangi mokymosi tikslumo funkcijos yra beveik vienodos, o validacija šiuo atveju yra šiek tiek mažesnio tikslumo gilesniame 
+Aukščiau pateikta Adagrad optimizavimo funkcijos grafikai (14 ir 15 pav.). Tikslumo grafikas (14 pav.) yra labai panašus į mažesnio gylio tikslumo grafiką (6 pav.), kadangi mokymosi tikslumo funkcijos yra beveik vienodos, o validacija šiuo atveju yra šiek tiek mažesnio tikslumo gilesniame 
 modelyje - susilygina ties 95 procentais.
-Nuostolio grafikas (16 pav.) kaip ir 8 paveiksliuke, parodo, kad mokymosi nuostolis staigiai mažėja iki 0 procentų. O validacijos nuostolis pirmose 10 epochų stipriai svyruoja ir po to sparčiai auga ir pasiekia maksimalią nuostolio 
-reikšmę ties 34 procentais, kai mažesnio gylio modelio yra apie 15 procentų.
+Nuostolio grafikas (15 pav.) kaip ir 8 paveiksliuke, parodo, kad mokymosi nuostolio funkcijos reikšmė staigiai mažėja iki 0. O validacijos nuostolio funkcija pirmose 10 epochų stipriai svyruoja ir po to sparčiai auga ir pasiekia maksimalią nuostolio 
+reikšmę ties 0,34, kai mažesnio gylio modelio yra apie 0,15.
 
-Paskutinė optimizavimo funkcija yra RMSprop. Jos grafikai yra 17 ir 18 paveiksliukai.
+Paskutinė optimizavimo funkcija yra RMSprop. Jos grafikai yra 16 ir 17 paveiksliukai.
 
 \begin{figure}[!htbp]
   \centering
   \begin{minipage}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{img/AL/RMSprop_acc.png}
+    \includegraphics[width=\textwidth]{img/AL/RMSprop_acc1.png}
     \caption{Gilesnio modelio mokymosi ir validacijos tikslumas naudojant RMSprop}
   \end{minipage}
   \begin{minipage}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{img/AL/RMSprop_loss.png}
+    \includegraphics[width=\textwidth]{img/AL/RMSprop_loss1.png}
     \caption{Gilesnio modelio mokymosi ir validacijos nuostolis naudojant RMSprop}
   \end{minipage}
 \end{figure}
 
-Tikslumo grafike (17 pav.) matyti, kad mokymosi funkcija pakyla iki 100 procentų, o validacijos funkcija svyruoja iki 40 epochos, o po to išsilygina ties 95 procentais, kai toks pat rezultatą matomas ir 9 paveikslėlyje, kuriame parodyta mažiau gilaus modelio tikslumas.
-Nuostolio grafikas (18 pav.) parodo, kad mokymosi funkcija pasiekia 0 procentų. Tačiau validacijos funkcija svyruoja pirmas 45 epochas, o po to išsilygina ties 55 procentais.
+Tikslumo grafike (16 pav.) matyti, kad mokymosi funkcija pakyla iki 100 procentų, o validacijos funkcija svyruoja iki 40 epochos, o po to išsilygina ties 95 procentais, kai toks pat rezultatą matomas ir 8 paveikslėlyje, kuriame parodyta mažiau gilaus modelio tikslumas.
+Nuostolio grafikas (17 pav.) parodo, kad mokymosi funkcija pasiekia 0. Tačiau validacijos funkcija svyruoja pirmas 45 epochas, o po to išsilygina ties 0,55 nuostoliu.
 
 \sectionnonum{Rezultatai ir išvados}
-Šio darbo metu buvo tirta dirbtinių neuroninių tinklų ir konvolicinių neuroninių tinklų veikimas ir jų sudedamosios dalys bei surinkta informacija iš litertūros šaltinių. Atliktas eksperimentas, kurio tikslas buvo pamatyti kokį efektą turi konvolicinio neuroninio tinklo gylis ir jo suderinimui naudojamas mažas duomenų rinkinys neuroninio tinklo tikslumui.
+Šio darbo metu buvo tirta dirbtinių neuroninių tinklų ir konvoliucinių neuroninių tinklų veikimas ir jų sudedamosios dalys bei surinkta informacija iš litertūros šaltinių. Atliktas eksperimentas, kurio tikslas buvo pamatyti kokį efektą turi konvoliucinio neuroninio tinklo gylis ir jo suderinimui naudojamas mažas duomenų rinkinys neuroninio tinklo tikslumui.
 
-\hfill\break
+%\hfill\break
 
 Darbo rezultatai:
 \begin{enumerate}
@@ -550,7 +548,7 @@ Darbo rezultatai:
 \item Suderinimo metu buvo keičiamos optimizavimo funkcijos - iš viso panaudotos SGD, Adam, Adagrad ir RMSprop funkcijos, kurios buvo palyginus naudojantis mokymo ir validacijos grafikais.
 \end{enumerate}
 
-\hfill\break
+%\hfill\break
 
 Darbo išvados:
 \begin{enumerate}

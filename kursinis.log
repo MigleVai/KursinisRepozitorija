@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.5.17)  16 JUN 2018 16:13
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.5.17)  17 JUN 2018 14:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1431,8 +1431,8 @@ Underfull \hbox (badness 2608) in paragraph at lines 177--178
  []
 
 [6] [7]
-File: img/Konvoliucija.png Graphic file (type QTm)
- <use  "img/Konvoliucija.png" > [8
+File: img/matrix.png Graphic file (type QTm)
+ <use  "img/matrix.png" > [8
 
 ] [9]
 ! Misplaced \noalign.
@@ -1460,86 +1460,31 @@ l.280 \beginhead
                 
 ? 
 
+Overfull \hbox (3.5265pt too wide) in paragraph at lines 281--281
+[]|\EU1/texgyretermes(0)/m/n/12 Pavadinimas| 
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 281--282
 []|\EU1/texgyretermes(0)/m/n/12 ILSVRC
  []
 
 
-Overfull \hbox (3.09444pt too wide) in alignment at lines 277--283
+Overfull \hbox (3.09442pt too wide) in alignment at lines 277--283
  [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 1990) in paragraph at lines 284--284
-\EU1/texgyretermes(0)/m/n/12 rašytus skaičius. Susideda
+Underfull \hbox (badness 2922) in paragraph at lines 284--284
+\EU1/texgyretermes(0)/m/n/12 bei pasibaigia dviem pilno sujungimo
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 288--288
-[]|\EU1/texgyretermes(0)/m/n/12 Vidiniai sluoksniai sudėti
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 288--288
-\EU1/texgyretermes(0)/m/n/12 paraleliai, naudojami In-
- []
-
-
-Underfull \hbox (badness 4391) in paragraph at lines 288--288
-\EU1/texgyretermes(0)/m/n/12 ception moduliai. Vienas
- []
-
-
-Underfull \hbox (badness 1661) in paragraph at lines 288--288
-\EU1/texgyretermes(0)/m/n/12 ir 5x5 dydžių konvoliucijos
- []
-
-
-Underfull \hbox (badness 1210) in paragraph at lines 288--288
-\EU1/texgyretermes(0)/m/n/12 filtrų bei vidurkio sudėjimo
- []
-
-
-Underfull \hbox (badness 3168) in paragraph at lines 292--292
-\EU1/texgyretermes(0)/m/n/12 dėtų vienas po kito, kurie
- []
-
-
-Underfull \hbox (badness 2418) in paragraph at lines 292--292
-\EU1/texgyretermes(0)/m/n/12 turi liekamąjį (angl. resi-
- []
-
-
-Underfull \hbox (badness 1242) in paragraph at lines 292--292
-\EU1/texgyretermes(0)/m/n/12 formaciją perduoda tolimes-
- []
-
-
-Underfull \hbox (badness 1472) in paragraph at lines 292--292
-\EU1/texgyretermes(0)/m/n/12 niam sluoksniui ją pridėda-
- []
-
-
-Underfull \hbox (badness 3343) in paragraph at lines 294--294
-[]|\EU1/texgyretermes(0)/m/n/12 Dvipusis dvikryptis tinklas,
- []
-
-
-Underfull \hbox (badness 1552) in paragraph at lines 294--294
-\EU1/texgyretermes(0)/m/n/12 kuris perduoda žinutes tarp
- []
-
-
-Underfull \hbox (badness 1360) in paragraph at lines 296--296
-[]|\EU1/texgyretermes(0)/m/n/12 Panašus veikimas į ResNet,
- []
-
-
-Overfull \hbox (3.09444pt too wide) in alignment at lines 283--298
+Overfull \hbox (3.09442pt too wide) in alignment at lines 283--298
  [] [] [] [] [] 
  []
 
-[10] [11] [12] [13
+[10] [11] [12
 
 ]
 Underfull \hbox (badness 1496) in paragraph at lines 344--344
@@ -1547,61 +1492,52 @@ Underfull \hbox (badness 1496) in paragraph at lines 344--344
  su mažu
  []
 
-[14
+[13
 
 ]
-File: img/FT/SGD_acc.png Graphic file (type QTm)
- <use  "img/FT/SGD_acc.png" >
-File: img/FT/SGD_loss.png Graphic file (type QTm)
- <use  "img/FT/SGD_loss.png" > [15]
-File: img/FT/Adam_acc.png Graphic file (type QTm)
+File: img/FT/SGD_acc1.png Graphic file (type QTm)
+ <use  "img/FT/SGD_acc1.png" >
+File: img/FT/SGD_loss1.png Graphic file (type QTm)
+ <use  "img/FT/SGD_loss1.png" > [14]
+File: img/FT/Adam_acc1.png Graphic file (type QTm)
 
-<use  "img/FT/Adam_acc.png" >
-File: img/FT/Adam_loss.png Graphic file (type QTm)
- <use  "img/FT/Adam_loss.png" >
-File: img/FT/Adagrad_loss.png Graphic file (type QTm)
+<use  "img/FT/Adam_acc1.png" >
+File: img/FT/Adam_loss1.png Graphic file (type QTm)
+ <use  "img/FT/Adam_loss1.png" >
+File: img/FT/Adagrad_acc1.png Graphic file (type QTm)
 
-<use  "img/FT/Adagrad_loss.png" >
-File: img/FT/Adagrad_acc.png Graphic file (type QTm)
- <use  "img/FT/Adagrad_acc.png" >
-File: img/FT/RMSprop_acc.png Graphic file (type QTm)
+<use  "img/FT/Adagrad_acc1.png" >
+File: img/FT/Adagrad_loss1.png Graphic file (type QTm)
+ <use  "img/FT/Adagrad_loss1.png" > [15]
+File: img/FT/RMSprop_acc1.png Graphic file (type QTm)
 
-<use  "img/FT/RMSprop_acc.png" >
-File: img/FT/RMSprop_loss.png Graphic file (type QTm)
- <use  "img/FT/RMSprop_loss.png" > [16]
-File: img/AL/SGD_acc.png Graphic file (type QTm)
+<use  "img/FT/RMSprop_acc1.png" >
+File: img/FT/RMSprop_loss1.png Graphic file (type QTm)
+ <use  "img/FT/RMSprop_loss1.png" >
+File: img/AL/SGD_acc1.png Graphic file (type QTm)
 
-<use  "img/AL/SGD_acc.png" >
-File: img/AL/SGD_loss.png Graphic file (type QTm)
- <use  "img/AL/SGD_loss.png" > [17]
-File: img/AL/Adam_acc.png Graphic file (type QTm)
+<use  "img/AL/SGD_acc1.png" >
+File: img/AL/SGD_loss1.png Graphic file (type QTm)
+ <use  "img/AL/SGD_loss1.png" > [16]
+File: img/AL/Adam_acc1.png Graphic file (type QTm)
 
-<use  "img/AL/Adam_acc.png" >
-File: img/AL/Adam_loss.png Graphic file (type QTm)
- <use  "img/AL/Adam_loss.png" >
-File: img/AL/Adagrad_acc.png Graphic file (type QTm)
+<use  "img/AL/Adam_acc1.png" >
+File: img/AL/Adam_loss1.png Graphic file (type QTm)
+ <use  "img/AL/Adam_loss1.png" >
+File: img/AL/Adagrad_acc1.png Graphic file (type QTm)
 
-<use  "img/AL/Adagrad_acc.png" >
-File: img/AL/Adagrad_loss.png Graphic file (type QTm)
- <use  "img/AL/Adagrad_loss.png" > [18]
-File: img/AL/RMSprop_acc.png Graphic file (type QTm)
+<use  "img/AL/Adagrad_acc1.png" >
+File: img/AL/Adagrad_loss1.png Graphic file (type QTm)
+ <use  "img/AL/Adagrad_loss1.png" > [17]
+File: img/AL/RMSprop_acc1.png Graphic file (type QTm)
 
-<use  "img/AL/RMSprop_acc.png" >
-File: img/AL/RMSprop_loss.png Graphic file (type QTm)
- <use  "img/AL/RMSprop_loss.png" > [19]
-Underfull \hbox (badness 10000) in paragraph at lines 542--543
+<use  "img/AL/RMSprop_acc1.png" >
+File: img/AL/RMSprop_loss1.png Graphic file (type QTm)
+ <use  "img/AL/RMSprop_loss1.png" > [18]
+[19
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 553--554
-
- []
-
-[20
-
-] [21]
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 574
+]
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 572
 .
  (/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmtt.fd
 File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1609,13 +1545,13 @@ File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ! Misplaced alignment tab character &.
 <to be read again> ...and soft computing science &
                                                    engineering (ijecscse)
-l.574 \printbibliography[heading=bibintoc]
+l.572 \printbibliography[heading=bibintoc]
                                           
 ? 
-[22
+[20
 
 ]
-Underfull \hbox (badness 1859) in paragraph at lines 574--574
+Underfull \hbox (badness 1859) in paragraph at lines 572--572
 \EU1/texgyretermes(0)/m/it/12 tems Techniques and Applications\EU1/texgyreterme
 s(0)/m/n/12 . Elsevier Science, 1998, p. 323–324. \EU1/texgyretermes(0)/m/sc/12
  isbn\EU1/texgyretermes(0)/m/n/12 :
@@ -1623,20 +1559,20 @@ s(0)/m/n/12 . Elsevier Science, 1998, p. 323–324. \EU1/texgyretermes(0)/m/sc/1
 
 
 Package biblatex Warning: No driver for entry type 'artice'.
-(biblatex)                Using fallback driver on input line 574.
+(biblatex)                Using fallback driver on input line 572.
 
-[23] [24] (./kursinis.aux)
+[21] [22] (./kursinis.aux)
 Package logreq Info: Writing requests to 'kursinis.run.xml'.
 \openout1 = `kursinis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25908 strings out of 493638
- 478138 string characters out of 6146796
- 852363 words of memory out of 5000000
+ 25907 strings out of 493638
+ 478144 string characters out of 6146796
+ 852361 words of memory out of 5000000
  28979 multiletter control sequences out of 15000+600000
  16614 words of font info for 86 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  68i,12n,96p,10497b,2291s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on kursinis.pdf (24 pages).
+Output written on kursinis.pdf (22 pages).
